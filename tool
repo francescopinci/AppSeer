@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Francesco Pinci - pinci.francesco@gmail.com
-# This tool extract and test the exposed activities defined in the Android source code
+# This tool extract exposed activities or services by AOSP and connected devices
 
 adb="../platform-tools/adb"
 manifest_name="AndroidManifest.xml"
@@ -73,22 +73,3 @@ case $1 in
 		echo "Usage: tool -a|-s android_build [manifests_source]"
 		exit 1
 esac
-
-# Step 3
-# ------
-# Test extracted intents one by one
-# For each line of the file
-# while read -r intent;
-# do
-# 	echo "Intent: $intent"
-# 	# Click home button
-# 	$adb shell input tap 540 1855 < /dev/null
-# 	sleep 2
-# 	# Clear logcat crash channel
-# 	$adb logcat -b crash -c < /dev/null
-# 	# Start the activity
-# 	$adb shell am start -a "$intent" < /dev/null
-# 	sleep 4
-# 	# Print logcat crash channel
-# 	$adb logcat -b crash -d -m 1 < /dev/null > report
-# done < $intents_i
