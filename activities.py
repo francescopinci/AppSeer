@@ -6,6 +6,7 @@ f3 = open('./exposed_activities_e.txt', mode='w');
 f4 = open('./test_activities_i.txt', mode='w');
 f5 = open('./test_activities_e.txt', mode='w');
 f6 = open('./exposed_activities_perm.txt', mode='w');
+f7 = open('./results.txt', mode='w');
 
 # list of installed packages on Android Oreo stock
 f = open('./packages', mode='r');
@@ -149,11 +150,12 @@ while line:
 						f3.write('Activity:\t' + activity + '\n')
 						x = re.search('^[.]', activity)
 						if x!= None:
-							f5.write(package + activity + '\n')
+							f5.write(package + '/' + activity + '\n')
 						elif package in activity:
-							f5.write(activity + '\n')
+							new_activity = activity.replace(package, package + '/')
+							f5.write(new_activity + '\n')
 						else:
-							f5.write(package + '.' + activity + '\n')
+							f5.write(package + '/.' + activity + '\n')
 						f3.write('\n')
 				# start to look for the next activity
 				searchLine = f_manifest.readline()
@@ -224,11 +226,12 @@ while line:
 						f3.write('Activity:\t' + activity + '\n')
 						x = re.search('^[.]', activity)
 						if x!= None:
-							f5.write(package + activity + '\n')
+							f5.write(package + '/' + activity + '\n')
 						elif package in activity:
-							f5.write(activity + '\n')
+							new_activity = activity.replace(package, package + '/')
+							f5.write(new_activity + '\n')
 						else:
-							f5.write(package + '.' + activity)
+							f5.write(package + '/.' + activity + '\n')
 						f3.write('\n')
 		searchLine = f_manifest.readline()
 	# while end	
@@ -237,12 +240,18 @@ while line:
 	f_manifest.close()
 # while end
 
+f7.write("Manifest files analyzed:\t" + str(manifests) + '\n')
+f7.write("Exposed activities found:\t" + str(exposed_activities_i+exposed_activities_e+exposed_activities_perm) + '\n')
+f7.write("Activities startable by implicit intents:\t" + str(exposed_activities_i) + '\n')
+f7.write("Activities startable by explicit intents:\t" + str(exposed_activities_e) + '\n')
+f7.write("Activities requiring permissions:\t\t" + str(exposed_activities_perm))
 print("Manifest files analyzed:\t" + str(manifests))
 print("Exposed activities found:\t" + str(exposed_activities_i+exposed_activities_e+exposed_activities_perm))
 print("Activities startable by implicit intents:\t" + str(exposed_activities_i))
 print("Activities startable by explicit intents:\t" + str(exposed_activities_e))
 print("Activities requiring permissions:\t\t" + str(exposed_activities_perm))
 
+f7.close()
 f6.close()
 f5.close()
 f4.close()

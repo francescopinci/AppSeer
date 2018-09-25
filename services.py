@@ -6,6 +6,7 @@ f3 = open('./exposed_services_e.txt', mode='w');
 f4 = open('./test_services_i.txt', mode='w');
 f5 = open('./test_services_e.txt', mode='w');
 f6 = open('./exposed_services_perm.txt', mode='w');
+f7 = open('./results.txt', mode='w');
 
 # list of installed packages on Android Oreo stock
 f = open('./packages', mode='r');
@@ -20,7 +21,6 @@ exposed_services_perm = 0;
 line = f1.readline()
 #for each AndroidManifest.xml
 while line:
-
 	manifest_path = line.strip('\n')
 	manifests = manifests + 1;
 	# open the manifest file in read mode
@@ -89,6 +89,7 @@ while line:
 	# search through all defined services
 	searchLine = f_manifest.readline()
 	while searchLine:
+		# 
 		if '<service ' not in searchLine:
 			searchLine = f_manifest.readline()
 			continue
@@ -149,11 +150,12 @@ while line:
 						f3.write('Service:\t' + service + '\n')
 						x = re.search('^[.]', service)
 						if x!= None:
-							f5.write(package + service + '\n')
+							f5.write(package + '/' + service + '\n')
 						elif package in service:
-							f5.write(service + '\n')
+							new_service = service.replace(package, package + '/')
+							f5.write(new_service + '\n')
 						else:
-							f5.write(package + '.' + service + '\n')
+							f5.write(package + '/.' + service + '\n')
 						f3.write('\n')
 				# start to look for the next service
 				searchLine = f_manifest.readline()
@@ -224,11 +226,12 @@ while line:
 						f3.write('Service:\t' + service + '\n')
 						x = re.search('^[.]', service)
 						if x!= None:
-							f5.write(package + service + '\n')
+							f5.write(package + '/' + service + '\n')
 						elif package in service:
-							f5.write(service + '\n')
+							new_service = service.replace(package, package + '/')
+							f5.write(new_service + '\n')
 						else:
-							f5.write(package + '.' + service)
+							f5.write(package + '/.' + service + '\n')
 						f3.write('\n')
 		searchLine = f_manifest.readline()
 	# while end	
@@ -237,12 +240,18 @@ while line:
 	f_manifest.close()
 # while end
 
+f7.write("Manifest files analyzed:\t" + str(manifests) + '\n')
+f7.write("Exposed services found:\t" + str(exposed_services_i+exposed_services_e+exposed_services_perm) + '\n')
+f7.write("Services startable by implicit intents:\t" + str(exposed_services_i) + '\n')
+f7.write("Services startable by explicit intents:\t" + str(exposed_services_e) + '\n')
+f7.write("Services requiring permissions:\t\t" + str(exposed_services_perm))
 print("Manifest files analyzed:\t" + str(manifests))
 print("Exposed services found:\t" + str(exposed_services_i+exposed_services_e+exposed_services_perm))
 print("Services startable by implicit intents:\t" + str(exposed_services_i))
 print("Services startable by explicit intents:\t" + str(exposed_services_e))
 print("Services requiring permissions:\t\t" + str(exposed_services_perm))
 
+f7.close()
 f6.close()
 f5.close()
 f4.close()
