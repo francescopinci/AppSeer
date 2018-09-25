@@ -1,0 +1,62 @@
+apktool.yml contains version name, version code, min SDK and target SDK
+
+-original: JAR manifest and the signature of the APK. (directly copied from apk file)
+
+-smali:	application source code in smali format. Organized in folders by package name(also code from dependencies is present!). Any modification here is reflected when the apk is rebuilt.
+
+-res: 	resources decoded from apk binary file 'resources.arsc'. Also here we find dependencies data. Subfolders name could not match thos in the original project.
+
+## From odex to dex ##
+----------------------
+In short, an odex file is an optimized version of a classes.dex file that has optimizations that are device specific. In particular, an odex file has dependencies on every "BOOTCLASSPATH" file that is loaded when it is generated. The odex file is only valid when used with these exact BOOTCLASSPATH files. dalvik enforces this by storing a checksum of each file that the odex file is dependent on, and ensuring that the checksum for each file matches when the odex file is loaded.
+
+The BOOTCLASSPATH is simply a list of the jars/apk from which classes can be loaded, in addition to the main apk/jar that is loaded. A normal android system has 5 jars in it's base BOOTCLASSPATH - core.jar, ext.jar, framework.jar, android.policy.jar and services.jar. These can all be found in /system/framework. However, some apks have dependencies on additional jar or apks files beyond that of the base 5 jars. For example, for applications that use google maps, com.google.android.maps.jar will be appended to the BOOTCLASSPATH for that application's apk.
+
+These odex dependencies make life a bit difficult for a couple of reasons. For one - you can't take an apk+odex file from one system image and run it on another system image (unless the other system image uses the exact same framework files). Another problem is that if you make any changes to any of the BOOTCLASSPATH files, it will invalidate every odex that depends on that file - basically every apk/jar on the device.
+
+(Source: https://github.com/JesusFreke/smali/wiki/DeodexInstructions)
+
+1: ./adb pull /system/path/to/file.odex
+2: ./adb pull /system/framework
+3: (to be called from smali folder) jar xf smali-version.jar
+4: (from odex to smali files) java -jar /smali/build/libs/baksmali-version-small.jar x /path/to/file.odex -d path/to/framework/x86 --> out folder is generated containing all the .smali files
+5: (from smali to dex) java -jar /smali/build/libs/smali-version-small.jar a /path/to/out -o classes.dex
+
+## AOSP hierarchy ##
+-------------------
+
+    Bionic - the C-runtime for Android. Note that Android is not using glibc like most Linux distributions. Instead the c-library is called bionic and is based mostly on BSD-derived sources. In this folder you will find the source for the c-library, math and other core runtime libraries.
+
+    Bootable - boot and startup related code. Some of it is legacy, the fastboot protocol info could be interesting since it is implemented by boot loaders in a number of devices such as the Nexus ones.
+
+    Build - the build system implementation including all the core make file templates. An important file here is the envsetup.sh script that will help you a lot when working with the platform source. Running this script in a shell will enable commands to setup environment variables, build specific modules and grep in source code files.
+
+    Cts - the compatability tests. The test suite to ensure that a build complies with the Android specification.
+
+    Dalvik - the source code for the implementation of the Dalvik Virtual Machine
+
+    Development - projects related to development such as the source code for the sdk and ndk tools. Normally not a folder you touch when working with the platform for a target.
+
+    Device - product specific code for different devices. This is the place to find hardware modules for the different Nexus devices, build configurations and more.
+
+    External - contains source code for all external open source projects such as SQLite, Freetype and webkit.
+
+    Frameworks - this folder is essential to Android since it contains the sources for the framework. Here you will find the implementation of key services such as the System Server with the Package- and Activity managers. A lot of the mapping between the java application APIs and the native libraries is also done here.
+
+    Hardware - hardware related source code such as the Android hardware abstraction layer specification and implementation. This folder also contains the reference radio interface layer (to communicate with the modem side) implementation.
+
+    libcore - Apache Harmony.
+
+    libnativehelper - Helper functions for use with JNI.
+
+    (Kernel) - not part of the default source download but you can get access to this code either by downloading it manually or by adding the repository to the repo tool. Contains the sources for the Android version of the Linux kernel.
+
+    Out - the build output will be placed here after you run make. The folder structure is out/target/product/. In the default build for the emulator the output will be placed in out/target/product/generic. This is where you will find the images used by the emulator to start (or to be downloaded and flashed to a device if you are building for a hardware target).
+
+    Packages - contains the source code for the default applications such as contacts, calendar, browser.
+
+    Prebuilt - contains files that are distributed in binary form for convenience. Examples include the cross compilations toolchains for different development machines.
+
+    System - source code files for the core Android system. That is the minimal Linux system that is started before the Dalvik VM and any java based services are enabled. This includes the source code for the init process and the default init.rc script that provide the dynamic configuration of the platform
+
+    tools - Various IDE tools.
