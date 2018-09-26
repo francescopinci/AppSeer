@@ -102,6 +102,11 @@ echo -en '\n'
 # ------
 # Test exposed components
 echo "Testing exposed components with implicit intents.."
+echo "##################################################"
+echo "Logcat crash channell #" > crash_report_i.txt
+echo -en "#######################\n\n" >> crash_report_i.txt
+echo "Adb activity manager output #" > log.txt
+echo -en "#############################\n\n" >> log.txt
 while read -r action;
 do
 	echo "Intent action: $action"
@@ -111,13 +116,22 @@ do
 	# Clear logcat crash channel
 	$adb logcat -b crash -c < /dev/null
 	# Start the activity
-	$adb_command_i "$action" < /dev/null
+	$adb_command_i "$action" < /dev/null >> log.txt
 	sleep 4
 	# Print logcat crash channel
-	$adb logcat -b crash -d -m 1 < /dev/null
+	tmp=$($adb logcat -b crash -d < /dev/null)
+	if [ "$tmp" != "" ]; then
+		echo "################################" >> crash_report_i.txt 
+		echo "$tmp" >> crash_report_i.txt
+		echo "################################" >> crash_report_i.txt
+		echo -en '\n' >> crash_report_i.txt
+	fi
 done < $intents_i
 
 echo "Testing exposed components with explicit intents.."
+echo "##################################################"
+echo "Logcat crash channell #" > crash_report_i.txt
+echo -en "#######################\n\n" >> crash_report_i.txt
 while read -r action;
 do
 	echo "Intent: $action"
@@ -127,8 +141,14 @@ do
 	# Clear logcat crash channel
 	$adb logcat -b crash -c < /dev/null
 	# Start the activity
-	$adb_command_e "$action" < /dev/null
+	$adb_command_e "$action" < /dev/null >> log.txt
 	sleep 4
 	# Print logcat crash channel
-	$adb logcat -b crash -d -m 1 < /dev/null
+	tmp=$($adb logcat -b crash -d < /dev/null)
+	if [ "$tmp" != "" ]; then
+		echo "################################" >> crash_report.txt 
+		echo "$tmp" >> crash_report.txt
+		echo "################################" >> crash_report.txt
+		echo -en '\n' >> crash_report.txt
+	fi
 done < $intents_e
