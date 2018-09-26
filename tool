@@ -130,8 +130,8 @@ done < $intents_i
 
 echo "Testing exposed components with explicit intents.."
 echo "##################################################"
-echo "Logcat crash channell #" > crash_report_i.txt
-echo -en "#######################\n\n" >> crash_report_i.txt
+echo "Logcat crash channell #" > crash_report_e.txt
+echo -en "#######################\n\n" >> crash_report_e.txt
 while read -r action;
 do
 	echo "Intent: $action"
@@ -146,9 +146,9 @@ do
 	# Print logcat crash channel
 	tmp=$($adb logcat -b crash -d < /dev/null)
 	if [ "$tmp" != "" ]; then
-		echo "################################" >> crash_report.txt 
-		echo "$tmp" >> crash_report.txt
-		echo "################################" >> crash_report.txt
-		echo -en '\n' >> crash_report.txt
+		echo "################################" >> crash_report_e.txt 
+		echo "$tmp" >> crash_report_e.txt
+		echo "################################" >> crash_report_e.txt
+		echo -en '\n' >> crash_report_e.txt
 	fi
 done < $intents_e
