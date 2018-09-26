@@ -18,13 +18,22 @@ fi
 
 if [ $# == 3 ]; then
 	manifests_source=$3
-	mkdir $android_build
+	if [ ! -d $android_build ]; then
+		mkdir $android_build
+	fi
 	cd $android_build
 elif [ $# == 2 ]; then
 	manifests_source=$2_apk
-	mkdir $android_build
-	cd $android_build
-	../extract_apks.sh $2
+	if [ ! -d $android_build ]; then
+		mkdir $android_build
+		cd $android_build
+		../extract_apks.sh $2
+	else
+		cd $android_build
+		if [ ! -d $manifests_source ]; then
+			../extract_apks.sh $2
+		fi
+	fi
 else
 	echo "Usage: tool -a|-s android_build [manifests_source]"
 	exit 1
@@ -35,19 +44,23 @@ fi
 # Find all the AndroidManifest.xml in the source code tree
 
 # extract list of installed packages
-echo -en "Reading list of installed packages.."
-$adb shell pm list packages > tmp
-file="tmp"
-while IFS= read -r line
-do	
-	echo $line | cut -c 9- >> packages
-done < $file
-rm tmp
-echo " done."
+if [ ! -f "packages.txt" ]; then
+	echo -en "Reading list of installed packages.."
+	$adb shell pm list packages > tmp
+	file="tmp"
+	while IFS= read -r line
+	do	
+		echo $line | cut -c 9- >> packages.txt
+	done < $file
+	rm tmp
+	echo " done."
+fi
 
-echo -en "Searching all $manifest_name files in $manifests_source.. "
-find $manifests_source -name $manifest_name > manifest_files.txt
-echo -en "done.\n"
+if [ ! -f "manifest_files.txt" ]; then
+	echo -en "Searching all $manifest_name files in $manifests_source.. "
+	find $manifests_source -name $manifest_name > manifest_files.txt
+	echo -en "done.\n"
+fi
 
 # Step 2
 # ------
@@ -59,6 +72,8 @@ case $1 in
 		python3 ../activities.py
 		intents_i="test_activities_i.txt"
 		intents_e="test_activities_e.txt"
+		adb_command_i="$adb shell am start -a"
+		adb_command_e="$adb shell am start -n"
 		;;
 	-s)
 		# Search for exposed services
@@ -66,6 +81,8 @@ case $1 in
 		python3 ../services.py
 		intents_i="test_services_i.txt"
 		intents_e="test_services_e.txt"
+		adb_command_i="$adb shell am startservice -a"
+		adb_command_e="$adb shell am startservice -n"
 		;;
 	*)
 		cd ..
@@ -73,3 +90,45 @@ case $1 in
 		echo "Usage: tool -a|-s android_build [manifests_source]"
 		exit 1
 esac
+
+echo -en "\nDo you want to test the exposed components on the connected device? [y|n] "
+read answer
+if [ $answer != 'y' ]; then
+	exit 1
+fi
+echo -en '\n'
+
+# Step 3
+# ------
+# Test exposed components
+echo "Testing exposed components with implicit intents.."
+while read -r action;
+do
+	echo "Intent action: $action"
+	# Click home button
+	$adb shell input tap 540 1855 < /dev/null
+	sleep 2
+	# Clear logcat crash channel
+	$adb logcat -b crash -c < /dev/null
+	# Start the activity
+	$adb_command_i "$action" < /dev/null
+	sleep 4
+	# Print logcat crash channel
+	$adb logcat -b crash -d -m 1 < /dev/null
+done < $intents_i
+
+echo "Testing exposed components with explicit intents.."
+while read -r action;
+do
+	echo "Intent: $action"
+	# Click home button
+	$adb shell input tap 540 1855 < /dev/null
+	sleep 2
+	# Clear logcat crash channel
+	$adb logcat -b crash -c < /dev/null
+	# Start the activity
+	$adb_command_e "$action" < /dev/null
+	sleep 4
+	# Print logcat crash channel
+	$adb logcat -b crash -d -m 1 < /dev/null
+done < $intents_e

@@ -9,7 +9,7 @@ f6 = open('./exposed_activities_perm.txt', mode='w');
 f7 = open('./results.txt', mode='w');
 
 # list of installed packages on Android Oreo stock
-f = open('./packages', mode='r');
+f = open('./packages.txt', mode='r');
 installed_packages = f.read()
 f.close()
 
@@ -244,7 +244,7 @@ f7.write("Manifest files analyzed:\t" + str(manifests) + '\n')
 f7.write("Exposed activities found:\t" + str(exposed_activities_i+exposed_activities_e+exposed_activities_perm) + '\n')
 f7.write("Activities startable by implicit intents:\t" + str(exposed_activities_i) + '\n')
 f7.write("Activities startable by explicit intents:\t" + str(exposed_activities_e) + '\n')
-f7.write("Activities requiring permissions:\t\t" + str(exposed_activities_perm))
+f7.write("Activities requiring permissions:\t\t" + str(exposed_activities_perm + '\n'))
 print("Manifest files analyzed:\t" + str(manifests))
 print("Exposed activities found:\t" + str(exposed_activities_i+exposed_activities_e+exposed_activities_perm))
 print("Activities startable by implicit intents:\t" + str(exposed_activities_i))

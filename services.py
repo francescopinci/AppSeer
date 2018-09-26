@@ -9,7 +9,7 @@ f6 = open('./exposed_services_perm.txt', mode='w');
 f7 = open('./results.txt', mode='w');
 
 # list of installed packages on Android Oreo stock
-f = open('./packages', mode='r');
+f = open('./packages.txt', mode='r');
 installed_packages = f.read()
 f.close()
 
@@ -244,7 +244,7 @@ f7.write("Manifest files analyzed:\t" + str(manifests) + '\n')
 f7.write("Exposed services found:\t" + str(exposed_services_i+exposed_services_e+exposed_services_perm) + '\n')
 f7.write("Services startable by implicit intents:\t" + str(exposed_services_i) + '\n')
 f7.write("Services startable by explicit intents:\t" + str(exposed_services_e) + '\n')
-f7.write("Services requiring permissions:\t\t" + str(exposed_services_perm))
+f7.write("Services requiring permissions:\t\t" + str(exposed_services_perm + '\n'))
 print("Manifest files analyzed:\t" + str(manifests))
 print("Exposed services found:\t" + str(exposed_services_i+exposed_services_e+exposed_services_perm))
 print("Services startable by implicit intents:\t" + str(exposed_services_i))
