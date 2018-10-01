@@ -17,7 +17,7 @@ else
 fi
 
 AOSP_manifests_source=../$build
-device_manifests_source=./$build_results'/APKs'
+device_manifests_source='./APKs'
 
 flag=false
 
