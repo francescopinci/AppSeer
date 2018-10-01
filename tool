@@ -67,11 +67,11 @@ fi
 # find AndroidManifest.xml files in the build source code (AOSP) and in the APKs present on the device
 if [ ! -f "manifests.txt" ]; then
 	echo -en "Searching all $manifest_name files in $build.. "
-	find $AOSP_manifests_source -name $manifest_name > manifests.txt
+	#find $AOSP_manifests_source -name $manifest_name > manifests.txt
 	echo -en "done.\n"
 
 	echo -en "Searching all $manifest_name files in device APKs.. "
-	find $device_manifests_source -name $manifest_name >> manifests.txt
+	find $device_manifests_source -name $manifest_name > manifests.txt
 	echo -en "done.\n"
 fi	
 

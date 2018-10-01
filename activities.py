@@ -264,6 +264,7 @@ f7.write("Exposed activities found:\t" + str(exposed_activities_i+exposed_activi
 f7.write("Activities startable by implicit intents:\t" + str(exposed_activities_i) + '\n')
 f7.write("Activities startable by explicit intents:\t" + str(exposed_activities_e) + '\n')
 f7.write("Activities requiring permissions:\t\t" + str(exposed_activities_perm) + '\n')
+
 print("Manifest files analyzed:\t" + str(manifests))
 print("Exposed activities found:\t" + str(exposed_activities_i+exposed_activities_e+exposed_activities_perm))
 print("Activities startable by implicit intents:\t" + str(exposed_activities_i))

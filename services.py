@@ -18,6 +18,11 @@ exposed_services_i = 0;
 exposed_services_e = 0;
 exposed_services_perm = 0;
 
+# lists used to avoid duplicate intents
+i_list = []
+e_list = []
+perm_list = []
+
 line = f1.readline()
 #for each AndroidManifest.xml
 while line:
@@ -135,28 +140,33 @@ while line:
 				if exported == True:
 					# check if a permission was requested
 					if permission != '':
-						exposed_services_perm = exposed_services_perm + 1
-						f6.write('Manifest:\t' + manifest_path + '\n')
-						f6.write('Package:\t' + package + '\n')
-						f6.write('App:\t\t' + application + '\n')
-						f6.write('Service:\t' + service + '\n')
-						f6.write('Permission:\t' + permission + '\n')
-						f6.write('\n')
+						if service not in perm_list:
+							perm_list.append(service)
+							exposed_services_perm = exposed_services_perm + 1
+							f6.write('Manifest:\t' + manifest_path + '\n')
+							f6.write('Package:\t' + package + '\n')
+							f6.write('App:\t\t' + application + '\n')
+							f6.write('Service:\t' + service + '\n')
+							f6.write('Permission:\t' + permission + '\n')
+							f6.write('\n')
 					else:
-						exposed_services_e = exposed_services_e + 1;
-						f3.write('Manifest:\t' + manifest_path + '\n')
-						f3.write('Package:\t' + package + '\n')
-						f3.write('App:\t\t' + application + '\n')
-						f3.write('Service:\t' + service + '\n')
 						x = re.search('^[.]', service)
 						if x!= None:
-							f5.write(package + '/' + service + '\n')
+							new_service = package + '/' + service
 						elif package in service:
 							new_service = service.replace(package, package + '/')
-							f5.write(new_service + '\n')
 						else:
-							f5.write(package + '/.' + service + '\n')
-						f3.write('\n')
+							new_service = package + '/.' + service
+
+						if new_service not in e_list:
+							e_list.append(new_service)
+							exposed_services_e = exposed_services_e + 1;
+							f3.write('Manifest:\t' + manifest_path + '\n')
+							f3.write('Package:\t' + package + '\n')
+							f3.write('App:\t\t' + application + '\n')
+							f3.write('Service:\t' + service + '\n')
+							f3.write('\n')
+							f5.write(new_service + '\n')
 				# start to look for the next service
 				searchLine = f_manifest.readline()
 				continue # to the next service
@@ -191,10 +201,14 @@ while line:
 											f2.write('App:\t\t' + application + '\n')
 											f2.write('Service:\t' + service + '\n')	
 									if permission != '':
-										f6.write('Action:\t\t' + action + '\n')
+										if action not in perm_list:
+											perm_list.append(action)
+											f6.write('Action:\t\t' + action + '\n')
 									else:
-										f2.write('Action:\t\t' + action + '\n')
-										f4.write(action + '\n')
+										if action not in i_list:
+											i_list.append(action)
+											f2.write('Action:\t\t' + action + '\n')
+											f4.write(action + '\n')
 						searchLine = f_manifest.readline()
 					# while end
 				searchLine = f_manifest.readline()
@@ -211,28 +225,33 @@ while line:
 				if exported == True:
 					# check if a permission was requested
 					if permission != '':
-						exposed_services_perm = exposed_services_perm + 1
-						f6.write('Manifest:\t' + manifest_path + '\n')
-						f6.write('Package:\t' + package + '\n')
-						f6.write('App:\t\t' + application + '\n')
-						f6.write('Service:\t' + service + '\n')
-						f6.write('Permission:\t' + permission + '\n')
-						f6.write('\n')
+						if service not in perm_list:
+							perm_list.append(service)
+							exposed_services_perm = exposed_services_perm + 1
+							f6.write('Manifest:\t' + manifest_path + '\n')
+							f6.write('Package:\t' + package + '\n')
+							f6.write('App:\t\t' + application + '\n')
+							f6.write('Service:\t' + service + '\n')
+							f6.write('Permission:\t' + permission + '\n')
+							f6.write('\n')
 					else:
-						exposed_services_e = exposed_services_e + 1;
-						f3.write('Manifest:\t' + manifest_path + '\n')
-						f3.write('Package:\t' + package + '\n')
-						f3.write('App:\t\t' + application + '\n')
-						f3.write('Service:\t' + service + '\n')
 						x = re.search('^[.]', service)
 						if x!= None:
-							f5.write(package + '/' + service + '\n')
+							new_service = package + '/' + service
 						elif package in service:
 							new_service = service.replace(package, package + '/')
-							f5.write(new_service + '\n')
 						else:
-							f5.write(package + '/.' + service + '\n')
-						f3.write('\n')
+							new_service = package + '/.' + service
+
+						if new_service not in e_list:
+							e_list.append(new_service)
+							exposed_services_e = exposed_services_e + 1;
+							f3.write('Manifest:\t' + manifest_path + '\n')
+							f3.write('Package:\t' + package + '\n')
+							f3.write('App:\t\t' + application + '\n')
+							f3.write('Service:\t' + service + '\n')
+							f3.write('\n')
+							f5.write(new_service + '\n')
 		searchLine = f_manifest.readline()
 	# while end	
 	# next manifest
@@ -245,6 +264,7 @@ f7.write("Exposed services found:\t" + str(exposed_services_i+exposed_services_e
 f7.write("Services startable by implicit intents:\t" + str(exposed_services_i) + '\n')
 f7.write("Services startable by explicit intents:\t" + str(exposed_services_e) + '\n')
 f7.write("Services requiring permissions:\t\t" + str(exposed_services_perm) + '\n')
+
 print("Manifest files analyzed:\t" + str(manifests))
 print("Exposed services found:\t" + str(exposed_services_i+exposed_services_e+exposed_services_perm))
 print("Services startable by implicit intents:\t" + str(exposed_services_i))
