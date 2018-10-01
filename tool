@@ -17,6 +17,9 @@ else
 fi
 
 AOSP_manifests_source=../$build
+device_manifests_source=./$build_results'/APKs'
+
+flag=false
 
 if [ $# != 2 ]; then
 	echo "Usage: tool -a|-s android_build"
@@ -35,10 +38,12 @@ fi
 
 # extract list of installed packages on connected device
 if [ $($adb devices | wc -l) -lt 3 ]; then
-	echo "Connect a device and enable ADB debugging to run the tool"
-	if $flag; then
-		rm -r $build_results
-	echo exit 1
+	if [ ! -d APKs ] || [ ! -f packages.txt ]; then
+		echo "Connect a device and enable ADB debugging to run the tool"
+		if $flag; then
+			rm -r $build_results
+		fi
+		exit 1
 	fi
 elif [ ! -f "packages.txt" ]; then
 	echo -en "Reading list of installed packages.."
@@ -66,7 +71,7 @@ if [ ! -f "manifests.txt" ]; then
 	echo -en "done.\n"
 
 	echo -en "Searching all $manifest_name files in device APKs.. "
-	find $manifests_source -name $manifest_name >> manifests.txt
+	find $device_manifests_source -name $manifest_name >> manifests.txt
 	echo -en "done.\n"
 fi	
 
@@ -74,6 +79,13 @@ fi
 # Step 2
 # ----------------------------------------------------------------
 # Search for exposed components
+echo -en "\nDo you want to search for exposed components? [y|n] "
+read answer
+if [ $answer != 'y' ]; then
+	exit 1
+fi
+echo -en '\n'
+
 case $1 in
 	-a)
 		# Search for exposed activities
