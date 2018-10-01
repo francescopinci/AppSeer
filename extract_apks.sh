@@ -11,7 +11,7 @@ echo -en "Creating apk files list.."
 echo "find system/ -name \"*.apk\"" | $adb shell su > $file
 echo " done."
 
-dir="$1_apk"
+dir="APKs"
 mkdir $dir
 
 echo -en "Pulling the apk files from the device.."

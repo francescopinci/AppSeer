@@ -6,45 +6,41 @@
 adb="../platform-tools/adb"
 manifest_name="AndroidManifest.xml"
 
-# Usage ./tool -a|-s android_build [manifests_source]
+# Usage ./tool -a|-s android_build
 # a : activities
 # s : services
-folder=$2
+build=$2
 if [[ $1 == "-a" ]]; then
-	android_build=$2_a
+	build_results=$build'_a'
 else
-	android_build=$2_s
+	build_results=$build'_s'
 fi
 
-if [ $# == 3 ]; then
-	manifests_source=$3
-	if [ ! -d $android_build ]; then
-		mkdir $android_build
-	fi
-	cd $android_build
-elif [ $# == 2 ]; then
-	manifests_source=$2_apk
-	if [ ! -d $android_build ]; then
-		mkdir $android_build
-		cd $android_build
-		../extract_apks.sh $2
-	else
-		cd $android_build
-		if [ ! -d $manifests_source ]; then
-			../extract_apks.sh $2
-		fi
-	fi
-else
-	echo "Usage: tool -a|-s android_build [manifests_source]"
+AOSP_manifests_source=../$build
+
+if [ $# != 2 ]; then
+	echo "Usage: tool -a|-s android_build"
 	exit 1
+else
+	if [ ! -d $build_results ]; then
+		flag=true
+		mkdir $build_results	
+	fi
+	cd $build_results
 fi
 
 # Step 1
-# ------
-# Find all the AndroidManifest.xml in the source code tree
+# ----------------------------------------------------------------
+# Find AOSP and device components
 
-# extract list of installed packages
-if [ ! -f "packages.txt" ]; then
+# extract list of installed packages on connected device
+if [ $($adb devices | wc -l) -lt 3 ]; then
+	echo "Connect a device and enable ADB debugging to run the tool"
+	if $flag; then
+		rm -r $build_results
+	echo exit 1
+	fi
+elif [ ! -f "packages.txt" ]; then
 	echo -en "Reading list of installed packages.."
 	$adb shell pm list packages > tmp
 	file="tmp"
@@ -56,15 +52,28 @@ if [ ! -f "packages.txt" ]; then
 	echo " done."
 fi
 
-if [ ! -f "manifest_files.txt" ]; then
-	echo -en "Searching all $manifest_name files in $manifests_source.. "
-	find $manifests_source -name $manifest_name > manifest_files.txt
-	echo -en "done.\n"
+# device components
+# find AndroidManifest.xml files in the device APKs
+if [ ! -d "APKs" ]; then
+	../extract_apks.sh
 fi
 
+# AOSP components
+# find AndroidManifest.xml files in the build source code (AOSP) and in the APKs present on the device
+if [ ! -f "manifests.txt" ]; then
+	echo -en "Searching all $manifest_name files in $build.. "
+	find $AOSP_manifests_source -name $manifest_name > manifests.txt
+	echo -en "done.\n"
+
+	echo -en "Searching all $manifest_name files in device APKs.. "
+	find $manifests_source -name $manifest_name >> manifests.txt
+	echo -en "done.\n"
+fi	
+
+
 # Step 2
-# ------
-# Detect if activities or services are requested
+# ----------------------------------------------------------------
+# Search for exposed components
 case $1 in
 	-a)
 		# Search for exposed activities
@@ -86,7 +95,9 @@ case $1 in
 		;;
 	*)
 		cd ..
-		rm -r $2
+		if $flag; then
+			rm -r $build_results
+		fi
 		echo "Usage: tool -a|-s android_build [manifests_source]"
 		exit 1
 esac
