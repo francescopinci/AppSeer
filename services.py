@@ -1,6 +1,6 @@
 import re
 
-f1 = open('./manifest_files.txt', mode='r');
+f1 = open('./manifests.txt', mode='r');
 f2 = open('./exposed_services_i.txt', mode='w');
 f3 = open('./exposed_services_e.txt', mode='w');
 f4 = open('./test_services_i.txt', mode='w');
