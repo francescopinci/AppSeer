@@ -59,7 +59,7 @@ fi
 
 # device components
 # find AndroidManifest.xml files in the device APKs
-if [ ! -d "APKs" ]; then
+if [ ! -d "APKas" ]; then
 	../extract_apks.sh
 fi
 
@@ -71,7 +71,7 @@ if [ ! -f "manifests.txt" ]; then
 	echo -en "done.\n"
 
 	echo -en "Searching all $manifest_name files in device APKs.. "
-	find $device_manifests_source -name $manifest_name > manifests.txt
+	#find $device_manifests_source -name $manifest_name > manifests.txt
 	echo -en "done.\n"
 fi	
 

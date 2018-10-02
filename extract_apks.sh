@@ -7,9 +7,11 @@
 adb="../platform-tools/adb"
 
 file="apks"
-echo -en "Creating apk files list.."
-echo "find system/ -name \"*.apk\"" | $adb shell su > $file
-echo " done."
+if [ ! -f apks ]; then
+	echo -en "Creating apk files list.."
+	echo "find system/ -name *.apk" | $adb shell su > $file
+	echo " done."
+fi
 
 dir="APKs"
 mkdir $dir
