@@ -24,7 +24,7 @@ e_list = []
 perm_list = []
 
 line = f1.readline()
-#for each AndroidManifest.xml
+# for each AndroidManifest.xml
 while line:
 	manifest_path = line.strip('\n')
 	manifests = manifests + 1;
