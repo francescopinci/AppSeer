@@ -59,7 +59,7 @@ fi
 
 # device components
 # find AndroidManifest.xml files in the device APKs
-if [ ! -d "APKas" ]; then
+if [ ! -d "APKs" ]; then
 	../extract_apks.sh
 fi
 
@@ -67,11 +67,11 @@ fi
 # find AndroidManifest.xml files in the build source code (AOSP) and in the APKs present on the device
 if [ ! -f "manifests.txt" ]; then
 	echo -en "Searching all $manifest_name files in $build.. "
-	#find $AOSP_manifests_source -name $manifest_name > manifests.txt
+	find $AOSP_manifests_source -name $manifest_name > manifests.txt
 	echo -en "done.\n"
 
 	echo -en "Searching all $manifest_name files in device APKs.. "
-	#find $device_manifests_source -name $manifest_name > manifests.txt
+	find $device_manifests_source -name $manifest_name > manifests.txt
 	echo -en "done.\n"
 fi	
 
@@ -89,8 +89,8 @@ echo -en '\n'
 case $1 in
 	-a)
 		# Search for exposed activities
-		echo -en "Searching for exposed activities..\n\n"
-		python3 ../activities.py
+		#echo -en "Searching for exposed activities..\n\n"
+		#python3 ../activities.py
 		intents_i="test_activities_i.txt"
 		intents_e="test_activities_e.txt"
 		adb_command_i="$adb shell am start -a"
@@ -98,12 +98,12 @@ case $1 in
 		;;
 	-s)
 		# Search for exposed services
-		echo -en "Searching for exposed services..\n\n"
-		python3 ../services.py
+		#echo -en "Searching for exposed services..\n\n"
+		#python3 ../services.py
 		intents_i="test_services_i.txt"
 		intents_e="test_services_e.txt"
-		adb_command_i="$adb shell am startservice -a"
-		adb_command_e="$adb shell am startservice -n"
+		adb_command_i="$adb shell am startforegroundservice -a"
+		adb_command_e="$adb shell am startforegroundservice -n"
 		;;
 	*)
 		cd ..
@@ -130,6 +130,7 @@ echo "Logcat crash channell #" > crash_report_i.txt
 echo -en "#######################\n\n" >> crash_report_i.txt
 echo "Adb activity manager output #" > log.txt
 echo -en "#############################\n\n" >> log.txt
+echo "List of actions crashing processes (implicit intents):" > crash_actions.txt
 while read -r action;
 do
 	echo "Intent action: $action"
@@ -144,6 +145,7 @@ do
 	# Print logcat crash channel
 	tmp=$($adb logcat -b crash -d < /dev/null)
 	if [ "$tmp" != "" ]; then
+		echo "$action" >> crash_actions.txt
 		echo "################################" >> crash_report_i.txt 
 		echo "$tmp" >> crash_report_i.txt
 		echo "################################" >> crash_report_i.txt
@@ -155,6 +157,7 @@ echo "Testing exposed components with explicit intents.."
 echo "##################################################"
 echo "Logcat crash channell #" > crash_report_e.txt
 echo -en "#######################\n\n" >> crash_report_e.txt
+echo -en "\n\nList of actions crashing processes (explicit intents):\n" >> crash_actions.txt
 while read -r action;
 do
 	echo "Intent: $action"
@@ -165,10 +168,11 @@ do
 	$adb logcat -b crash -c < /dev/null
 	# Start the activity
 	$adb_command_e "$action" < /dev/null >> log.txt
-	sleep 4
+	sleep 6
 	# Print logcat crash channel
 	tmp=$($adb logcat -b crash -d < /dev/null)
 	if [ "$tmp" != "" ]; then
+		echo "$action" >> crash_actions.txt
 		echo "################################" >> crash_report_e.txt 
 		echo "$tmp" >> crash_report_e.txt
 		echo "################################" >> crash_report_e.txt

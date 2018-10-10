@@ -35,8 +35,8 @@ do
 	apk_file=$(echo $line | cut -c 3-) 
 	apktool d -f $apk_file > /dev/null 2>&1
 	apk_folder=$(basename -s ".apk" $apk_file)
-	rm -r $apk_folder/original/ > /dev/null 2>&1
-	rm -r $apk_folder/res/ > /dev/null 2>&1
+	#rm -r $apk_folder/original/ > /dev/null 2>&1
+	#rm -r $apk_folder/res/ > /dev/null 2>&1
 done < $file
 rm tmp
 cd ..
