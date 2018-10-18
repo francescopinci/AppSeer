@@ -1,0 +1,47 @@
+Intent action: com.android.settings.MONITORING_CERT_INFO
+Intent action: com.android.settings.TRUSTED_CREDENTIALS
+Intent action: android.app.action.SET_NEW_PASSWORD
+Intent action: android.app.action.SET_NEW_PARENT_PROFILE_PASSWORD
+Intent action: android.net.wifi.action.REQUEST_SCAN_ALWAYS_AVAILABLE
+Intent action: android.settings.MANAGE_UNKNOWN_APP_SOURCES
+Intent action: android.settings.SHOW_ADMIN_SUPPORT_DETAILS
+Intent action: android.service.quicksettings.action.QS_TILE_PREFERENCES
+Intent action: android.settings.FOREGROUND_SERVICES_SETTINGS
+Intent action: android.app.action.PROVISION_MANAGED_USER
+Intent action: android.app.action.PROVISION_MANAGED_DEVICE
+Intent action: android.speech.action.VOICE_SEARCH_HANDS_FREE
+Intent action: android.speech.action.RECOGNIZE_SPEECH
+Intent action: android.speech.action.RECOGNIZE_VOICE_COMMAND
+Intent action: com.google.android.googlequicksearchbox.action.CLASSIC_GSA_VOICE_SEARCH
+com.google.android.googlequicksearchbox.VIEW_PRIVACY_POLICY
+com.android.settings.action.IA_SETTINGS
+Intent: com.android.cellbroadcastreceiver/.CellBroadcastSettings
+?? Intent: android/.accounts.GrantCredentialsPermissionActivity
+Error: Activity class {com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.com.google.android.apps.gsa.shared.util.permissions.ProxyActivity} does not exist.
+Intent: com.google.android.googlequicksearchbox/.com.google.android.apps.gsa.soundsearchwidget.WidgetResultActivity
+Error type 3
+Error: Activity class {com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.com.google.android.apps.gsa.soundsearchwidget.WidgetResultActivity} does not exist.
+Intent: com.google.android.googlequicksearchbox/.com.google.android.apps.gsa.speech.setupwizard.HotwordSetupWizardActivity
+Error type 3
+Error: Activity class {com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.com.google.android.apps.gsa.speech.setupwizard.HotwordSetupWizardActivity} does not exist.
+Intent: com.google.android.googlequicksearchbox/.com.google.android.apps.gsa.staticplugins.opa.hq.OpaHqActivity
+Error type 3
+Error: Activity class {com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.com.google.android.apps.gsa.staticplugins.opa.hq.OpaHqActivity} does not exist.
+Intent: com.google.android.googlequicksearchbox/.com.google.android.apps.gsa.staticplugins.opa.hq.ResizableOpaHqActivity
+Error type 3
+Error: Activity class {com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.com.google.android.apps
+Intent: com.google.android.dialer/.com.android.dialer.callcomposer.CallComposerActivity
+Error type 3
+Error: Activity class {com.google.android.dialer/com.google.android.dialer.com.android.dialer.callcomposer.CallComposerActivity} does not exist.
+Intent: com.google.android.gms/.gcm.GcmDiagnostics
+Intent: com.google.android.apps.docs/.shortcut.ScanToDriveActivity
+Intent: com.google.android.gm/.com.android.email.activity.setup.AccountSecurity
+Error type 3
+Error: Activity class {com.google.android.gm/com.google.android.gm.com.android.email.activity.setup.AccountSecurity} does not exist.
+Error: Activity class {org.chromium.webview_shell/org.chromium.webview_shell.TelemetryMemoryPressureActivity} does not exist.
+Intent: org.chromium.webview_shell/.JankActivity
+Error type 3
+Error: Activity class {org.chromium.webview_shell/org.chromium.webview_shell.JankActivity} does not exist.
+Intent: org.chromium.webview_shell/.StartupTimeActivity
+Error type 3
+
