@@ -16,8 +16,8 @@ else
 	build_results=$build'_s'
 fi
 
-AOSP_manifests_source=../$build
-device_manifests_source='./APKs'
+AOSP_manifests_source=.$build
+device_manifests_source='APKs'
 
 flag=false
 
@@ -110,7 +110,7 @@ case $1 in
 		if $flag; then
 			rm -r $build_results
 		fi
-		echo "Usage: tool -a|-s android_build [manifests_source]"
+		echo "Usage: tool -a|-s android_build"
 		exit 1
 esac
 

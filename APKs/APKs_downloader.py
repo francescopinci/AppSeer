@@ -69,4 +69,3 @@ while app:
 	except RequestError as e:
 		print(str(e) + '\n')
 	app = f.readline()
-	
