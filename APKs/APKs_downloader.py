@@ -1,9 +1,7 @@
 import sys
 import argparse
 
-sys.path.append('/home/francesco/Desktop/Thesis/tool/googleplay-api')
-
-from gpapi.googleplay import GooglePlayAPI, RequestError
+from googleplay_api.gpapi.googleplay import GooglePlayAPI, RequestError
 
 ap = argparse.ArgumentParser(description='Test')
 ap.add_argument('-e', '--email', dest='email', help='google username')
@@ -20,7 +18,7 @@ server.login(args.email, args.password, None, None)
 gsfId = server.gsfId
 authSubToken = server.authSubToken
 
-print('Now trying secondary login with ac2dm token and gsfId saved')
+print('Now trying secondary login with ac2dm token and gsfId saved\n')
 server.login(None, None, gsfId, authSubToken)
 
 # BROWSE
