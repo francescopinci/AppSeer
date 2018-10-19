@@ -1,7 +1,8 @@
 import sys
 import argparse
+from pathlib import Path
 
-from googleplay_api.gpapi.googleplay import GooglePlayAPI, RequestError
+from googleplay_api.gpapi.googleplay import GooglePlayAPI, RequestError, LoginError
 
 ap = argparse.ArgumentParser(description='Test')
 ap.add_argument('-e', '--email', dest='email', help='google username')
@@ -13,66 +14,59 @@ args = ap.parse_args()
 server = GooglePlayAPI('en_US', 'Usa/Chicago')
 
 # LOGIN
-print('\nLogging in with email and password')
-server.login(args.email, args.password, None, None)
-gsfId = server.gsfId
-authSubToken = server.authSubToken
+try:
+	print('\nLogging in with email and password')
+	server.login(args.email, args.password, None, None)
+	gsfId = server.gsfId
+	authSubToken = server.authSubToken
 
-print('Now trying secondary login with ac2dm token and gsfId saved\n')
-server.login(None, None, gsfId, authSubToken)
+	print('Now trying secondary login with ac2dm token and gsfId saved\n')
+	server.login(None, None, gsfId, authSubToken)
+except LoginError as e:
+	print(e + '\n')
 
-# BROWSE
-categories = []
-print('Browse play store categories\n')
-browse = server.browse()
-for b in browse:
-    # print(b['name'])
-    #print(b['catId'])
-    categories.append(b['catId'])
+file = 'applications.txt'
+path = Path(file)
+if not path.exists():
+	# BROWSE CATEGORIES
+	categories = []
+	print('Browsing play store categories')
+	browse = server.browse()
+	for b in browse:
+	    categories.append(b['catId'])
 
-applications = []
-count = 0
-for c in categories:
-	#print('\nCATEGORY: %s\n' % (c))
-	browseCategory = server.browse(c)
-	for sc in browseCategory:
-		if "paid" not in sc['docid']:
-			#print('Subcategory: %s' % (sc['docid']))
-			#print('################################################')
-			for app in sc['apps']:
-				if "00,000" in app['numDownloads']:
-					applications.append(app['docId'])
-					#print('%s' % (app['docId']))
-					count = count + 1
+	f = open(file, mode='w');
+	applications = []
+	count = 0
+	for c in categories:
+		#print('\nCATEGORY: %s\n' % (c))
+		browseCategory = server.browse(c)
+		for sc in browseCategory:
+			if "paid" not in sc['docid']:
+				#print('Subcategory: %s' % (sc['docid']))
+				#print('################################################')
+				for app in sc['apps']:
+					if "00,000" in app['numDownloads']:
+						applications.append(app['docId'])
+						f.write(app['docId'] + '\n')
+						count = count + 1
+	f.close()
+	print("Count = ", str(count))
 
-print(app)
-print(str(count))
 # DOWNLOAD
-#for app in applications:
-	#print('\nAttempting to download %s\n' % app)
-	# fl = server.download(docid)
-	# with open(docid + '.apk', 'wb') as apk_file:
-	#     for chunk in fl.get('file').get('data'):
-	#         apk_file.write(chunk)
-	#     print('\nDownload successful\n')
-
-	# # DOWNLOAD APP NOT PURCHASED
-	# # Attempting to download Nova Launcher Prime
-	# # it should throw an error 'App Not Purchased'
-
-	# print('\nAttempting to download "com.teslacoilsw.launcher.prime"\n')
-	# errorThrown = False
-	# try:
-	#     app = server.search('nova launcher prime', 3, None)
-	#     app = filter(lambda x: x['docId'] == 'com.teslacoilsw.launcher.prime', app)
-	#     app = list(app)[0]
-	#     fl = server.delivery(app['docId'], app['versionCode'])
-	# except RequestError as e:
-	#     errorThrown = True
-	#     print(e)
-
-	# if not errorThrown:
-	#     print('Download of previous app should have failed')
-	#     sys.exit(1)
-
-# print("\n# of applications: " + str(count))
+folder = '/media/francesco/FRANCESCO 2/APKs/'
+f = open(file, mode='r');
+app = f.readline()
+while app:
+	app = app.strip('\n')
+	print('Attempting to download %s' % app)
+	try:
+		fl = server.download(app)
+		with open(folder + app + '.apk', 'wb') as apk_file:
+			for chunk in fl.get('file').get('data'):
+				apk_file.write(chunk)
+			print('Download successful\n')
+	except RequestError as e:
+		print(str(e) + '\n')
+	app = f.readline()
+	
