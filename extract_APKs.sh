@@ -4,7 +4,7 @@
 # Extracts and decompiles all the apks present in the connected device
 
 # set adb folder for correct functioning
-adb="../platform-tools/adb"
+adb="./platform-tools/adb"
 
 file="apks"
 if [ ! -f apks ]; then

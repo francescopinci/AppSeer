@@ -9,28 +9,31 @@ manifest_name="AndroidManifest.xml"
 # Usage ./tool -a|-s android_build
 # a : activities
 # s : services
+# Options:
+# tool -a android_build
+# tool -s android_build
+# tool -p
 build=$2
 if [[ $1 == "-a" ]]; then
-	build_results=$build'_a'
+	build_results=$build"_a"
+elif [[ $1 == "-s" ]]; then
+	build_results=$build"_s"
+elif [[ $1 == "-p" ]]; then
+	build_results=$build"_p"
 else
-	build_results=$build'_s'
+	echo "Invalid option (-a|-s|-p)"
+	exit 1
 fi
 
 AOSP_manifests_source=.$build
-device_manifests_source='APKs'
+device_manifests_source='device_APKs'
 
 flag=false
-
-if [ $# != 2 ]; then
-	echo "Usage: tool -a|-s android_build"
-	exit 1
-else
-	if [ ! -d $build_results ]; then
-		flag=true
-		mkdir $build_results	
-	fi
-	cd $build_results
+if [ ! -d $build_results ]; then
+	flag=true
+	mkdir $build_results	
 fi
+cd $build_results
 
 # Step 1
 # ----------------------------------------------------------------
@@ -38,13 +41,18 @@ fi
 
 # extract list of installed packages on connected device
 if [ $($adb devices | wc -l) -lt 3 ]; then
-	if [ ! -d APKs ] || [ ! -f packages.txt ]; then
-		echo "Connect a device and enable ADB debugging to run the tool"
-		if $flag; then
-			rm -r $build_results
-		fi
-		exit 1
+	#if [ ! -d APKs ] || [ ! -f packages.txt ]; then
+	echo "Connect a device and enable ADB debugging to run the tool"
+	if $flag; then
+		rm -r $build_results
 	fi
+	exit 1
+	#fi
+elif [[ $1 == "-p" ]]; then
+	# test third-party applications
+	# 1 - decompile application
+	echo -en "Analyzing third-party applications.. "
+	echo "done"
 elif [ ! -f "packages.txt" ]; then
 	echo -en "Reading list of installed packages.."
 	$adb shell pm list packages > tmp
@@ -57,21 +65,20 @@ elif [ ! -f "packages.txt" ]; then
 	echo " done."
 fi
 
-# device components
-# find AndroidManifest.xml files in the device APKs
-if [ ! -d "APKs" ]; then
-	../extract_apks.sh
+# extract APK files from the connected device
+if [ ! -d "device_APKs" ]; then
+	./extract_apks.sh
 fi
 
 # AOSP components
 # find AndroidManifest.xml files in the build source code (AOSP) and in the APKs present on the device
 if [ ! -f "manifests.txt" ]; then
 	echo -en "Searching all $manifest_name files in $build.. "
-	find $AOSP_manifests_source -name $manifest_name > manifests.txt
+	find $AOSP_manifests_source -name $manifest_name >> manifests.txt
 	echo -en "done.\n"
 
 	echo -en "Searching all $manifest_name files in device APKs.. "
-	find $device_manifests_source -name $manifest_name > manifests.txt
+	find $device_manifests_source -name $manifest_name >> manifests.txt
 	echo -en "done.\n"
 fi	
 
