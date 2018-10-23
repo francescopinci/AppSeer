@@ -59,6 +59,8 @@ if [[ $1 == "-p" ]]; then
 		apk_file=$line
 		apk_folder=$(basename -s ".apk" $line)
 		apktool d -f $apk_file > /dev/null 2>&1
+		cd $apk_folder
+		rm -rv !("AndroidManifest.xml")
 		mv $apk_file $apk_folder
 		#rm -r $apk_folder/original/ > /dev/null 2>&1
 		#rm -r $apk_folder/res/ > /dev/null 2>&1
