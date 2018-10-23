@@ -1,8 +1,2 @@
-abs.workout.fitness.tabata.hiit.stomach.apk
 cn.threeplus.appscomm.pedometer.apk
 com.android2.calculator3.apk
-com.asanayoga.asanarebel.apk
-com.bigoven.android.apk
-com.creditkarma.mobile.apk
-com.ovz.carscanner.apk
-com.plexapp.android.apk
