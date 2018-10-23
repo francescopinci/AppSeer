@@ -19,7 +19,7 @@ if [[ $1 == "-a" ]]; then
 elif [[ $1 == "-s" ]]; then
 	build_results=$build"_s"
 elif [[ $1 == "-p" ]]; then
-	build_results=$build"_p"
+	build_results="android_p"
 else
 	echo "Invalid option (-a|-s|-p)"
 	exit 1
@@ -35,12 +35,9 @@ if [ ! -d $build_results ]; then
 fi
 cd $build_results
 
-# Step 1
 # ----------------------------------------------------------------
-# Find AOSP and device components
 
-# extract list of installed packages on connected device
-if [ $($adb devices | wc -l) -lt 3 ]; then
+if [ $($adb devices | wc -l) -lt 2 ]; then
 	#if [ ! -d APKs ] || [ ! -f packages.txt ]; then
 	echo "Connect a device and enable ADB debugging to run the tool"
 	if $flag; then
@@ -48,12 +45,31 @@ if [ $($adb devices | wc -l) -lt 3 ]; then
 	fi
 	exit 1
 	#fi
-elif [[ $1 == "-p" ]]; then
+fi
+
+# third party applications analysis
+if [[ $1 == "-p" ]]; then
 	# test third-party applications
+	#echo -en "Analyzing third-party applications.. "
 	# 1 - decompile application
-	echo -en "Analyzing third-party applications.. "
-	echo "done"
-elif [ ! -f "packages.txt" ]; then
+	cd "../APKs/APKs"
+	while IFS= read -r line
+	do	
+		echo "Decompiling $line"
+		apk_file=$line
+		apk_folder=$(basename -s ".apk" $line)
+		apktool d -f $apk_file > /dev/null 2>&1
+		mv $apk_file $apk_folder
+		#rm -r $apk_folder/original/ > /dev/null 2>&1
+		#rm -r $apk_folder/res/ > /dev/null 2>&1
+	done < '../applications.txt'
+
+	#echo "done"
+	exit 1
+fi
+
+# AOSP+device applications analysis
+if [ ! -f "packages.txt" ]; then
 	echo -en "Reading list of installed packages.."
 	$adb shell pm list packages > tmp
 	file="tmp"
@@ -82,10 +98,8 @@ if [ ! -f "manifests.txt" ]; then
 	echo -en "done.\n"
 fi	
 
-
-# Step 2
 # ----------------------------------------------------------------
-# Search for exposed components
+
 echo -en "\nDo you want to search for exposed components? [y|n] "
 read answer
 if [ $answer != 'y' ]; then
@@ -121,6 +135,9 @@ case $1 in
 		exit 1
 esac
 
+
+# ----------------------------------------------------------------
+
 echo -en "\nDo you want to test the exposed components on the connected device? [y|n] "
 read answer
 if [ $answer != 'y' ]; then
@@ -128,9 +145,6 @@ if [ $answer != 'y' ]; then
 fi
 echo -en '\n'
 
-# Step 3
-# ------
-# Test exposed components
 echo "Testing exposed components with implicit intents.."
 echo "##################################################"
 echo "Logcat crash channell #" > crash_report_i.txt
