@@ -13,20 +13,24 @@ manifest_name="AndroidManifest.xml"
 # tool -a android_build
 # tool -s android_build
 # tool -p
-build=$2
+if [[ $# -eq 2 ]]; then
+	build=$2
+else
+	build="third-party"
+fi
+
 if [[ $1 == "-a" ]]; then
 	build_results=$build"_a"
 elif [[ $1 == "-s" ]]; then
 	build_results=$build"_s"
-elif [[ $1 == "-p" ]]; then
-	build_results="android_p"
 else
-	echo "Invalid option (-a|-s|-p)"
+	echo "Invalid option (-a|-s)"
 	exit 1
 fi
 
 AOSP_manifests_source=.$build
 device_manifests_source='device_APKs'
+APKs_manifests_source='APKs/APKs/'
 
 flag=false
 if [ ! -d $build_results ]; then
@@ -47,21 +51,21 @@ if [ $($adb devices | wc -l) -lt 2 ]; then
 	#fi
 fi
 
-# third party applications analysis
-if [[ $1 == "-p" ]]; then
-	# test third-party applications
-	#echo -en "Analyzing third-party applications.. "
+if [[ $# -ne 2 ]]; then
+	# third-party applications
+	# prepare data
 	# 1 - decompile application
-	cd "../APKs/APKs"
+	cd ../APKs/APKs/
 	while IFS= read -r line
-	do	
+	do
 		echo "Decompiling $line"
 		apk_file=$line
 		apk_folder=$(basename -s ".apk" $line)
 		mkdir $apk_folder
 		mv $apk_file $apk_folder
 		cd $apk_folder
-		apktool d -f $apk_file > /dev/null 2>&1
+		apktool d -f $apk_file 
+		#> /dev/null 2>&1
 		mv $apk_folder"/AndroidManifest.xml" ./
 		rm -r $apk_folder/
 		cd ../
@@ -69,39 +73,43 @@ if [[ $1 == "-p" ]]; then
 		#rm -r $apk_folder/res/ > /dev/null 2>&1
 	done < '../applications.txt'
 
-	#echo "done"
-	exit 1
-fi
-
-# AOSP+device applications analysis
-if [ ! -f "packages.txt" ]; then
-	echo -en "Reading list of installed packages.."
-	$adb shell pm list packages > tmp
-	file="tmp"
-	while IFS= read -r line
-	do	
-		echo $line | cut -c 9- >> packages.txt
-	done < $file
-	rm tmp
-	echo " done."
-fi
-
-# extract APK files from the connected device
-if [ ! -d "device_APKs" ]; then
-	./extract_apks.sh
-fi
-
-# AOSP components
-# find AndroidManifest.xml files in the build source code (AOSP) and in the APKs present on the device
-if [ ! -f "manifests.txt" ]; then
-	echo -en "Searching all $manifest_name files in $build.. "
-	find $AOSP_manifests_source -name $manifest_name >> manifests.txt
+	cd "../../"$build_results
+	if [ ! -f "manifests.txt" ]; then
+	echo -en "Searching all $manifest_name files in APKs.. "
+	find $APKs_manifests_source -name $manifest_name > manifests.txt
 	echo -en "done.\n"
+	fi
+else
+	# AOSP+device applications
+	if [ ! -f "packages.txt" ]; then
+		echo -en "Reading list of installed packages.."
+		$adb shell pm list packages > tmp
+		file="tmp"
+		while IFS= read -r line
+		do	
+			echo $line | cut -c 9- >> packages.txt
+		done < $file
+		rm tmp
+		echo " done."
+	fi
 
-	echo -en "Searching all $manifest_name files in device APKs.. "
-	find $device_manifests_source -name $manifest_name >> manifests.txt
-	echo -en "done.\n"
-fi	
+	# extract APK files from the connected device
+	if [ ! -d "device_APKs" ]; then
+		./extract_apks.sh
+	fi
+
+	# AOSP components
+	# find AndroidManifest.xml files in the build source code (AOSP) and in the APKs present on the device
+	if [ ! -f "manifests.txt" ]; then
+		echo -en "Searching all $manifest_name files in $build.. "
+		find $AOSP_manifests_source -name $manifest_name >> manifests.txt
+		echo -en "done.\n"
+
+		echo -en "Searching all $manifest_name files in device APKs.. "
+		find $device_manifests_source -name $manifest_name >> manifests.txt
+		echo -en "done.\n"
+	fi
+fi
 
 # ----------------------------------------------------------------
 
@@ -136,7 +144,7 @@ case $1 in
 		if $flag; then
 			rm -r $build_results
 		fi
-		echo "Usage: tool -a|-s android_build"
+		echo "Usage: tool -a|-s [android_build]"
 		exit 1
 esac
 
