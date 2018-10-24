@@ -6,13 +6,10 @@
 adb="../platform-tools/adb"
 manifest_name="AndroidManifest.xml"
 
-# Usage ./tool -a|-s android_build
+# Usage: tool -a|-s [android_build]
 # a : activities
 # s : services
-# Options:
-# tool -a android_build
-# tool -s android_build
-# tool -p
+
 if [[ $# -eq 2 ]]; then
 	build=$2
 else
@@ -111,6 +108,7 @@ else
 	fi
 fi
 
+# Search exposed components
 # ----------------------------------------------------------------
 
 echo -en "\nDo you want to search for exposed components? [y|n] "
@@ -148,7 +146,7 @@ case $1 in
 		exit 1
 esac
 
-
+# Test exposed components
 # ----------------------------------------------------------------
 
 echo -en "\nDo you want to test the exposed components on the connected device? [y|n] "
