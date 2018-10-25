@@ -21,13 +21,13 @@ if [[ $1 == "-a" ]]; then
 elif [[ $1 == "-s" ]]; then
 	build_results=$build"_s"
 else
-	echo "Invalid option (-a|-s)"
+	echo "Invalid option (-a | -s)"
 	exit 1
 fi
 
 AOSP_manifests_source=.$build
 device_manifests_source='device_APKs'
-APKs_manifests_source='APKs/APKs/'
+APKs_manifests_source='/media/francesco/FRANCESCO2/APKs/'
 
 flag=false
 if [ ! -d $build_results ]; then
@@ -122,7 +122,11 @@ case $1 in
 	-a)
 		# Search for exposed activities
 		#echo -en "Searching for exposed activities..\n\n"
-		#python3 ../activities.py
+		if [[ $# -eq 2 ]]; then
+			python3 ../activities.py
+		else
+			python3 ../activities_3rd.py
+		fi
 		intents_i="test_activities_i.txt"
 		intents_e="test_activities_e.txt"
 		adb_command_i="$adb shell am start -a"
@@ -131,7 +135,11 @@ case $1 in
 	-s)
 		# Search for exposed services
 		#echo -en "Searching for exposed services..\n\n"
-		#python3 ../services.py
+		if [[ $# -eq 2 ]]; then
+			python3 ../services.py
+		else
+			python3 ../services_3rd.py
+		fi
 		intents_i="test_services_i.txt"
 		intents_e="test_services_e.txt"
 		adb_command_i="$adb shell am startforegroundservice -a"
@@ -142,7 +150,7 @@ case $1 in
 		if $flag; then
 			rm -r $build_results
 		fi
-		echo "Usage: tool -a|-s [android_build]"
+		echo "usage: tool -a | -s [android_build]"
 		exit 1
 esac
 
@@ -156,58 +164,167 @@ if [ $answer != 'y' ]; then
 fi
 echo -en '\n'
 
-echo "Testing exposed components with implicit intents.."
-echo "##################################################"
-echo "Logcat crash channell #" > crash_report_i.txt
-echo -en "#######################\n\n" >> crash_report_i.txt
-echo "Adb activity manager output #" > log.txt
-echo -en "#############################\n\n" >> log.txt
-echo "List of actions crashing processes (implicit intents):" > crash_actions.txt
-while read -r action;
-do
-	echo "Intent action: $action"
-	# Click home button
-	$adb shell input tap 540 1855 < /dev/null
-	sleep 2
-	# Clear logcat crash channel
-	$adb logcat -b crash -c < /dev/null
-	# Start the activity
-	$adb_command_i "$action" < /dev/null >> log.txt
-	sleep 4
-	# Print logcat crash channel
-	tmp=$($adb logcat -b crash -d < /dev/null)
-	if [ "$tmp" != "" ]; then
-		echo "$action" >> crash_actions.txt
-		echo "################################" >> crash_report_i.txt 
-		echo "$tmp" >> crash_report_i.txt
-		echo "################################" >> crash_report_i.txt
-		echo -en '\n' >> crash_report_i.txt
-	fi
-done < $intents_i
+if [[ $# -eq 2 ]]; then
+	echo "Testing exposed components with implicit intents.."
+	echo "##################################################"
+	echo "Logcat crash channell #" > crash_report_i.txt
+	echo -en "#######################\n\n" >> crash_report_i.txt
+	echo "Adb activity manager output #" > log.txt
+	echo -en "#############################\n\n" >> log.txt
+	echo "List of actions crashing processes (implicit intents):" > crash_actions.txt
+	while read -r action;
+	do
+		echo "Intent action: $action"
+		# Click home button
+		$adb shell input tap 540 1855 < /dev/null
+		sleep 2
+		# Clear logcat crash channel
+		$adb logcat -b crash -c < /dev/null
+		# Start the activity
+		$adb_command_i "$action" < /dev/null >> log.txt
+		sleep 4
+		# Print logcat crash channel
+		tmp=$($adb logcat -b crash -d < /dev/null)
+		if [ "$tmp" != "" ]; then
+			echo "$action" >> crash_actions.txt
+			echo "################################" >> crash_report_i.txt 
+			echo "$tmp" >> crash_report_i.txt
+			echo "################################" >> crash_report_i.txt
+			echo -en '\n' >> crash_report_i.txt
+		fi
+	done < $intents_i
 
-echo "Testing exposed components with explicit intents.."
-echo "##################################################"
-echo "Logcat crash channell #" > crash_report_e.txt
-echo -en "#######################\n\n" >> crash_report_e.txt
-echo -en "\n\nList of actions crashing processes (explicit intents):\n" >> crash_actions.txt
-while read -r action;
-do
-	echo "Intent: $action"
-	# Click home button
-	$adb shell input tap 540 1855 < /dev/null
-	sleep 2
-	# Clear logcat crash channel
-	$adb logcat -b crash -c < /dev/null
-	# Start the activity
-	$adb_command_e "$action" < /dev/null >> log.txt
-	sleep 6
-	# Print logcat crash channel
-	tmp=$($adb logcat -b crash -d < /dev/null)
-	if [ "$tmp" != "" ]; then
-		echo "$action" >> crash_actions.txt
-		echo "################################" >> crash_report_e.txt 
-		echo "$tmp" >> crash_report_e.txt
-		echo "################################" >> crash_report_e.txt
-		echo -en '\n' >> crash_report_e.txt
-	fi
-done < $intents_e
+	echo "Testing exposed components with explicit intents.."
+	echo "##################################################"
+	echo "Logcat crash channell #" > crash_report_e.txt
+	echo -en "#######################\n\n" >> crash_report_e.txt
+	echo -en "\n\nList of actions crashing processes (explicit intents):\n" >> crash_actions.txt
+	while read -r action;
+	do
+		echo "Intent: $action"
+		# Click home button
+		$adb shell input tap 540 1855 < /dev/null
+		sleep 2
+		# Clear logcat crash channel
+		$adb logcat -b crash -c < /dev/null
+		# Start the activity
+		$adb_command_e "$action" < /dev/null >> log.txt
+		sleep 6
+		# Print logcat crash channel
+		tmp=$($adb logcat -b crash -d < /dev/null)
+		if [ "$tmp" != "" ]; then
+			echo "$action" >> crash_actions.txt
+			echo "################################" >> crash_report_e.txt 
+			echo "$tmp" >> crash_report_e.txt
+			echo "################################" >> crash_report_e.txt
+			echo -en '\n' >> crash_report_e.txt
+		fi
+	done < $intents_e
+else
+	# test 3rd party applications here
+	echo "Testing exposed components with implicit intents.."
+	echo "##################################################"
+	echo "Logcat crash channell #" > crash_report_i.txt
+	echo -en "#######################\n\n" >> crash_report_i.txt
+	echo "Adb activity manager output #" > log.txt
+	echo -en "#############################\n\n" >> log.txt
+	echo "List of actions crashing processes (implicit intents):" > crash_actions.txt
+	first=true
+	counter=0
+	while read -r action;
+	do
+		if [ -f $action ]; then
+			counted=false
+			if [ $first = true ]; then
+				first=false
+			else
+				# uninstall previous application
+				echo -en "Uninstalling $previous.. "
+				$adb uninstall $previous
+			fi
+			# install the apk on the device
+			previous=${action##*/}
+			previous=${previous%.apk}
+		 	echo -en "\nInstalling $previous.. "
+		 	# -g grant all permissions requested by the app
+		 	$adb install -g $action
+		 	echo "#################"
+		else
+			echo "Intent action: $action"
+			# Click home button
+			$adb shell input tap 540 1855 < /dev/null
+			sleep 1
+			# Clear logcat crash channel
+			$adb logcat -b crash -c < /dev/null
+			# Start the activity
+			$adb_command_i "$action" < /dev/null >> log.txt
+			sleep 4
+			# Print logcat crash channel
+			tmp=$($adb logcat -b crash -d < /dev/null)
+			if [ "$tmp" != "" ]; then
+				if [ $counted = false ]; then
+					counted=true
+					counter=$(($counter+1))
+				fi
+				echo "$action" >> crash_actions.txt
+				echo "################################" >> crash_report_i.txt 
+				echo "$tmp" >> crash_report_i.txt
+				echo "################################" >> crash_report_i.txt
+				echo -en '\n' >> crash_report_i.txt
+			fi
+		fi
+	done < $intents_i
+	echo "Applications crashing with implicit intents: $counter" >> results.txt
+
+	echo "Testing exposed components with explicit intents.."
+	echo "##################################################"
+	echo "Logcat crash channell #" > crash_report_e.txt
+	echo -en "#######################\n\n" >> crash_report_e.txt
+	echo -en "\n\nList of actions crashing processes (explicit intents):\n" >> crash_actions.txt
+	first=true
+	counter=0
+	while read -r action;
+	do
+		if [ -f $action ]; then
+			counted=false
+			if [ $first = true ]; then
+				first=false
+			else
+				# uninstall previous application
+				echo -en "Uninstalling $previous.. "
+				$adb uninstall $previous
+			fi
+			# install the apk on the device
+			previous=${action##*/}
+			previous=${previous%.apk}
+		 	echo -en "\nInstalling $previous.. "
+		 	# -g grant all permissions requested by the app
+		 	$adb install -g $action
+		 	echo "#################"
+		else
+			echo "Intent: $action"
+			# Click home button
+			$adb shell input tap 540 1855 < /dev/null
+			sleep 2
+			# Clear logcat crash channel
+			$adb logcat -b crash -c < /dev/null
+			# Start the activity
+			$adb_command_e "$action" < /dev/null >> log.txt
+			sleep 4
+			# Print logcat crash channel
+			tmp=$($adb logcat -b crash -d < /dev/null)
+			if [ "$tmp" != "" ]; then
+				if [ $counted = false ]; then
+					counted=true
+					counter=$(($counter+1))
+				fi
+				echo "$action" >> crash_actions.txt
+				echo "################################" >> crash_report_e.txt 
+				echo "$tmp" >> crash_report_e.txt
+				echo "################################" >> crash_report_e.txt
+				echo -en '\n' >> crash_report_e.txt
+			fi
+		fi
+	done < $intents_e
+	echo "Applications crashing with explicit intents: $counter" >> results.txt
+fi
