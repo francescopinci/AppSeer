@@ -1,0 +1,10 @@
+Adb activity manager output #
+#############################
+
+Starting service: Intent { cmp=com.wsl.noom/.com.samsung.android.sdk.shealth.PluginService }
+Starting service: Intent { cmp=com.netqin.ps/.com.ducaller.fsdk.callmonitor.component.CallMonitorService }
+Starting service: Intent { cmp=com.netqin.ps/.com.ducaller.fsdk.ad.DUCallerADService }
+Starting service: Intent { cmp=com.xiaomi.hm.health/.device.service.HMCoreService }
+Starting service: Intent { cmp=com.xiaomi.hm.health/.com.xiaomi.mipush.sdk.PushMessageHandler }
+Starting service: Intent { cmp=com.xvideostudio.videoeditor/.com.umeng.message.UmengIntentService }
+Starting service: Intent { cmp=com.yanflex.craigslist/.io.invertase.firebase.messaging.MessagingService }
