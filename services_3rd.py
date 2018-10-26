@@ -22,6 +22,8 @@ exposed_services_perm = 0;
 i_list = []
 e_list = []
 perm_list = []
+apps_list_i = []
+apps_list_e = []
 
 line = f1.readline()
 # for each AndroidManifest.xml
@@ -150,23 +152,27 @@ while line:
 						f6.write('Permission:\t' + permission + '\n')
 						f6.write('\n')
 					else:
-						x = re.search('^[.]', service)
-						if x!= None:
-							new_service = package + '/' + service
-						elif package in service:
-							new_service = service.replace(package, package + '/')
-						else:
-							new_service = package + '/.' + service
+						if 'com.google.firebase' not in service:
+							x = re.search('^[.]', service)
+							if x!= None:
+								new_service = package + '/' + service
+							elif package in service:
+								new_service = service.replace(package, package + '/')
+							else:
+								new_service = package + '/.' + service
 
-						#if new_service not in e_list:
-						e_list.append(new_service)
-						exposed_services_e = exposed_services_e + 1;
-						f3.write('Manifest:\t' + manifest_path + '\n')
-						f3.write('Package:\t' + package + '\n')
-						f3.write('App:\t\t' + application + '\n')
-						f3.write('Service:\t' + service + '\n')
-						f3.write('\n')
-						f5.write(new_service + '\n')
+							#if new_service not in e_list:
+							e_list.append(new_service)
+							exposed_services_e = exposed_services_e + 1;
+							f3.write('Manifest:\t' + manifest_path + '\n')
+							f3.write('Package:\t' + package + '\n')
+							f3.write('App:\t\t' + application + '\n')
+							f3.write('Service:\t' + service + '\n')
+							f3.write('\n')
+							if manifest_path not in apps_list_e:
+								f5.write(manifest_path[:-19] + package + '.apk\n')
+								apps_list_e.append(manifest_path)
+							f5.write(new_service + '\n')
 				# start to look for the next service
 				searchLine = f_manifest.readline()
 				continue # to the next service
@@ -183,7 +189,7 @@ while line:
 							if x != None:
 								action = x.group(1)
 								# exclude all android.intent.action
-								if 'android.intent.action' not in action:
+								if ('android.intent.action' not in action) and ('com.google.firebase' not in action):
 									# at this point i'm sure this service is exposed and contains at least one legit intent filter
 									if empty == True:
 										empty = False
@@ -199,7 +205,10 @@ while line:
 											f2.write('Manifest:\t' + manifest_path + '\n')
 											f2.write('Package:\t' + package + '\n')
 											f2.write('App:\t\t' + application + '\n')
-											f2.write('Service:\t' + service + '\n')	
+											f2.write('Service:\t' + service + '\n')
+											if manifest_path not in apps_list_i:
+												f4.write(manifest_path[:-19] + package + '.apk\n')
+												apps_list_i.append(manifest_path)
 									if permission != '':
 										#if action not in perm_list:
 										perm_list.append(action)
@@ -235,23 +244,27 @@ while line:
 						f6.write('Permission:\t' + permission + '\n')
 						f6.write('\n')
 					else:
-						x = re.search('^[.]', service)
-						if x!= None:
-							new_service = package + '/' + service
-						elif package in service:
-							new_service = service.replace(package, package + '/')
-						else:
-							new_service = package + '/.' + service
+						if 'com.google.firebase' not in service:
+							x = re.search('^[.]', service)
+							if x!= None:
+								new_service = package + '/' + service
+							elif package in service:
+								new_service = service.replace(package, package + '/')
+							else:
+								new_service = package + '/.' + service
 
-						#if new_service not in e_list:
-						e_list.append(new_service)
-						exposed_services_e = exposed_services_e + 1;
-						f3.write('Manifest:\t' + manifest_path + '\n')
-						f3.write('Package:\t' + package + '\n')
-						f3.write('App:\t\t' + application + '\n')
-						f3.write('Service:\t' + service + '\n')
-						f3.write('\n')
-						f5.write(new_service + '\n')
+							#if new_service not in e_list:
+							e_list.append(new_service)
+							exposed_services_e = exposed_services_e + 1;
+							f3.write('Manifest:\t' + manifest_path + '\n')
+							f3.write('Package:\t' + package + '\n')
+							f3.write('App:\t\t' + application + '\n')
+							f3.write('Service:\t' + service + '\n')
+							f3.write('\n')
+							if manifest_path not in apps_list_e:
+								f5.write(manifest_path[:-19] + package + '.apk\n')
+								apps_list_e.append(manifest_path)
+							f5.write(new_service + '\n')
 		searchLine = f_manifest.readline()
 	# while end	
 	# next manifest

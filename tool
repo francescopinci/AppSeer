@@ -38,7 +38,7 @@ cd $build_results
 
 # ----------------------------------------------------------------
 
-if [ $($adb devices | wc -l) -lt 2 ]; then
+if [ $($adb devices | wc -l) -lt 3 ]; then
 	#if [ ! -d APKs ] || [ ! -f packages.txt ]; then
 	echo "Connect a device and enable ADB debugging to run the tool"
 	if $flag; then
@@ -258,7 +258,7 @@ else
 			$adb logcat -b crash -c < /dev/null
 			# Start the activity
 			$adb_command_i "$action" < /dev/null >> log.txt
-			sleep 4
+			sleep 6
 			# Print logcat crash channel
 			tmp=$($adb logcat -b crash -d < /dev/null)
 			if [ "$tmp" != "" ]; then
@@ -310,7 +310,7 @@ else
 			$adb logcat -b crash -c < /dev/null
 			# Start the activity
 			$adb_command_e "$action" < /dev/null >> log.txt
-			sleep 4
+			sleep 6
 			# Print logcat crash channel
 			tmp=$($adb logcat -b crash -d < /dev/null)
 			if [ "$tmp" != "" ]; then

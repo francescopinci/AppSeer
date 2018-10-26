@@ -1,2 +1,14 @@
 Updated tool and activities_3rd to test activities and count how many applicatios we can crash.
 Do the same updates for the services(implicit+explicit) and consider their syntax
+
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        
+        <service android:exported="true" android:name="com.viewlift.Audio.MusicService">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>

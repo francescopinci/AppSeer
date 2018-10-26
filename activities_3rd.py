@@ -32,6 +32,7 @@ while line:
 	manifests = manifests + 1;
 	# open the manifest file in read mode
 	f_manifest = open(manifest_path, 'r')
+	
 	# extract package name and check if it is between the installed ones
 	# the first part of the manifest has always the <manifest> tag which includes the 'package' attribute
 	package = ''
