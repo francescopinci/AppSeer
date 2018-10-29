@@ -1,0 +1,36 @@
+Manifest:	../android-8.0.0_r1/packages/providers/MediaProvider/AndroidManifest.xml
+Package:	com.android.providers.media
+App:		
+Service:	MediaScannerService
+Action:		android.media.IMediaScannerService
+
+Manifest:	../android-8.0.0_r1/packages/services/Telecomm/AndroidManifest.xml
+Package:	com.android.server.telecom
+App:		
+Service:	.components.BluetoothPhoneService
+Action:		android.bluetooth.IBluetoothHeadsetPhone
+
+Manifest:	../android-8.0.0_r1/packages/services/Telecomm/AndroidManifest.xml
+Package:	com.android.server.telecom
+App:		
+Service:	.components.TelecomService
+Action:		android.telecom.ITelecomService
+
+Manifest:	../android-8.0.0_r1/packages/services/Car/service/AndroidManifest.xml
+Package:	com.android.car
+App:		
+Service:	.CarService
+Action:		android.car.ICar
+
+Manifest:	../android-8.0.0_r1/packages/services/Telephony/AndroidManifest.xml
+Package:	com.android.phone
+App:		PhoneApp
+Service:	.otasp.OtaspActivationService
+Action:		android.service.simActivation.SimActivationService
+
+Manifest:	../android-8.0.0_r1/packages/apps/KeyChain/AndroidManifest.xml
+Package:	com.android.keychain
+App:		
+Service:	com.android.keychain.KeyChainService
+Action:		android.security.IKeyChainService
+

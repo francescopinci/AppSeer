@@ -13,7 +13,7 @@ if [ ! -f apks ]; then
 	echo " done."
 fi
 
-dir="APKs"
+dir="device_APKs"
 mkdir $dir
 
 echo -en "Pulling the apk files from the device.."

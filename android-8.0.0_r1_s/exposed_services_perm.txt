@@ -1,0 +1,129 @@
+Manifest:	../android-8.0.0_r1/packages/services/Telephony/AndroidManifest.xml
+Package:	com.android.phone
+App:		PhoneApp
+Service:	com.android.phone.TelephonyDebugService
+Permission:	android.permission.DUMP
+Action:		com.android.phone.TelephonyDebugService
+
+Manifest:	../android-8.0.0_r1/packages/services/Telephony/AndroidManifest.xml
+Package:	com.android.phone
+App:		PhoneApp
+Service:	com.android.services.telephony.sip.SipConnectionService
+Permission:	android.permission.BIND_TELECOM_CONNECTION_SERVICE
+Action:		android.telecom.ConnectionService
+
+Manifest:	../android-8.0.0_r1/packages/services/BuiltInPrintService/AndroidManifest.xml
+Package:	com.android.bips
+App:		
+Service:	com.android.bips.BuiltInPrintService
+Permission:	android.permission.BIND_PRINT_SERVICE
+Action:		android.printservice.PrintService
+
+Manifest:	../android-8.0.0_r1/packages/inputmethods/OpenWnn/AndroidManifest.xml
+Package:	jp.co.omronsoft.openwnn
+App:		
+Service:	OpenWnnJAJP
+Permission:	android.permission.BIND_INPUT_METHOD
+Action:		android.view.InputMethod
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Service:	.TetherService
+Permission:	android.permission.TETHER_PRIVILEGED
+
+Manifest:	../android-8.0.0_r1/packages/apps/CarrierConfig/AndroidManifest.xml
+Package:	com.android.carrierconfig
+App:		
+Service:	.DefaultCarrierConfigService
+Permission:	android.permission.BIND_CARRIER_SERVICES
+Action:		android.service.carrier.CarrierService
+
+Manifest:	../android-8.0.0_r1/development/samples/ApiDemos/AndroidManifest.xml
+Package:	com.example.android.apis
+App:		ApiDemosApplication
+Service:	.accessibility.ClockBackService
+Permission:	android.permission.BIND_ACCESSIBILITY_SERVICE
+Action:		android.accessibilityservice.AccessibilityService
+
+Manifest:	../android-8.0.0_r1/development/samples/ApiDemos/AndroidManifest.xml
+Package:	com.example.android.apis
+App:		ApiDemosApplication
+Service:	.accessibility.MagnificationService
+Permission:	android.permission.BIND_ACCESSIBILITY_SERVICE
+
+Manifest:	../android-8.0.0_r1/development/samples/ApiDemos/AndroidManifest.xml
+Package:	com.example.android.apis
+App:		ApiDemosApplication
+Service:	.accessibility.TaskBackService
+Permission:	android.permission.BIND_ACCESSIBILITY_SERVICE
+
+Manifest:	../android-8.0.0_r1/development/samples/ApiDemos/AndroidManifest.xml
+Package:	com.example.android.apis
+App:		ApiDemosApplication
+Service:	.os.HeadlessSmsSendService
+Permission:	android.permission.SEND_RESPOND_VIA_MESSAGE
+
+Manifest:	../android-8.0.0_r1/development/samples/SoftKeyboard/AndroidManifest.xml
+Package:	com.example.android.softkeyboard
+App:		
+Service:	SoftKeyboard
+Permission:	android.permission.BIND_INPUT_METHOD
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/FusedLocation/AndroidManifest.xml
+Package:	com.android.location.fused
+App:		
+Service:	com.android.location.fused.FusedLocationService
+Permission:	android.permission.WRITE_SECURE_SETTINGS
+Action:		com.android.location.service.FusedLocationProvider
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Service:	SystemUISecondaryUserService
+Permission:	com.android.systemui.permission.SELF
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Service:	.ImageWallpaper
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/ExtServices/AndroidManifest.xml
+Package:	android.ext.services
+App:		
+Service:	.storage.CacheQuotaServiceImpl
+Permission:	android.permission.BIND_CACHE_QUOTA_SERVICE
+Action:		android.app.usage.CacheQuotaService
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/ExtServices/AndroidManifest.xml
+Package:	android.ext.services
+App:		
+Service:	.resolver.LRResolverRankerService
+Permission:	android.permission.BIND_RESOLVER_RANKER_SERVICE
+Action:		android.service.resolver.ResolverRankerService
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/DefaultContainerService/AndroidManifest.xml
+Package:	com.android.defcontainer
+App:		
+Service:	.DefaultContainerService
+Permission:	android.permission.COPY_PROTECTED_DATA
+
+Manifest:	../android-8.0.0_r1/frameworks/base/core/res/AndroidManifest.xml
+Package:	android
+App:		
+Service:	com.android.server.MountServiceIdler
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	../android-8.0.0_r1/frameworks/base/core/res/AndroidManifest.xml
+Package:	android
+App:		
+Service:	com.android.server.backup.FullBackupJob
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	../android-8.0.0_r1/frameworks/base/core/res/AndroidManifest.xml
+Package:	android
+App:		
+Service:	com.android.server.pm.BackgroundDexOptService
+Permission:	android.permission.BIND_JOB_SERVICE
+

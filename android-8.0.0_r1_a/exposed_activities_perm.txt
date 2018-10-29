@@ -1,0 +1,305 @@
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.wifi.WifiNoInternetDialog
+Permission:	android.permission.CONNECTIVITY_INTERNAL
+Action:		android.net.conn.PROMPT_UNVALIDATED
+Action:		android.net.conn.PROMPT_LOST_VALIDATION
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	TetherProvisioningActivity
+Permission:	android.permission.TETHER_PRIVILEGED
+Action:		android.settings.TETHER_PROVISIONING_UI
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.fingerprint.SetupFingerprintEnrollIntroduction
+Permission:	android.permission.MANAGE_FINGERPRINT
+Action:		android.settings.FINGERPRINT_SETUP
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	Settings$PrivateVolumeForgetActivity
+Permission:	android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.deviceinfo.StorageWizardInit
+Permission:	android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.deviceinfo.StorageWizardMigrateProgress
+Permission:	android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.deviceinfo.StorageWizardReady
+Permission:	android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.deviceinfo.StorageWizardMoveProgress
+Permission:	android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.bluetooth.RequestPermissionActivity
+Permission:	android.permission.BLUETOOTH
+Action:		android.bluetooth.adapter.action.REQUEST_DISCOVERABLE
+Action:		android.bluetooth.adapter.action.REQUEST_ENABLE
+Action:		android.bluetooth.adapter.action.REQUEST_DISABLE
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.deviceinfo.UsbModeChooserActivity
+Permission:	android.permission.MANAGE_USB
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.RemoteBugreportActivity
+Permission:	android.permission.DUMP
+Action:		android.settings.SHOW_REMOTE_BUGREPORT_DIALOG
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.bluetooth.BluetoothPermissionActivity
+Permission:	android.permission.BLUETOOTH_ADMIN
+Action:		android.bluetooth.device.action.CONNECTION_ACCESS_REQUEST
+Action:		android.bluetooth.device.action.CONNECTION_ACCESS_CANCEL
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	Settings$ManagedProfileSettingsActivity
+Permission:	android.permission.MANAGE_USERS
+Action:		android.settings.MANAGED_PROFILE_SETTINGS
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.wifi.RequestToggleWiFiActivity
+Permission:	android.permission.CHANGE_WIFI_STATE
+Action:		android.net.wifi.action.REQUEST_ENABLE
+Action:		android.net.wifi.action.REQUEST_DISABLE
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.wifi.WifiDialogActivity
+Permission:	android.permission.CHANGE_WIFI_STATE
+Action:		com.android.settings.WIFI_DIALOG
+
+Manifest:	../android-8.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.HelpTrampoline
+Permission:	android.permission.DUMP
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Activity:	.usb.UsbConfirmActivity
+Permission:	android.permission.MANAGE_USB
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Activity:	.usb.UsbPermissionActivity
+Permission:	android.permission.MANAGE_USB
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Activity:	.usb.UsbResolverActivity
+Permission:	android.permission.MANAGE_USB
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Activity:	.usb.UsbAccessoryUriActivity
+Permission:	android.permission.MANAGE_USB
+
+Manifest:	../android-8.0.0_r1/frameworks/base/core/res/AndroidManifest.xml
+Package:	android
+App:		
+Activity:	com.android.internal.app.ShutdownActivity
+Permission:	android.permission.SHUTDOWN
+Action:		com.android.internal.intent.action.REQUEST_SHUTDOWN
+
+Manifest:	device_APKs/CompanionDeviceManager/AndroidManifest.xml
+Package:	com.android.companiondevicemanager
+App:		
+Activity:	.DeviceChooserActivity
+Permission:	android.permission.BIND_COMPANION_DEVICE_MANAGER_SERVICE
+Action:		android.companiondevice.START_DISCOVERY
+
+Manifest:	device_APKs/PrintSpooler/AndroidManifest.xml
+Package:	com.android.printspooler
+App:		
+Activity:	.ui.PrintActivity
+Permission:	android.permission.BIND_PRINT_SPOOLER_SERVICE
+Action:		android.print.PRINT_DIALOG
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Activity:	com.google.android.velvet.tg.SetupWizardOptInIntroActivity
+Permission:	com.google.android.apps.now.OPT_IN_WIZARD
+Action:		com.google.android.apps.now.OPT_IN_WIZARD
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Activity:	com.google.android.apps.gsa.sidekick.main.remoteservice.CurrentAccountActivity
+Permission:	com.google.android.apps.now.CURRENT_ACCOUNT_ACCESS
+Action:		com.google.android.apps.now.GET_CURRENT_ACCOUNT
+
+Manifest:	device_APKs/YouTube/AndroidManifest.xml
+Package:	com.google.android.youtube
+App:		com.google.android.apps.youtube.app.YouTubeApplication
+Activity:	com.google.android.youtube.api.StandalonePlayerActivity
+Permission:	android.permission.INTERNET
+Action:		com.google.android.youtube.api.StandalonePlayerActivity.START
+
+Manifest:	device_APKs/SystemUIGoogle/AndroidManifest.xml
+Package:	com.android.systemui
+App:		com.android.systemui.SystemUIApplication
+Activity:	com.android.systemui.usb.UsbConfirmActivity
+Permission:	android.permission.MANAGE_USB
+
+Manifest:	device_APKs/SystemUIGoogle/AndroidManifest.xml
+Package:	com.android.systemui
+App:		com.android.systemui.SystemUIApplication
+Activity:	com.android.systemui.usb.UsbPermissionActivity
+Permission:	android.permission.MANAGE_USB
+
+Manifest:	device_APKs/SystemUIGoogle/AndroidManifest.xml
+Package:	com.android.systemui
+App:		com.android.systemui.SystemUIApplication
+Activity:	com.android.systemui.usb.UsbResolverActivity
+Permission:	android.permission.MANAGE_USB
+
+Manifest:	device_APKs/SystemUIGoogle/AndroidManifest.xml
+Package:	com.android.systemui
+App:		com.android.systemui.SystemUIApplication
+Activity:	com.android.systemui.usb.UsbAccessoryUriActivity
+Permission:	android.permission.MANAGE_USB
+
+Manifest:	device_APKs/SystemUIGoogle/AndroidManifest.xml
+Package:	com.android.systemui
+App:		com.android.systemui.SystemUIApplication
+Activity:	com.android.systemui.net.NetworkOverLimitActivity
+Permission:	android.permission.MANAGE_NETWORK_POLICY
+
+Manifest:	device_APKs/framework-res/AndroidManifest.xml
+Package:	android
+App:		
+Activity:	com.android.internal.app.ShutdownActivity
+Permission:	android.permission.SHUTDOWN
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.smartdevice.d2d.ui.TargetActivity
+Permission:	android.permission.UPDATE_APP_OPS_STATS
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.firebase.auth.internal.FederatedSignInActivity
+Permission:	com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN
+
+Manifest:	device_APKs/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.wifi.WifiNoInternetDialog
+Permission:	android.permission.CONNECTIVITY_INTERNAL
+
+Manifest:	device_APKs/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	TetherProvisioningActivity
+Permission:	android.permission.TETHER_PRIVILEGED
+
+Manifest:	device_APKs/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.fingerprint.SetupFingerprintEnrollIntroduction
+Permission:	android.permission.MANAGE_FINGERPRINT
+
+Manifest:	device_APKs/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.bluetooth.RequestPermissionActivity
+Permission:	android.permission.BLUETOOTH
+
+Manifest:	device_APKs/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.RemoteBugreportActivity
+Permission:	android.permission.DUMP
+
+Manifest:	device_APKs/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.bluetooth.BluetoothPermissionActivity
+Permission:	android.permission.BLUETOOTH_ADMIN
+
+Manifest:	device_APKs/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	Settings$ManagedProfileSettingsActivity
+Permission:	android.permission.MANAGE_USERS
+
+Manifest:	device_APKs/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.wifi.RequestToggleWiFiActivity
+Permission:	android.permission.CHANGE_WIFI_STATE
+
+Manifest:	device_APKs/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.wifi.WifiDialogActivity
+Permission:	android.permission.CHANGE_WIFI_STATE
+
+Manifest:	device_APKs/DownloadProviderUi/AndroidManifest.xml
+Package:	com.android.providers.downloads.ui
+App:		
+Activity:	.TrampolineActivity
+Permission:	android.permission.MANAGE_DOCUMENTS
+Action:		android.provider.action.MANAGE_DOCUMENT
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Activity:	com.google.android.gm.AutoSendActivity
+Permission:	com.google.android.gm.permission.AUTO_SEND
+Action:		com.google.android.gm.action.AUTO_SEND
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Activity:	com.google.android.gm.browse.TrampolineActivity
+Permission:	com.google.android.gm.permission.READ_GMAIL
+Action:		com.google.android.gm.intent.VIEW_PLID
+
+Manifest:	device_APKs/BuiltInPrintService/AndroidManifest.xml
+Package:	com.android.bips
+App:		
+Activity:	com.android.bips.ui.AddPrintersActivity
+Permission:	android.permission.START_PRINT_SERVICE_CONFIG_ACTIVITY
+

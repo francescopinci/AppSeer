@@ -1,0 +1,130 @@
+Manifest:	../android-6.0.0_r1/packages/services/Mms/AndroidManifest.xml
+Package:	com.android.mms.service
+App:		
+Service:	.MmsService
+
+Manifest:	../android-6.0.0_r1/frameworks/base/packages/SharedStorageBackup/AndroidManifest.xml
+Package:	com.android.sharedstoragebackup
+App:		
+Service:	.ObbBackupService
+
+Manifest:	../android-6.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Service:	SystemUIService
+
+Manifest:	../android-6.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Service:	.LoadAverageService
+
+Manifest:	../android-6.0.0_r1/frameworks/base/packages/services/PacProcessor/AndroidManifest.xml
+Package:	com.android.pacprocessor
+App:		
+Service:	.PacService
+
+Manifest:	../android-6.0.0_r1/frameworks/base/packages/services/Proxy/AndroidManifest.xml
+Package:	com.android.proxyhandler
+App:		
+Service:	.ProxyService
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.velvet.VelvetApplication
+Service:	com.google.android.nowdev.TrustedTestService
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.velvet.VelvetApplication
+Service:	com.google.android.projection.SearchProjectionService
+
+Manifest:	device_APKs/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Service:	.keyguard.KeyguardService
+
+Manifest:	device_APKs/GoogleContactsSyncAdapter/AndroidManifest.xml
+Package:	com.google.android.syncadapters.contacts
+App:		
+Service:	SyncHighResPhotoIntentService
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.PhotosApplication
+Service:	com.google.android.libraries.social.notifications.impl.GunsIntentService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.GetToken
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.account.authenticator.DefaultAuthDelegateService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.setup.devicesignals.DeviceSignalsService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.backup.SetBackupAccountService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.common.stats.GmsCoreStatsService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.feedback.LegacyBugReportService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.gcm.http.GoogleHttpService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.maps.auth.ApiTokenService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.maps.service.HttpProxyService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.location.nearby.direct.service.NearbyDirectService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.nearby.messages.debug.DebugPokeService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.people.pub.PeopleSyncRawContactService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.security.verifier.ApkUploadService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	org.chromium.customtabsclient.shared.KeepAliveService
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailApplication
+Service:	com.android.email.service.AttachmentService
+

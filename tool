@@ -25,7 +25,7 @@ else
 	exit 1
 fi
 
-AOSP_manifests_source=.$build
+AOSP_manifests_source=../$build
 device_manifests_source='device_APKs'
 APKs_manifests_source='/media/francesco/FRANCESCO2/APKs/'
 
@@ -92,7 +92,7 @@ else
 
 	# extract APK files from the connected device
 	if [ ! -d "device_APKs" ]; then
-		./extract_apks.sh
+		../extract_apks.sh
 	fi
 
 	# AOSP components

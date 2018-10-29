@@ -1,3 +1,0 @@
-Logcat crash channell #
-#######################
-

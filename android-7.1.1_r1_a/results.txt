@@ -1,0 +1,5 @@
+Manifest files analyzed:	1759
+Exposed activities found:	664
+Activities startable by implicit intents:	480
+Activities startable by explicit intents:	141
+Activities requiring permissions:		43

@@ -1,0 +1,475 @@
+Manifest:	../android-6.0.0_r1/packages/apps/Messaging/AndroidManifest.xml
+Package:	com.android.messaging
+App:		com.android.messaging.BugleApplication
+Activity:	.ui.LicenseActivity
+
+Manifest:	../android-6.0.0_r1/packages/apps/DeskClock/AndroidManifest.xml
+Package:	com.android.deskclock
+App:		.DeskClockApplication
+Activity:	.ScreensaverSettingsActivity
+
+Manifest:	../android-6.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	.applications.InstalledAppDetailsTop
+
+Manifest:	../android-6.0.0_r1/packages/apps/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Activity:	Settings$NotificationAppListActivity
+
+Manifest:	../android-6.0.0_r1/packages/apps/Music/AndroidManifest.xml
+Package:	com.android.music
+App:		
+Activity:	com.android.music.MusicBrowserActivity
+
+Manifest:	../android-6.0.0_r1/packages/apps/Music/AndroidManifest.xml
+Package:	com.android.music
+App:		
+Activity:	AudioPreview
+
+Manifest:	../android-6.0.0_r1/packages/apps/Music/AndroidManifest.xml
+Package:	com.android.music
+App:		
+Activity:	com.android.music.QueryBrowserActivity
+
+Manifest:	../android-6.0.0_r1/packages/apps/Music/AndroidManifest.xml
+Package:	com.android.music
+App:		
+Activity:	com.android.music.PlaylistBrowserActivity
+
+Manifest:	../android-6.0.0_r1/packages/apps/Music/AndroidManifest.xml
+Package:	com.android.music
+App:		
+Activity:	com.android.music.MusicPicker
+
+Manifest:	../android-6.0.0_r1/frameworks/base/packages/BackupRestoreConfirmation/AndroidManifest.xml
+Package:	com.android.backupconfirm
+App:		
+Activity:	.BackupRestoreConfirmation
+
+Manifest:	../android-6.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Activity:	.egg.MLandActivity
+
+Manifest:	../android-6.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Activity:	.Somnambulator
+
+Manifest:	../android-6.0.0_r1/frameworks/base/core/res/AndroidManifest.xml
+Package:	android
+App:		
+Activity:	com.android.internal.app.IntentForwarderActivity
+
+Manifest:	../android-6.0.0_r1/frameworks/base/core/res/AndroidManifest.xml
+Package:	android
+App:		
+Activity:	android.accounts.ChooseAccountActivity
+
+Manifest:	../android-6.0.0_r1/frameworks/base/core/res/AndroidManifest.xml
+Package:	android
+App:		
+Activity:	android.accounts.ChooseTypeAndAccountActivity
+
+Manifest:	../android-6.0.0_r1/frameworks/base/core/res/AndroidManifest.xml
+Package:	android
+App:		
+Activity:	android.accounts.CantAddAccountActivity
+
+Manifest:	../android-6.0.0_r1/frameworks/base/core/res/AndroidManifest.xml
+Package:	android
+App:		
+Activity:	android.accounts.GrantCredentialsPermissionActivity
+
+Manifest:	device_APKs/CalendarGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.calendar
+App:		com.android.calendar.CalendarApplication
+Activity:	com.android.calendar.AllInOneCalendarActivity
+
+Manifest:	device_APKs/CalendarGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.calendar
+App:		com.android.calendar.CalendarApplication
+Activity:	com.android.calendar.event.LaunchInfoActivity
+
+Manifest:	device_APKs/CalendarGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.calendar
+App:		com.android.calendar.CalendarApplication
+Activity:	com.google.android.calendar.timely.settings.TimelyNotificationSettingsActvity
+
+Manifest:	device_APKs/CalendarGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.calendar
+App:		com.android.calendar.CalendarApplication
+Activity:	com.google.android.calendar.timely.settings.CalendarPublicPreferenceActvity
+
+Manifest:	device_APKs/CalendarGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.calendar
+App:		com.android.calendar.CalendarApplication
+Activity:	com.android.calendar.SearchActivity
+
+Manifest:	device_APKs/CalendarGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.calendar
+App:		com.android.calendar.CalendarApplication
+Activity:	com.google.android.calendar.extensions.LicenseActivity
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.velvet.VelvetApplication
+Activity:	com.google.android.apps.gsa.velour.DynamicActivityTrampoline
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.velvet.VelvetApplication
+Activity:	com.google.android.sidekick.main.TestLauncherActivity
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.velvet.VelvetApplication
+Activity:	com.google.android.apps.gsa.soundsearchwidget.WidgetResultActivity
+
+Manifest:	device_APKs/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Activity:	.media.MediaProjectionPermissionActivity
+
+Manifest:	device_APKs/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Activity:	.DessertCase
+
+Manifest:	device_APKs/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Activity:	.settings.BrightnessDialog
+
+Manifest:	device_APKs/PlayGames/AndroidManifest.xml
+Package:	com.google.android.play.games
+App:		com.google.android.gms.games.app.PowerUpApplication
+Activity:	com.google.android.libraries.social.licenses.LicenseMenuActivity
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.PhotosApplication
+Activity:	com.google.android.libraries.social.licenses.LicenseMenuActivity
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.PhotosApplication
+Activity:	com.google.android.apps.photos.home.HomeActivity
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.PhotosApplication
+Activity:	com.google.android.apps.photos.picker.external.ExternalPickerActivity
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.PhotosApplication
+Activity:	com.google.android.apps.photos.setwallpaper.SetWallpaperActivity
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.PhotosApplication
+Activity:	com.google.android.apps.photos.uploadtoalbum.UploadContentActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.auth.TokenActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.auth.frp.FactoryResetProtectionActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.auth.uiflows.addaccount.AccountAddedActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.auth.account.visibility.RequestAccountsAccessActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.auth.api.credentials.ui.CredentialsSaveConfirmationActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.auth.authzen.AuthzenDeeplinkHandlerActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.auth.authzen.magicwand.MagicWandBarcodeScannerActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.auth.managed.ui.SetupWorkProfileActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.car.CarHomeActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.car.CarServiceSettingsActivity2
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.carsetup.DrivingModeFrxActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.carsetup.DrivingModeToggleActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.app.settings.GoogleSettingsActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.easysignin.EasySignInActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.feedback.FeedbackActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.feedback.IntentListenerFeedbackActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.firebase.auth.api.gms.ui.BrowserSignInResponseHandlerActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.gcm.GcmDiagnostics
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.gconnect.ui.PhoneNumberTosActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.gconnect.ui.SmsEntryActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.gconnect.ui.ConnectionCompletionActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.gconnect.ui.ErrorActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.googlehelp.helpactivities.DeviceSignalsExportActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.googlehelp.contact.chat.ChatSupportRequestFormActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.growth.ui.webview.GrowthWebViewActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.instantapps.settings.OptInActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.instantapps.settings.SettingsActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.matchstick.ui.ConversationListActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.nearby.discovery.ui.DiscoveryChromeTabActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.nearby.discovery.ui.NotificationSettingsActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.nearby.messages.settings.NearbyMessagesAppOptInActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.panorama.PanoramaViewActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.people.pub.PeopleInviteContactActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.people.pub.PeopleViewCircleActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.people.pub.PeopleProfileActionGatewayActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.photos.autobackup.ui.AutoBackupSettingsActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.photos.autobackup.ui.LocalFoldersBackupSettings
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.smartdevice.magicwand.MagicWandActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.tapandpay.tokenization.AddNewCardThroughBrowserActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.trustagent.TrustAgentOnboardingActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.trustagent.discovery.OnbodyPromotionActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.trustagent.discovery.WebpageOnbodyPromotionActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.wallet.ow.RootActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.wallet.ow.ShowLockScreenActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.wallet.buyflow.CheckoutActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.wallet.addinstrument.AddInstrumentRootActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.wallet.fixinstrument.FixInstrumentRootActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.wallet.ib.LaunchPendingIntentActivity
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Activity:	com.google.android.gms.wallet.redirect.FinishAndroidAppRedirectProxyActivity
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailApplication
+Activity:	com.google.android.gm.LicenseActivity
+
+Manifest:	device_APKs/GoogleLoginService/AndroidManifest.xml
+Package:	com.google.android.gsf.login
+App:		
+Activity:	.NameActivity
+
+Manifest:	device_APKs/GoogleLoginService/AndroidManifest.xml
+Package:	com.google.android.gsf.login
+App:		
+Activity:	.PhotoActivity
+
+Manifest:	device_APKs/GoogleLoginService/AndroidManifest.xml
+Package:	com.google.android.gsf.login
+App:		
+Activity:	.CaptchaActivity
+
+Manifest:	device_APKs/GoogleLoginService/AndroidManifest.xml
+Package:	com.google.android.gsf.login
+App:		
+Activity:	.LoginActivity
+
+Manifest:	device_APKs/GoogleLoginService/AndroidManifest.xml
+Package:	com.google.android.gsf.login
+App:		
+Activity:	.EduLoginActivity
+
+Manifest:	device_APKs/GoogleLoginService/AndroidManifest.xml
+Package:	com.google.android.gsf.login
+App:		
+Activity:	.ShowErrorActivity
+
+Manifest:	device_APKs/GoogleLoginService/AndroidManifest.xml
+Package:	com.google.android.gsf.login
+App:		
+Activity:	.RecoveryIntroActivity
+
+Manifest:	device_APKs/GoogleLoginService/AndroidManifest.xml
+Package:	com.google.android.gsf.login
+App:		
+Activity:	.AccountSecurityActivity
+
+Manifest:	device_APKs/GoogleLoginService/AndroidManifest.xml
+Package:	com.google.android.gsf.login
+App:		
+Activity:	.BrowserActivity
+
+Manifest:	device_APKs/GoogleLoginService/AndroidManifest.xml
+Package:	com.google.android.gsf.login
+App:		
+Activity:	com.google.android.gsf.loginservice.GrantCredentialsPermissionActivity
+

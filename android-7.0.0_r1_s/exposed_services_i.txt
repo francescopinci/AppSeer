@@ -1,0 +1,1011 @@
+Manifest:	../android-7.0.0_r1/packages/providers/MediaProvider/AndroidManifest.xml
+Package:	com.android.providers.media
+App:		
+Service:	MediaScannerService
+Action:		android.media.IMediaScannerService
+
+Manifest:	../android-7.0.0_r1/packages/services/Telecomm/AndroidManifest.xml
+Package:	com.android.server.telecom
+App:		
+Service:	.components.BluetoothPhoneService
+Action:		android.bluetooth.IBluetoothHeadsetPhone
+
+Manifest:	../android-7.0.0_r1/packages/services/Telecomm/AndroidManifest.xml
+Package:	com.android.server.telecom
+App:		
+Service:	.components.TelecomService
+Action:		android.telecom.ITelecomService
+
+Manifest:	../android-7.0.0_r1/packages/services/Car/service/AndroidManifest.xml
+Package:	com.android.car
+App:		
+Service:	.CarService
+Action:		android.car.ICar
+
+Manifest:	../android-7.0.0_r1/packages/services/Telephony/AndroidManifest.xml
+Package:	com.android.phone
+App:		PhoneApp
+Service:	com.android.services.telephony.sip.SipCallServiceProvider
+Action:		android.telecom.CallServiceProvider
+
+Manifest:	../android-7.0.0_r1/packages/apps/KeyChain/AndroidManifest.xml
+Package:	com.android.keychain
+App:		
+Service:	com.android.keychain.KeyChainService
+Action:		android.security.IKeyChainService
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.store.SyncService
+Action:		android.content.SyncAdapter
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.store.VideoUserContentService
+Action:		com.google.android.play.IUserContentService.BIND
+
+Manifest:	device_APKs/CalendarGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.calendar
+App:		com.android.calendar.CalendarApplication
+Service:	com.google.android.calendar.alerts.TasksListenerService
+Action:		com.google.android.gms.reminders.BIND_LISTENER
+
+Manifest:	device_APKs/CalendarGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.calendar
+App:		com.android.calendar.CalendarApplication
+Service:	com.google.android.syncadapters.calendar.CalendarSyncAdapterService
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.ssb.service.SsbService
+Action:		com.google.android.ssb.action.SSB_SERVICE
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.hotword.service.HotwordService
+Action:		com.google.android.googlequicksearchbox.HOTWORD_SERVICE
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.sidekick.main.remoteservice.GoogleNowRemoteService
+Action:		com.google.android.sidekick.shared.remoteapi.IGoogleNowRemoteService
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.voicesearch.serviceapi.GoogleRecognitionService
+Action:		android.speech.RecognitionService
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.apps.gsa.now.NowAuthServiceImpl
+Action:		com.google.android.now.NOW_AUTH_SERVICE
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.remotesearch.RemoteSearchService
+Action:		com.google.android.remotesearch.IRemoteSearchService
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.apps.gsa.clockwork.services.DispatchingWearableListenerService
+Action:		com.google.android.gms.wearable.BIND_LISTENER
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.apps.gsa.nowoverlayservice.DrawerOverlayService
+Action:		com.android.launcher3.WINDOW_OVERLAY
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.apps.gsa.snapple.SnappleService
+Action:		com.google.android.apps.gsa.snapple.ISnappleService
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.search.verification.api.SearchActionVerificationService
+Action:		com.google.android.googlequicksearchbox.SEARCH_ACTION_VERIFICATION_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		com.google.android.apps.chrome.MonochromeApplicationInternal
+Service:	org.chromium.chrome.browser.customtabs.CustomTabsConnectionService
+Action:		android.support.customtabs.action.CustomTabsService
+
+Manifest:	device_APKs/TeleService/AndroidManifest.xml
+Package:	com.android.phone
+App:		PhoneApp
+Service:	com.android.services.telephony.sip.SipCallServiceProvider
+
+Manifest:	device_APKs/PlayGames/AndroidManifest.xml
+Package:	com.google.android.play.games
+App:		com.google.android.gms.games.app.PowerUpApplication
+Service:	com.google.android.gms.games.service.PlayGamesBridgeService
+Action:		com.google.android.gms.games.service.GAMES_BRIDGE
+
+Manifest:	device_APKs/YouTube/AndroidManifest.xml
+Package:	com.google.android.youtube
+App:		com.google.android.apps.youtube.app.YouTubeApplication
+Service:	com.google.android.apps.youtube.app.ads.AdIdListenerService
+Action:		com.google.android.gms.ads.identifier.BIND_LISTENER
+
+Manifest:	device_APKs/PrebuiltBugle/AndroidManifest.xml
+Package:	com.google.android.apps.messaging
+App:		com.google.android.apps.messaging.BugleApplication
+Service:	com.google.android.apps.messaging.wearable.WearableBindService
+Action:		com.google.android.gms.wearable.DATA_CHANGED
+Action:		com.google.android.gms.wearable.MESSAGE_RECEIVED
+Action:		com.google.android.gms.wearable.CHANNEL_EVENT
+
+Manifest:	device_APKs/KeyChain/AndroidManifest.xml
+Package:	com.android.keychain
+App:		
+Service:	com.android.keychain.KeyChainService
+
+Manifest:	device_APKs/GoogleServicesFramework/AndroidManifest.xml
+Package:	com.google.android.gsf
+App:		
+Service:	.subscribedfeeds.SubscribedFeedsSyncAdapterService
+
+Manifest:	device_APKs/Music2/AndroidManifest.xml
+Package:	com.google.android.music
+App:		com.google.android.music.MusicApplication
+Service:	com.google.android.music.browse.MediaBrowserService
+Action:		android.media.browse.MediaBrowserService
+
+Manifest:	device_APKs/Music2/AndroidManifest.xml
+Package:	com.google.android.music
+App:		com.google.android.music.MusicApplication
+Service:	com.google.android.music.sync.SyncAdapterService
+
+Manifest:	device_APKs/Music2/AndroidManifest.xml
+Package:	com.google.android.music
+App:		com.google.android.music.MusicApplication
+Service:	com.google.android.music.MusicUserContentBinder$MusicUserContentService
+
+Manifest:	device_APKs/Music2/AndroidManifest.xml
+Package:	com.google.android.music
+App:		com.google.android.music.MusicApplication
+Service:	com.google.android.music.wear.MusicWearableListenerService
+
+Manifest:	device_APKs/MediaProvider/AndroidManifest.xml
+Package:	com.android.providers.media
+App:		
+Service:	MediaScannerService
+
+Manifest:	device_APKs/Telecom/AndroidManifest.xml
+Package:	com.android.server.telecom
+App:		
+Service:	.components.BluetoothPhoneService
+
+Manifest:	device_APKs/Telecom/AndroidManifest.xml
+Package:	com.android.server.telecom
+App:		
+Service:	.components.TelecomService
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.app.PhotosApplication
+Service:	com.google.android.apps.photos.backup.apiservice.PhotosBackupApiService
+Action:		com.google.android.apps.photos.backup.apiservice.PHOTOS_BACKUP_SERVICE
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.app.PhotosApplication
+Service:	com.google.android.libraries.social.notifications.service.GunsService
+Action:		com.google.android.libraries.social.notifications.impl.NOTIFICATION_SELECTED
+Action:		com.google.android.libraries.social.notifications.impl.ACTOR_SELECTED
+Action:		com.google.android.libraries.social.notifications.impl.SYSTEM_NOTIFICATION_DISMISSED
+Action:		com.google.android.libraries.social.notifications.impl.SYNC_REGISTRATION_STATUS
+Action:		com.google.android.libraries.social.notifications.installation.ANDROID_ACCOUNT_CHANGED
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.ads.AdRequestBrokerService
+Action:		com.google.android.gms.ads.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.ads.cache.CacheBrokerService
+Action:		com.google.android.gms.ads.service.CACHE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.ads.identifier.service.AdvertisingIdService
+Action:		com.google.android.gms.ads.identifier.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.ads.measurement.GmpConversionTrackingBrokerService
+Action:		com.google.android.gms.ads.measurement.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.appinvite.service.AppInviteService
+Action:		com.google.android.gms.appinvite.service.START
+Action:		com.google.android.gms.appinvite.service.START_INTERNAL
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.appstate.service.AppStateAndroidService
+Action:		com.google.android.gms.appstate.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.appstate.service.AppStateSyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.api.signin.SignInService
+Action:		com.google.android.gms.auth.api.signin.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.account.service.WorkAccountService
+Action:		com.google.android.gms.auth.account.workaccount.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.account.be.accountstate.AccountStateSyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.account.be.accountstate.CredentialStateSyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.account.be.legacy.GoogleAccountDataService
+Action:		com.google.android.gms.auth.DATA_PROXY
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.frp.FrpService
+Action:		com.google.android.gms.auth.frp.FRP_BIND
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.api.credentials.sync.CredentialSyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.api.phone.service.SmsRetrieverApiService
+Action:		com.google.android.gms.auth.api.phone.service.SmsRetrieverApiService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.api.proxy.AuthService
+Action:		com.google.android.gms.auth.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.backup.BackupAccountManagerService
+Action:		com.google.android.gms.backup.BackupAccountManagerService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.backup.stats.BackupStatsService
+Action:		com.google.android.gms.backup.BackupStatsService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.car.CarService
+Action:		com.google.android.gms.car.service.START
+Action:		com.google.android.gms.car.service.CALL
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.carsetup.wifi.CarWifiConnectionService
+Action:		com.google.android.gms.car.wifi.BT_START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.cast.media.CastMediaRouteProviderService
+Action:		android.media.MediaRouteProviderService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.checkin.CheckinService
+Action:		com.google.android.gms.checkin.BIND_TO_SERVICE
+Action:		com.google.android.gms.gcm.ACTION_TASK_READY
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.checkin.CheckinApiService
+Action:		com.google.android.gms.checkin.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.chromesync.sync.SyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.config.ConfigService
+Action:		com.google.android.gms.config.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.contextmanager.service.ContextManagerService
+Action:		com.google.android.contextmanager.service.ContextManagerService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.drive.metadata.sync.syncadapter.SyncAdapterService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.droidguard.DroidGuardService
+Action:		com.google.android.gms.droidguard.service.INIT
+Action:		com.google.android.gms.droidguard.service.PING
+Action:		com.google.android.gms.droidguard.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fido.u2f.U2fService
+Action:		com.google.android.gms.fido.u2f.privileged.START
+Action:		com.google.android.gms.fido.u2f.thirdparty.START
+Action:		com.google.android.gms.fido.u2f.zeroparty.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.firebase.auth.api.gms.service.FirebaseAuthService
+Action:		com.google.firebase.auth.api.gms.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.proxy.FitProxyBroker
+Action:		com.google.android.gms.fitness.GoogleFitnessService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.recording.FitRecordingBroker
+Action:		com.google.android.gms.fitness.RecordingApi
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.sessions.FitSessionsBroker
+Action:		com.google.android.gms.fitness.SessionsApi
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.history.FitHistoryBroker
+Action:		com.google.android.gms.fitness.HistoryApi
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.goals.FitGoalsBroker
+Action:		com.google.android.gms.fitness.GoalsApi
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.cache.DataUpdateListenerCacheService
+Action:		com.google.android.gms.fitness.cache.DataUpdateListenerCacheService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.sensors.FitSensorsBroker
+Action:		com.google.android.gms.fitness.SensorsApi
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.ble.FitBleBroker
+Action:		com.google.android.gms.fitness.BleApi
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.config.FitConfigBroker
+Action:		com.google.android.gms.fitness.ConfigApi
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.internal.FitInternalBroker
+Action:		com.google.android.gms.fitness.InternalApi
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.sync.FitnessSyncAdapterService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.wearables.WearableSyncService
+Action:		com.google.android.gms.fitness.wearables.START_SYNC
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.wearable.WearableSyncMessageService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.wearable.WearableSyncAccountService
+Action:		com.google.android.gms.wearable.NODE_CHANGED
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.wearable.WearableSyncConnectionService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.fitness.service.wearable.WearableSyncConfigService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.freighter.service.FreighterService
+Action:		com.google.android.gms.freighter.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.games.chimera.GamesAndroidServiceProxy
+Action:		com.google.android.gms.games.service.START
+Action:		com.google.android.gms.games.service.START_ASYNC
+Action:		com.google.android.play.games.service.START_1P
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.games.chimera.GamesSignInServiceProxy
+Action:		com.google.android.gms.games.signin.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.games.chimera.GamesSyncServiceNotificationProxy
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.games.chimera.SnapshotEventServiceProxy
+Action:		com.google.android.gms.drive.events.HANDLE_EVENT
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.gass.GassService
+Action:		com.google.android.gms.gass.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.gcm.PushMessagingRegistrarProxy
+Action:		com.google.android.c2dm.intent.REGISTER
+Action:		com.google.android.c2dm.intent.UNREGISTER
+Action:		com.google.android.gms.gcm.WEARABLE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.googlehelp.service.GoogleHelpService
+Action:		com.google.android.gms.googlehelp.service.GoogleHelpService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.icing.service.IndexService
+Action:		com.google.android.gms.icing.INDEX_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.icing.service.AppIndexingService
+Action:		com.google.android.gms.icing.APP_INDEXING_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.instantapps.service.InstantAppsService
+Action:		com.google.android.gms.instantapps.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.kids.chimera.KidsServiceProxy
+Action:		com.google.android.gms.kids.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.fused.wearable.GmsWearableListenerService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.internal.GoogleLocationManagerService
+Action:		com.google.android.location.internal.GoogleLocationManagerService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.geofencer.service.GeofenceProviderService
+Action:		com.android.location.service.GeofenceProvider
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.fused.service.FusedProviderService
+Action:		com.android.location.service.FusedProvider
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.internal.server.HardwareArProviderService
+Action:		com.android.location.service.ActivityRecognitionProvider
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.reporting.service.ReportingAndroidService
+Action:		com.google.android.location.reporting.service.START
+Action:		com.google.android.gms.location.reporting.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.reporting.service.LocationHistoryInjectorService
+Action:		android.location.SettingInjectorService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.wearable.WearableLocationService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.locationsharing.service.LocationSharingSettingInjectorService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.locationsharing.service.LocationSharingService
+Action:		com.google.android.gms.social.location.activity.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.lockbox.service.LockboxBrokerService
+Action:		com.google.android.gms.lockbox.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.matchstick.contacts.sync.TachystickSyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.matchstick.contacts.sync.TachystickAccountService
+Action:		android.accounts.AccountAuthenticator
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.measurement.service.MeasurementBrokerService
+Action:		com.google.android.gms.measurement.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.audiomodem.service.AudioModemService
+Action:		com.google.android.gms.audiomodem.service.AudioModemService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.nearby.bootstrap.service.NearbyBootstrapService
+Action:		com.google.android.gms.nearby.bootstrap.service.NearbyBootstrapService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.nearby.connection.service.NearbyConnectionsAndroidService
+Action:		com.google.android.gms.nearby.connection.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.nearby.messages.service.NearbyMessagesService
+Action:		com.google.android.gms.nearby.messages.service.NearbyMessagesService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.mdm.services.NetworkQualityAndroidService
+Action:		com.google.android.gms.mdm.services.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService
+Action:		com.google.android.gms.herrevad.services.LightweightNetworkQualityAndroidService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.update.SystemUpdateService
+Action:		com.google.android.gms.update.START_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.people.sync.PeopleSyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.photos.autobackup.service.AutoBackupService
+Action:		com.google.android.gms.photos.autobackup.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.libraries.social.autobackup.AutoBackupSyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.plus.service.PlusService
+Action:		com.google.android.gms.plus.service.START
+Action:		com.google.android.gms.plus.service.internal.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.plus.service.OfflineActionSyncAdapterService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.pseudonymous.service.PseudonymousIdService
+Action:		com.google.android.gms.pseudonymous.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.reminders.sync.RemindersSyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.security.snet.SnetIdleTaskService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.security.snet.SnetNormalTaskService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.security.snet.SafeBrowsingUpdateTaskService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.mdm.services.DeviceManagerApiService
+Action:		com.google.android.gms.mdm.services.DeviceManagerApiService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.smartdevice.d2d.SourceDeviceService
+Action:		com.google.android.gms.smartdevice.d2d.SourceDeviceService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.smartdevice.d2d.TargetDeviceService
+Action:		com.google.android.gms.smartdevice.d2d.TargetDeviceService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.smartdevice.setup.accounts.AccountsService
+Action:		com.google.android.gms.smartdevice.setup.accounts.AccountsService.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.subscribedfeeds.SyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.subscribedfeeds.GmsFeedsSyncService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.tapandpay.service.TapAndPayService
+Action:		com.google.android.gms.tapandpay.service.BIND
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.trustagent.speech.service.VoiceUnlockService
+Action:		com.google.android.gms.speech.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.usagereporting.service.UsageReportingService
+Action:		com.google.android.gms.usagereporting.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.wallet.service.PaymentService
+Action:		com.google.android.gms.wallet.service.BIND
+Action:		com.google.android.gms.wallet.service.ia.IIaService
+Action:		com.google.android.gms.wallet.service.ib.IIbService
+Action:		com.google.android.gms.wallet.service.orchestration.IOrchestrationService
+Action:		com.google.android.gms.wallet.service.ow.IOwInternalService
+Action:		com.google.android.gms.wallet.service.reauth.IReauthService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.wallet.service.address.AddressService
+Action:		com.google.android.gms.identity.service.BIND
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.wearable.service.WearableService
+Action:		com.google.android.gms.wearable.BIND
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.chimera.container.FileApkIntentOperation$ExternalFileApkService
+Action:		com.google.android.gms.chimera.container.LOG_LOAD_ATTEMPT
+Action:		com.google.android.gms.chimera.container.STAGE_MODULE_APKS
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.chimera.GmsApiService
+Action:		com.google.android.gms.auth.api.credentials.service.START
+Action:		com.google.android.gms.auth.authzen.api.service.internaldata.START
+Action:		com.google.android.gms.auth.authzen.api.service.key.START
+Action:		com.google.android.gms.backup.G1_BACKUP
+Action:		com.google.android.gms.backup.G1_RESTORE
+Action:		com.google.android.gms.chromesync.service.START
+Action:		com.google.android.gms.learning.examplecollection.START
+Action:		com.google.android.gms.learning.internal.dynamitesupport.START
+Action:		com.google.android.gms.learning.predictor.START
+Action:		com.google.android.gms.learning.trainer.START
+Action:		com.google.android.gms.panorama.service.START
+Action:		com.google.android.gms.reminders.service.START
+Action:		com.google.android.gms.signin.service.START
+Action:		com.google.android.gms.vehicle.cabin.service.START
+Action:		com.google.android.gms.vehicle.hvac.service.START
+Action:		com.google.android.gms.walletp2p.service.firstparty.BIND
+Action:		com.google.android.gms.walletp2p.service.secondparty.BIND
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.chimera.PersistentApiService
+Action:		com.google.android.gms.udc.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.chimera.PersistentDirectBootAwareApiService
+Action:		com.google.android.gms.clearcut.service.START
+Action:		com.google.android.gms.phenotype.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.chimera.GmsBoundBrokerService
+Action:		com.google.android.finsky.BIND_PLAY_CLIENT_SERVICE
+Action:		com.google.android.gms.accounts.ACCOUNT_SERVICE
+Action:		com.google.android.gms.ads.service.CONSENT_LOOKUP
+Action:		com.google.android.gms.ads.service.HTTP
+Action:		com.google.android.gms.apppreviewmessaging.service.START
+Action:		com.google.android.gms.audit.service.START
+Action:		com.google.android.gms.auth.api.accounttransfer.service.START
+Action:		com.google.android.gms.auth.cryptauth.cryptauthservice.START
+Action:		com.google.android.gms.backup.LOCAL_RESTORE
+Action:		com.google.android.gms.backup.RESTORE_SESSION
+Action:		com.google.android.gms.cast.firstparty.START
+Action:		com.google.android.gms.cast.remote_display.service.START
+Action:		com.google.android.gms.cast.service.BIND_CAST_DEVICE_CONTROLLER_SERVICE
+Action:		com.google.android.gms.cast_mirroring.service.START
+Action:		com.google.android.gms.chimera.test.START_SERVICE
+Action:		com.google.android.gms.common.download.START
+Action:		com.google.android.gms.common.service.START
+Action:		com.google.android.gms.constellation.service.START
+Action:		com.google.android.gms.drive.ApiService.START
+Action:		com.google.android.gms.drive.ApiService.STOP
+Action:		com.google.android.gms.drive.ApiService.RESET_AFTER_BOOT
+Action:		com.google.android.gms.feedback.internal.IFeedbackService
+Action:		com.google.android.gms.fido.fido2.privileged.START
+Action:		com.google.android.gms.fido.fido2.regular.START
+Action:		com.google.android.gms.fido.fido2.zeroparty.START
+Action:		com.google.android.gms.fonts.service.START
+Action:		com.google.android.gms.growth.service.START
+Action:		com.google.android.gms.ipa.service.START
+Action:		com.google.android.gms.languageprofile.service.START
+Action:		com.google.android.gms.locationsharing.api.START
+Action:		com.google.android.gms.mdns.service.START
+Action:		com.google.android.gms.mobiledataplan.service.START
+Action:		com.google.android.gms.nearby.setup.service.START
+Action:		com.google.android.gms.notifications.service.START
+Action:		com.google.android.gms.peerdownloadmanager.service.START
+Action:		com.google.android.gms.people.service.START
+Action:		com.google.android.gms.predictondevice.service.START
+Action:		com.google.android.gms.romanesco.service.START
+Action:		com.google.android.gms.safetynet.service.START
+Action:		com.google.android.gms.search.service.SEARCH_AUTH_START
+Action:		com.google.android.gms.semanticlocation.service.START
+Action:		com.google.android.gms.subscriptions.service.START
+Action:		com.google.android.gms.telephonyspam.service.START
+Action:		com.google.android.gms.testsupport.service.START
+Action:		com.google.android.gms.update.START_API_SERVICE
+Action:		com.google.android.mdd.service.START
+Action:		com.google.android.mdh.service.START
+Action:		com.google.android.mdh.service.listener.START
+Action:		com.google.android.mobstore.service.START
+Action:		com.google.firebase.dynamiclinks.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.chimera.PersistentBoundBrokerService
+Action:		android.service.textclassifier.TextClassifierService
+Action:		com.google.android.gms.ads.identifier.service.PERSISTENT_START
+Action:		com.google.android.gms.auth.account.data.service.START
+Action:		com.google.android.gms.auth.proximity.START
+Action:		com.google.android.gms.auth.proximity.devicesyncservice.START
+Action:		com.google.android.gms.auth.proximity.securechannelservice.START
+Action:		com.google.android.gms.auth.uncertifieddevice.service.START
+Action:		com.google.android.gms.backup.ACTION_BACKUP_NOW
+Action:		com.google.android.gms.clearcut.bootcount.service.START
+Action:		com.google.android.gms.deviceconnection.service.START
+Action:		com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE
+Action:		com.google.android.gms.ipa.mediastoreindexer.PERSISTENT_START
+Action:		com.google.android.gms.ipa.smsindexer.PERSISTENT_START
+Action:		com.google.android.gms.location.places.GeoDataApi
+Action:		com.google.android.gms.location.places.PlacesApi
+Action:		com.google.android.gms.location.places.PlaceDetectionApi
+Action:		com.google.android.gms.netrec.scoring.service.START
+Action:		com.google.android.gms.sesame.service.BIND
+Action:		com.google.android.gms.trustagent.trustlet.trustletmanagerservice.BIND
+Action:		com.google.android.gms.trustlet.bluetooth.service.BIND
+Action:		com.google.android.gms.trustlet.connectionlessble.service.BIND
+Action:		com.google.android.gms.trustlet.face.service.BIND
+Action:		com.google.android.gms.trustlet.nfc.service.BIND
+Action:		com.google.android.gms.trustlet.onbody.service.BIND
+Action:		com.google.android.gms.trustlet.place.service.BIND
+Action:		com.google.android.gms.trustlet.voiceunlock.service.BIND
+Action:		com.google.android.gms.userlocation.service.START
+Action:		android.net.action.RECOMMEND_NETWORKS
+Action:		com.google.android.gms.auth.account.authenticator.tv.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.chimera.CarBoundBrokerService
+Action:		com.google.android.gms.car.CALL
+Action:		com.google.android.gms.car.PROXY_IN_CALL_SERVICE
+Action:		com.google.android.gms.carsetup.CAR_DATA
+Action:		com.google.android.gms.carsetup.DRIVING_MODE
+Action:		com.google.android.gms.auth.api.earlyupdate.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.firebase.messaging.FirebaseMessagingService
+Action:		com.google.firebase.MESSAGING_EVENT
+
+Manifest:	device_APKs/Drive/AndroidManifest.xml
+Package:	com.google.android.apps.docs
+App:		com.google.android.apps.docs.drive.MultidexDriveApplication
+Service:	com.google.android.apps.docs.sync.syncadapter.DocsSyncAdapterService
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.google.android.gm.provider.MailSyncAdapterService
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.google.android.gm.GcmImapPurgeService
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.android.email.service.Pop3AuthenticatorService
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.google.android.gm.provider.GmailPop3SyncAdapterService
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.google.android.gm.provider.GmailImapSyncAdapterService
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.android.email.service.EasAuthenticatorService
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.google.android.gm.wearable.AppWearableListenerService
+
+Manifest:	device_APKs/PrebuiltDeskClockGoogle/AndroidManifest.xml
+Package:	com.google.android.deskclock
+App:		com.android.deskclock.DeskClockGoogleApplication
+Service:	com.android.deskclock.WearableMessageListenerService
+Action:		com.google.android.gms.wearable.CAPABILITY_CHANGED
+
+Manifest:	device_APKs/Duo/AndroidManifest.xml
+Package:	com.google.android.apps.tachyon
+App:		com.google.android.apps.tachyon.TachyonApplication
+Service:	com.google.firebase.iid.FirebaseInstanceIdService
+Action:		com.google.firebase.INSTANCE_ID_EVENT
+

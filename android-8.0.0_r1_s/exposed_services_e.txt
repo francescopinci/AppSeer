@@ -1,0 +1,25 @@
+Manifest:	../android-8.0.0_r1/packages/services/Mms/AndroidManifest.xml
+Package:	com.android.mms.service
+App:		
+Service:	.MmsService
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/SharedStorageBackup/AndroidManifest.xml
+Package:	com.android.sharedstoragebackup
+App:		
+Service:	.ObbBackupService
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/SystemUI/AndroidManifest.xml
+Package:	com.android.systemui
+App:		.SystemUIApplication
+Service:	SystemUIService
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/services/PacProcessor/AndroidManifest.xml
+Package:	com.android.pacprocessor
+App:		
+Service:	.PacService
+
+Manifest:	../android-8.0.0_r1/frameworks/base/packages/services/Proxy/AndroidManifest.xml
+Package:	com.android.proxyhandler
+App:		
+Service:	.ProxyService
+
