@@ -1,0 +1,208 @@
+Logcat crash channell #
+#######################
+
+################################
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: Process: com.android.settings, PID: 5678
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.settings/com.android.settings.Settings$SavedAccessPointsSettingsActivity}: java.lang.IllegalArgumentException: Invalid fragment for this activity: com.android.settings.wifi.SavedAccessPointsSettings
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Invalid fragment for this activity: com.android.settings.wifi.SavedAccessPointsSettings
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at com.android.settings.SettingsActivity.switchToFragment(SettingsActivity.java:1021)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at com.android.settings.SettingsActivity.onCreate(SettingsActivity.java:630)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6237)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+10-30 10:11:55.983  5678  5678 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: Process: com.android.settings, PID: 7027
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.settings/com.android.settings.Settings$UsbSettingsActivity}: java.lang.IllegalArgumentException: Invalid fragment for this activity: com.android.settings.deviceinfo.UsbSettings
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Invalid fragment for this activity: com.android.settings.deviceinfo.UsbSettings
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at com.android.settings.SettingsActivity.switchToFragment(SettingsActivity.java:1021)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at com.android.settings.SettingsActivity.onCreate(SettingsActivity.java:630)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6237)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+10-30 10:18:29.705  7027  7027 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: Process: com.svox.pico, PID: 7128
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.svox.pico/com.svox.pico.DownloadVoiceData}: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=market://search?q=pname:com.svox.langpack.installer }
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: Caused by: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=market://search?q=pname:com.svox.langpack.installer }
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1798)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1512)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:3917)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.Activity.startActivityForResult(Activity.java:3877)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at com.svox.pico.DownloadVoiceData.onCreate(DownloadVoiceData.java:34)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6237)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+10-30 10:21:59.607  7128  7128 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: Process: com.android.development, PID: 8369
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.development/com.android.development.PermissionDetails}: java.lang.NullPointerException: Attempt to read from field 'java.lang.String android.content.pm.PackageItemInfo.name' on a null object reference
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'java.lang.String android.content.pm.PackageItemInfo.name' on a null object reference
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at com.android.development.PermissionDetails.onCreate(PermissionDetails.java:200)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6237)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+10-30 10:22:35.196  8369  8369 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: Process: com.google.android.googlequicksearchbox:search, PID: 2567
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.google.android.apps.gsa.extradex.intentapi.b.a(com.google.android.apps.gsa.extradex.intentapi.e)' on a null object reference
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at com.google.android.apps.gsa.extradex.intentapi.a.onResume(IntentApiAdapterImpl.java:174)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at com.google.android.voicesearch.intentapi.a.onResume(IntentApiActivity.java:63)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at android.app.Fragment.performResume(Fragment.java:2263)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1008)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1148)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at android.app.BackStackRecord.run(BackStackRecord.java:793)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1535)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at android.app.FragmentManagerImpl$1.run(FragmentManager.java:482)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:739)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-30 10:24:08.932  2567  2567 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+################################
+
+################################
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: Process: com.google.android.play.games.ui, PID: 9097
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.google.android.play.games/com.google.android.gms.games.testcompat.ParcelTestCompatActivity}: java.lang.NullPointerException: ParcelTestCompat must be started for result!
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: Caused by: java.lang.NullPointerException: ParcelTestCompat must be started for result!
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at ebi.a(:com.google.android.play.games@57060070@5.7.06 (193054555.193054555-000700):3)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at com.google.android.gms.games.testcompat.ParcelTestCompatActivity.onCreate(:com.google.android.play.games@57060070@5.7.06 (193054555.193054555-000700):2)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6237)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+10-30 10:30:02.290  9097  9097 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: Process: com.google.android.gms.ui, PID: 5067
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.google.android.gms/com.google.android.gms.appinvite.ui.context.ContextualPeopleSelectionActivity}: java.lang.SecurityException: Calling package was null
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: Caused by: java.lang.SecurityException: Calling package was null
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at pog.b(:com.google.android.gms@12874026@12.8.74 (040700-204998136):10)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at pog.c(:com.google.android.gms@12874026@12.8.74 (040700-204998136):1)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at com.google.android.gms.appinvite.ui.context.ContextualPeopleSelectionChimeraActivity.onCreate(:com.google.android.gms@12874026@12.8.74 (040700-204998136):2)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at com.google.android.chimera.Activity.publicOnCreate(:com.google.android.gms@12874026@12.8.74 (040700-204998136))
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at ddu.onCreate(:com.google.android.gms@12874026@12.8.74 (040700-204998136):5)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6237)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+10-30 10:32:25.284  5067  5067 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: Process: com.google.android.gms.ui, PID: 11913
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: android.util.SuperNotCalledException: Activity {com.google.android.gms/com.google.android.gms.mobiledataplan.ui.MobileDataPlanSettingsActivity} did not call through to super.onCreate()
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2372)
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-30 10:38:13.040 11913 11913 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+################################
+
+################################
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: Process: com.google.android.gms.ui, PID: 13200
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.google.android.gms/com.google.android.gms.wallet.common.ui.UpdateCallingAppActivity}: java.lang.RuntimeException: Couldn't find app name for app to update
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: Caused by: java.lang.RuntimeException: Couldn't find app name for app to update
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at com.google.android.gms.wallet.common.ui.UpdateCallingAppChimeraActivity.a(:com.google.android.gms@12874026@12.8.74 (040700-204998136):3)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at com.google.android.gms.wallet.common.ui.UpdateCallingAppChimeraActivity.onCreate(:com.google.android.gms@12874026@12.8.74 (040700-204998136):5)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at com.google.android.chimera.Activity.publicOnCreate(:com.google.android.gms@12874026@12.8.74 (040700-204998136))
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at ddu.onCreate(:com.google.android.gms@12874026@12.8.74 (040700-204998136):5)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6237)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+10-30 10:43:13.327 13200 13200 E AndroidRuntime: 	... 9 more
+################################
+

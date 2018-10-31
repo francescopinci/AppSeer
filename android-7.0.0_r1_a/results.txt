@@ -3,3 +3,5 @@ Exposed activities found:	688
 Activities startable by implicit intents:	506
 Activities startable by explicit intents:	142
 Activities requiring permissions:		40
+Components causing applications to crash with implicit intents: 24
+Components causing applications to crash with explicit intents: 3

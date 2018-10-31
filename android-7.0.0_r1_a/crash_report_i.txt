@@ -1,0 +1,571 @@
+Logcat crash channell #
+#######################
+
+################################
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: Process: com.android.settings, PID: 4868
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.android.settings/com.android.settings.SystemSettings}: java.lang.ClassNotFoundException: Didn't find class "com.android.settings.SystemSettings" on path: DexPathList[[zip file "/system/priv-app/Settings/Settings.apk"],nativeLibraryDirectories=[/system/priv-app/Settings/lib/x86, /system/priv-app/Settings/Settings.apk!/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2548)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.settings.SystemSettings" on path: DexPathList[[zip file "/system/priv-app/Settings/Settings.apk"],nativeLibraryDirectories=[/system/priv-app/Settings/lib/x86, /system/priv-app/Settings/Settings.apk!/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:380)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1078)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2538)
+10-30 15:32:51.988  4868  4868 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: Process: com.android.settings, PID: 5049
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.settings/com.android.settings.wifi.WifiSetupActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v7.widget.RecyclerView.setAdapter(android.support.v7.widget.RecyclerView$Adapter)' on a null object reference
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v7.widget.RecyclerView.setAdapter(android.support.v7.widget.RecyclerView$Adapter)' on a null object reference
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.support.v14.preference.PreferenceFragment.bindPreferences(PreferenceFragment.java:540)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.support.v14.preference.PreferenceFragment.onViewCreated(PreferenceFragment.java:333)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at com.android.settings.wifi.WifiSettings.onViewCreated(WifiSettings.java:167)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1010)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1171)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1153)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:2039)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.FragmentController.dispatchActivityCreated(FragmentController.java:176)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.Activity.performCreateCommon(Activity.java:6656)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6664)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+10-30 15:33:43.925  5049  5049 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: Process: com.android.settings, PID: 5758
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.settings/com.android.settings.Settings$SavedAccessPointsSettingsActivity}: java.lang.IllegalArgumentException: Invalid fragment for this activity: com.android.settings.wifi.SavedAccessPointsSettings
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Invalid fragment for this activity: com.android.settings.wifi.SavedAccessPointsSettings
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at com.android.settings.SettingsActivity.switchToFragment(SettingsActivity.java:1007)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at com.android.settings.SettingsActivity.onCreate(SettingsActivity.java:616)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6662)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+10-30 15:33:56.833  5758  5758 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: Process: com.android.settings, PID: 5903
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {com.android.settings/com.android.settings.bluetooth.DevicePickerActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'com.android.settingslib.bluetooth.CachedBluetoothDeviceManager com.android.settingslib.bluetooth.LocalBluetoothManager.getCachedDeviceManager()' on a null object reference
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3400)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3440)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2713)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'com.android.settingslib.bluetooth.CachedBluetoothDeviceManager com.android.settingslib.bluetooth.LocalBluetoothManager.getCachedDeviceManager()' on a null object reference
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at com.android.settings.bluetooth.DeviceListPreferenceFragment.addCachedDevices(DeviceListPreferenceFragment.java:131)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at com.android.settings.bluetooth.DevicePickerFragment.onResume(DevicePickerFragment.java:105)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.Fragment.performResume(Fragment.java:2399)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1032)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1171)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1153)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.FragmentManagerImpl.dispatchResume(FragmentManager.java:2049)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.FragmentController.dispatchResume(FragmentController.java:198)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:6787)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3377)
+10-30 15:34:16.342  5903  5903 E AndroidRuntime: 	... 10 more
+################################
+
+################################
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: Process: com.android.settings, PID: 5950
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.settings/com.android.settings.Settings$ZenModeScheduleRuleSettingsActivity}: java.lang.NullPointerException: Id is null
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: Caused by: java.lang.NullPointerException: Id is null
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:1689)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:1636)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.INotificationManager$Stub$Proxy.getAutomaticZenRule(INotificationManager.java:1637)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.NotificationManager.getAutomaticZenRule(NotificationManager.java:501)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at com.android.settings.notification.ZenModeRuleSettingsBase.getZenRule(ZenModeRuleSettingsBase.java:270)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at com.android.settings.notification.ZenModeRuleSettingsBase.refreshRuleOrFinish(ZenModeRuleSettingsBase.java:228)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at com.android.settings.notification.ZenModeRuleSettingsBase.onCreate(ZenModeRuleSettingsBase.java:89)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.Fragment.performCreate(Fragment.java:2336)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:949)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.BackStackRecord.setLastIn(BackStackRecord.java:857)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.BackStackRecord.calculateFragments(BackStackRecord.java:897)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.BackStackRecord.run(BackStackRecord.java:727)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1578)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.FragmentManagerImpl.executePendingTransactions(FragmentManager.java:563)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at com.android.settings.SettingsActivity.switchToFragment(SettingsActivity.java:1025)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at com.android.settings.SettingsActivity.onCreate(SettingsActivity.java:616)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6662)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+10-30 15:36:00.294  5950  5950 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: Process: com.android.settings, PID: 6420
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.settings/com.android.settings.Settings$ZenModeEventRuleSettingsActivity}: java.lang.NullPointerException: Id is null
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: Caused by: java.lang.NullPointerException: Id is null
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:1689)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:1636)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.INotificationManager$Stub$Proxy.getAutomaticZenRule(INotificationManager.java:1637)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.NotificationManager.getAutomaticZenRule(NotificationManager.java:501)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at com.android.settings.notification.ZenModeRuleSettingsBase.getZenRule(ZenModeRuleSettingsBase.java:270)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at com.android.settings.notification.ZenModeRuleSettingsBase.refreshRuleOrFinish(ZenModeRuleSettingsBase.java:228)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at com.android.settings.notification.ZenModeRuleSettingsBase.onCreate(ZenModeRuleSettingsBase.java:89)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.Fragment.performCreate(Fragment.java:2336)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:949)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.BackStackRecord.setLastIn(BackStackRecord.java:857)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.BackStackRecord.calculateFragments(BackStackRecord.java:897)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.BackStackRecord.run(BackStackRecord.java:727)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1578)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.FragmentManagerImpl.executePendingTransactions(FragmentManager.java:563)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at com.android.settings.SettingsActivity.switchToFragment(SettingsActivity.java:1025)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at com.android.settings.SettingsActivity.onCreate(SettingsActivity.java:616)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6662)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+10-30 15:36:06.897  6420  6420 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: Process: com.android.settings, PID: 6467
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.settings/com.android.settings.Settings$ZenModeExternalRuleSettingsActivity}: java.lang.IllegalArgumentException: Invalid fragment for this activity: com.android.settings.notification.ZenModeExternalRuleSettings
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Invalid fragment for this activity: com.android.settings.notification.ZenModeExternalRuleSettings
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at com.android.settings.SettingsActivity.switchToFragment(SettingsActivity.java:1007)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at com.android.settings.SettingsActivity.onCreate(SettingsActivity.java:616)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6662)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+10-30 15:36:13.341  6467  6467 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: Process: com.android.settings, PID: 6511
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: java.lang.RuntimeException: Unable to destroy activity {com.android.settings/com.android.settings.bluetooth.BluetoothPairingDialog}: java.lang.IllegalArgumentException: Receiver not registered: com.android.settings.bluetooth.BluetoothPairingDialog$1@a172278
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:4167)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:4185)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.app.ActivityThread.-wrap6(ActivityThread.java)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1521)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: Receiver not registered: com.android.settings.bluetooth.BluetoothPairingDialog$1@a172278
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:1007)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1358)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:608)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at com.android.settings.bluetooth.BluetoothPairingDialog.onDestroy(BluetoothPairingDialog.java:376)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.app.Activity.performDestroy(Activity.java:6864)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1153)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:4154)
+10-30 15:40:46.112  6511  6511 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: Process: com.android.settings, PID: 7851
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.settings/com.android.settings.Settings$AndroidBeamSettingsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.nfc.NfcAdapter.isNdefPushEnabled()' on a null object reference
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.nfc.NfcAdapter.isNdefPushEnabled()' on a null object reference
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at com.android.settings.nfc.AndroidBeam.onActivityCreated(AndroidBeam.java:97)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.Fragment.performActivityCreated(Fragment.java:2362)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1014)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1171)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1153)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:2039)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.FragmentController.dispatchActivityCreated(FragmentController.java:176)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.Activity.performCreateCommon(Activity.java:6656)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6664)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+10-30 15:40:59.812  7851  7851 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: Process: com.android.settings, PID: 7939
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.settings/com.android.settings.nfc.PaymentDefaultDialog}: java.lang.NullPointerException: NfcAdapter is null
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: Caused by: java.lang.NullPointerException: NfcAdapter is null
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.nfc.cardemulation.CardEmulation.getInstance(CardEmulation.java:146)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at com.android.settings.nfc.PaymentBackend.<init>(PaymentBackend.java:66)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at com.android.settings.nfc.PaymentDefaultDialog.onCreate(PaymentDefaultDialog.java:45)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6662)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+10-30 15:42:59.465  7939  7939 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:45:08.908  8331  8331 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:45:08.908  8331  8331 E AndroidRuntime: Process: com.android.settings, PID: 8331
+10-30 15:45:08.908  8331  8331 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:45:08.910  1729  1729 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:45:08.910  1729  1729 E AndroidRuntime: Process: com.android.systemui, PID: 1729
+10-30 15:45:08.910  1729  1729 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:45:08.912  1840  1970 E AndroidRuntime: FATAL EXCEPTION: DcHandlerThread
+10-30 15:45:08.912  1840  1970 E AndroidRuntime: Process: com.android.phone, PID: 1840
+10-30 15:45:08.912  1840  1970 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:45:08.915  2225  2342 E AndroidRuntime: FATAL EXCEPTION: GoogleApiHandler
+10-30 15:45:08.915  2225  2342 E AndroidRuntime: Process: com.google.android.gms, PID: 2225
+10-30 15:45:08.915  2225  2342 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+################################
+
+################################
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: Process: com.android.development, PID: 11074
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.android.development/com.android.development.PermissionDetails}: java.lang.NullPointerException: Attempt to read from field 'java.lang.String android.content.pm.PackageItemInfo.name' on a null object reference
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to read from field 'java.lang.String android.content.pm.PackageItemInfo.name' on a null object reference
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at com.android.development.PermissionDetails.onCreate(PermissionDetails.java:200)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6662)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+10-30 15:47:51.618 11074 11074 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: Process: com.android.cts.priv.ctsshim, PID: 11207
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.android.cts.priv.ctsshim/com.android.cts.priv.ctsshim.UpgradeActionSubset}: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeActionSubset" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2548)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeActionSubset" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:380)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1078)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2538)
+10-30 15:48:18.617 11207 11207 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: Process: com.android.cts.priv.ctsshim, PID: 11253
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.android.cts.priv.ctsshim/com.android.cts.priv.ctsshim.UpgradeActionSubset}: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeActionSubset" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2548)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeActionSubset" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:380)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1078)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2538)
+10-30 15:48:33.609 11253 11253 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: Process: com.android.cts.priv.ctsshim, PID: 11301
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.android.cts.priv.ctsshim/com.android.cts.priv.ctsshim.UpgradeActionSubset}: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeActionSubset" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2548)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeActionSubset" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:380)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1078)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2538)
+10-30 15:48:44.610 11301 11301 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: Process: com.android.cts.priv.ctsshim, PID: 11350
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.android.cts.priv.ctsshim/com.android.cts.priv.ctsshim.UpgradeCategorySubset}: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeCategorySubset" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2548)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeCategorySubset" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:380)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1078)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2538)
+10-30 15:48:59.612 11350 11350 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: Process: com.android.cts.priv.ctsshim, PID: 11449
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.android.cts.priv.ctsshim/com.android.cts.priv.ctsshim.UpgradeNewAction}: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeNewAction" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2548)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeNewAction" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:380)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1078)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2538)
+10-30 15:49:18.616 11449 11449 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: Process: com.android.cts.priv.ctsshim, PID: 11494
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.android.cts.priv.ctsshim/com.android.cts.priv.ctsshim.UpgradeNewCategory}: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeNewCategory" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2548)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.cts.priv.ctsshim.UpgradeNewCategory" on path: DexPathList[[],nativeLibraryDirectories=[/system/priv-app/CtsShimPrivPrebuilt/lib/x86, /system/lib, /vendor/lib, /system/lib, /vendor/lib]]
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:380)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at android.app.Instrumentation.newActivity(Instrumentation.java:1078)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2538)
+10-30 15:49:31.613 11494 11494 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: Process: android:ui, PID: 11673
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{android/com.android.internal.app.ConfirmUserCreationActivity}: java.lang.SecurityException: User Creation intent must be launched with startActivityForResult
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: Caused by: java.lang.SecurityException: User Creation intent must be launched with startActivityForResult
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at com.android.internal.app.ConfirmUserCreationActivity.checkUserCreationRequirements(ConfirmUserCreationActivity.java:87)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at com.android.internal.app.ConfirmUserCreationActivity.onCreate(ConfirmUserCreationActivity.java:65)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6662)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+10-30 15:50:10.763 11673 11673 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 15:53:15.333  9056  9056 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:53:15.333  9056  9056 E AndroidRuntime: Process: com.android.phone, PID: 9056
+10-30 15:53:15.333  9056  9056 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:53:15.337  9373  9373 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:53:15.337  9373  9373 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 9373
+10-30 15:53:15.337  9373  9373 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:53:15.337  9396  9396 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:53:15.337  9396  9396 E AndroidRuntime: Process: com.google.android.gms, PID: 9396
+10-30 15:53:15.337  9396  9396 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:53:15.338 12194 12194 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:53:15.338 12194 12194 E AndroidRuntime: Process: com.android.managedprovisioning, PID: 12194
+10-30 15:53:15.338 12194 12194 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:53:15.339  8847  8847 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:53:15.339  8847  8847 E AndroidRuntime: Process: com.android.systemui, PID: 8847
+10-30 15:53:15.339  8847  8847 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+################################
+
+################################
+10-30 15:59:52.228 12725 12725 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:59:52.228 12725 12725 E AndroidRuntime: Process: com.android.phone, PID: 12725
+10-30 15:59:52.228 12725 12725 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:59:52.232 15263 15263 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:59:52.232 15263 15263 E AndroidRuntime: Process: com.google.android.play.games.ui, PID: 15263
+10-30 15:59:52.232 15263 15263 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:59:52.233 13727 13803 E AndroidRuntime: FATAL EXCEPTION: disconnect check
+10-30 15:59:52.233 13727 13803 E AndroidRuntime: Process: com.google.android.gm, PID: 13727
+10-30 15:59:52.233 13727 13803 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:59:52.233 13071 13071 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:59:52.233 13071 13071 E AndroidRuntime: Process: com.google.android.gms, PID: 13071
+10-30 15:59:52.233 13071 13071 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:59:52.233 13646 13805 E AndroidRuntime: FATAL EXCEPTION: disconnect check
+10-30 15:59:52.233 13646 13805 E AndroidRuntime: Process: com.google.android.calendar, PID: 13646
+10-30 15:59:52.233 13646 13805 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+10-30 15:59:52.235 12596 12596 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 15:59:52.235 12596 12596 E AndroidRuntime: Process: com.android.systemui, PID: 12596
+10-30 15:59:52.235 12596 12596 E AndroidRuntime: DeadSystemException: The system died; earlier logs will point to the root cause
+################################
+
+################################
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: Process: com.google.android.play.games.ui, PID: 17563
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.google.android.play.games/com.google.android.gms.games.testcompat.ParcelTestCompatActivity}: java.lang.NullPointerException: ParcelTestCompat must be started for result!
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2646)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: Caused by: java.lang.NullPointerException: ParcelTestCompat must be started for result!
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at ebi.a(:com.google.android.play.games@57060070@5.7.06 (193054555.193054555-000700):3)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at com.google.android.gms.games.testcompat.ParcelTestCompatActivity.onCreate(:com.google.android.play.games@57060070@5.7.06 (193054555.193054555-000700):2)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6662)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2599)
+10-30 16:03:56.598 17563 17563 E AndroidRuntime: 	... 9 more
+################################
+
+################################
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: FATAL EXCEPTION: main
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: Process: com.google.android.play.games.ui, PID: 18384
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: android.util.SuperNotCalledException: Activity {com.google.android.play.games/com.google.android.gms.games.ui.GamesSettingsActivity} did not call through to super.onCreate()
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2602)
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707)
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: 	at android.app.ActivityThread.-wrap12(ActivityThread.java)
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460)
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6077)
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:866)
+10-30 16:04:06.651 18384 18384 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:756)
+################################
+
+################################
+10-30 16:09:39.618 19615 19692 E AndroidRuntime: FATAL EXCEPTION: com.google.android.music.activities.SharedSongsActivity$AsyncWorker
+10-30 16:09:39.618 19615 19692 E AndroidRuntime: Process: com.google.android.music:ui, PID: 19615
+10-30 16:09:39.618 19615 19692 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List android.net.Uri.getPathSegments()' on a null object reference
+10-30 16:09:39.618 19615 19692 E AndroidRuntime: 	at com.google.android.music.activities.SharedSongsActivity$AsyncWorker.processGetSharedPlaylist(SharedSongsActivity.java:245)
+10-30 16:09:39.618 19615 19692 E AndroidRuntime: 	at com.google.android.music.activities.SharedSongsActivity$AsyncWorker.handleMessage(SharedSongsActivity.java:219)
+10-30 16:09:39.618 19615 19692 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-30 16:09:39.618 19615 19692 E AndroidRuntime: 	at com.google.android.music.utils.LoggableHandler.dispatchMessage(LoggableHandler.java:86)
+10-30 16:09:39.618 19615 19692 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+10-30 16:09:39.618 19615 19692 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+################################
+

@@ -3,3 +3,5 @@ Exposed services found:		310
 Services startable by implicit intents:	155
 Services startable by explicit intents:	32
 Services requiring permissions:		123
+Components causing applications to crash with implicit intents: 9
+Components causing applications to crash with explicit intents: 3

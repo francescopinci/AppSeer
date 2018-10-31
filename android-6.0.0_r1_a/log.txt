@@ -1,0 +1,586 @@
+Adb activity manager output #
+#############################
+
+Starting: Intent { act=com.android.providers.contacts.DUMP_DATABASE }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=android.service.wallpaper.LIVE_WALLPAPER_CHOOSER }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=android.service.wallpaper.CHANGE_LIVE_WALLPAPER }
+Starting: Intent { act=android.telecom.action.SHOW_RESPOND_VIA_SMS_SETTINGS }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=android.telecom.action.CHANGE_DEFAULT_DIALER }
+Starting: Intent { act=com.android.phone.EmergencyDialer.DIAL }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=android.settings.DATA_ROAMING_SETTINGS }
+Starting: Intent { act=android.settings.NETWORK_OPERATOR_SETTINGS }
+Starting: Intent { act=android.telecom.action.SHOW_CALL_SETTINGS }
+Starting: Intent { act=android.telecom.action.SHOW_CALL_ACCESSIBILITY_SETTINGS }
+Starting: Intent { act=com.android.phone.action.ACTION_SHOW_ECM_EXIT_DIALOG }
+Starting: Intent { act=android.telecom.action.CONFIGURE_PHONE_ACCOUNT }
+Starting: Intent { act=android.net.sip.NOTIFY }
+Error: Activity not started, unable to resolve Intent { act=android.net.sip.NOTIFY flg=0x10000000 }
+Starting: Intent { act=android.telecom.action.CHANGE_PHONE_ACCOUNTS }
+Starting: Intent { act=com.android.phone.CallFeaturesSetting.ADD_VOICEMAIL }
+Starting: Intent { act=android.telephony.action.CONFIGURE_VOICEMAIL }
+Starting: Intent { act=android.appwidget.action.APPWIDGET_CONFIGURE }
+Error: Activity not started, unable to resolve Intent { act=android.appwidget.action.APPWIDGET_CONFIGURE flg=0x10000000 }
+Starting: Intent { act=com.android.phone.action.TOUCH_DIALER }
+Starting: Intent { act=com.android.phone.action.RECENT_CALLS }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=android.media.action.IMAGE_CAPTURE }
+Starting: Intent { act=android.media.action.STILL_IMAGE_CAMERA }
+Starting: Intent { act=android.media.action.VIDEO_CAMERA }
+Starting: Intent { act=android.media.action.VIDEO_CAPTURE }
+Starting: Intent { act=com.android.email.EXCHANGE_REQUEST_CERT }
+Error: Activity not started, unable to resolve Intent { act=com.android.email.EXCHANGE_REQUEST_CERT flg=0x10000000 }
+Starting: Intent { act=com.android.contacts.action.LIST_DEFAULT }
+Starting: Intent { act=com.android.contacts.action.LIST_CONTACTS }
+Starting: Intent { act=com.android.contacts.action.LIST_ALL_CONTACTS }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=com.android.contacts.action.LIST_CONTACTS_WITH_PHONES }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=com.android.contacts.action.LIST_STARRED }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=com.android.contacts.action.LIST_FREQUENT }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=com.android.contacts.action.LIST_STREQUENT }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=com.android.contacts.action.JOIN_CONTACT }
+Starting: Intent { act=android.nfc.action.NDEF_DISCOVERED }
+Error: Activity not started, unable to resolve Intent { act=android.nfc.action.NDEF_DISCOVERED flg=0x10000000 }
+Starting: Intent { act=com.android.keychain.CHOOSER }
+Starting: Intent { act=android.speech.action.VOICE_SEARCH_RESULTS }
+Starting: Intent { act=android.provider.MediaStore.RECORD_SOUND }
+Starting: Intent { act=android.credentials.INSTALL }
+Starting: Intent { act=android.content.pm.action.CONFIRM_PERMISSIONS }
+Starting: Intent { act=android.content.pm.action.REQUEST_PERMISSIONS }
+Starting: Intent { act=android.settings.SETTINGS }
+Starting: Intent { act=android.settings.WIRELESS_SETTINGS }
+Starting: Intent { act=android.settings.AIRPLANE_MODE_SETTINGS }
+Starting: Intent { act=android.settings.NFC_SETTINGS }
+Starting: Intent { act=android.settings.VOICE_CONTROL_AIRPLANE_MODE }
+Starting: Intent { act=android.settings.WIFI_SETTINGS }
+Starting: Intent { act=android.net.wifi.PICK_WIFI_NETWORK }
+Starting: Intent { act=com.android.net.wifi.SETUP_WIFI_NETWORK }
+Starting: Intent { act=android.settings.WIFI_IP_SETTINGS }
+Starting: Intent { act=android.settings.WIFI_IF_SETTINGS }
+Starting: Intent { act=android.settings.APN_SETTINGS }
+Starting: Intent { act=android.settings.BLUETOOTH_SETTINGS }
+Starting: Intent { act=android.bluetooth.devicepicker.action.LAUNCH }
+Starting: Intent { act=android.net.vpn.SETTINGS }
+Starting: Intent { act=android.settings.DATE_SETTINGS }
+Starting: Intent { act=android.settings.LOCALE_SETTINGS }
+Starting: Intent { act=android.settings.INPUT_METHOD_SETTINGS }
+Starting: Intent { act=android.settings.VOICE_INPUT_SETTINGS }
+Starting: Intent { act=android.settings.INPUT_METHOD_SUBTYPE_SETTINGS }
+Starting: Intent { act=android.settings.USER_DICTIONARY_SETTINGS }
+Starting: Intent { act=com.android.settings.USER_DICTIONARY_INSERT }
+Starting: Intent { act=com.android.settings.USER_DICTIONARY_EDIT }
+Starting: Intent { act=android.settings.ZEN_MODE_SETTINGS }
+Starting: Intent { act=android.settings.ZEN_MODE_PRIORITY_SETTINGS }
+Starting: Intent { act=android.settings.ZEN_MODE_AUTOMATION_SETTINGS }
+Starting: Intent { act=android.settings.ACTION_CONDITION_PROVIDER_SETTINGS }
+Starting: Intent { act=android.settings.ZEN_MODE_SCHEDULE_RULE_SETTINGS }
+Starting: Intent { act=android.settings.ZEN_MODE_EVENT_RULE_SETTINGS }
+Starting: Intent { act=android.settings.ZEN_MODE_EXTERNAL_RULE_SETTINGS }
+Starting: Intent { act=android.settings.HOME_SETTINGS }
+Starting: Intent { act=com.android.settings.DISPLAY_SETTINGS }
+Starting: Intent { act=android.settings.DISPLAY_SETTINGS }
+Starting: Intent { act=android.settings.DEVICE_INFO_SETTINGS }
+Starting: Intent { act=android.settings.LICENSE }
+Starting: Intent { act=android.settings.APPLICATION_SETTINGS }
+Starting: Intent { act=android.settings.MANAGE_APPLICATIONS_SETTINGS }
+Starting: Intent { act=android.settings.MANAGE_ALL_APPLICATIONS_SETTINGS }
+Starting: Intent { act=android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS }
+Starting: Intent { act=android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS }
+Error: Activity not started, unable to resolve Intent { act=android.settings.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS flg=0x10000000 }
+Starting: Intent { act=android.settings.VOICE_CONTROL_DO_NOT_DISTURB_MODE }
+Starting: Intent { act=android.settings.LOCATION_SOURCE_SETTINGS }
+Starting: Intent { act=android.settings.SECURITY_SETTINGS }
+Starting: Intent { act=android.credentials.UNLOCK }
+Starting: Intent { act=com.android.settings.MONITORING_CERT_INFO }
+Starting: Intent { act=com.android.settings.TRUSTED_CREDENTIALS }
+Starting: Intent { act=com.android.settings.TRUSTED_CREDENTIALS_USER }
+Starting: Intent { act=android.settings.PRIVACY_SETTINGS }
+Starting: Intent { act=android.settings.BACKUP_AND_RESET_SETTINGS }
+Starting: Intent { act=com.android.credentials.UNLOCK }
+Starting: Intent { act=com.android.credentials.INSTALL }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=com.android.credentials.RESET }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=android.app.action.ADD_DEVICE_ADMIN }
+Starting: Intent { act=android.settings.USAGE_ACCESS_SETTINGS }
+Starting: Intent { act=android.settings.ACCESSIBILITY_SETTINGS }
+Starting: Intent { act=com.android.settings.ACCESSIBILITY_COLOR_SPACE_SETTINGS }
+Starting: Intent { act=android.settings.CAPTIONING_SETTINGS }
+Starting: Intent { act=com.android.settings.TTS_SETTINGS }
+Starting: Intent { act=android.app.action.CONFIRM_DEVICE_CREDENTIAL }
+Starting: Intent { act=android.settings.ACTION_APP_NOTIFICATION_REDACTION }
+Starting: Intent { act=com.android.settings.SETUP_LOCK_SCREEN }
+Starting: Intent { act=android.app.action.SET_NEW_PASSWORD }
+Starting: Intent { act=android.settings.INTERNAL_STORAGE_SETTINGS }
+Starting: Intent { act=android.settings.MEMORY_CARD_SETTINGS }
+Starting: Intent { act=android.provider.action.DOCUMENT_ROOT_SETTINGS }
+Error: Activity not started, unable to resolve Intent { act=android.provider.action.DOCUMENT_ROOT_SETTINGS flg=0x10000000 }
+Starting: Intent { act=android.settings.APPLICATION_DEVELOPMENT_SETTINGS }
+Starting: Intent { act=com.android.settings.APPLICATION_DEVELOPMENT_SETTINGS }
+Starting: Intent { act=android.settings.ACTION_PRINT_SETTINGS }
+Starting: Intent { act=android.settings.STORAGE_USB_SETTINGS }
+Starting: Intent { act=com.android.settings.STORAGE_USB_SETTINGS }
+Starting: Intent { act=android.bluetooth.device.action.PAIRING_REQUEST }
+Starting: Intent { act=android.net.wifi.action.REQUEST_SCAN_ALWAYS_AVAILABLE }
+Starting: Intent { act=android.settings.NFCSHARING_SETTINGS }
+Starting: Intent { act=android.settings.CAST_SETTINGS }
+Starting: Intent { act=android.appwidget.action.APPWIDGET_PICK }
+Starting: Intent { act=android.appwidget.action.APPWIDGET_BIND }
+Starting: Intent { act=android.settings.BATTERY_SAVER_SETTINGS }
+Starting: Intent { act=android.settings.VOICE_CONTROL_BATTERY_SAVER_MODE }
+Starting: Intent { act=android.settings.SYNC_SETTINGS }
+Starting: Intent { act=android.settings.ACCOUNT_SYNC_SETTINGS }
+Starting: Intent { act=android.settings.ADD_ACCOUNT_SETTINGS }
+Starting: Intent { act=android.app.action.START_ENCRYPTION }
+Starting: Intent { act=android.settings.DREAM_SETTINGS }
+Starting: Intent { act=android.settings.USER_SETTINGS }
+Starting: Intent { act=android.settings.NFC_PAYMENT_SETTINGS }
+Starting: Intent { act=android.nfc.cardemulation.action.ACTION_CHANGE_DEFAULT }
+Starting: Intent { act=android.provider.Telephony.ACTION_CHANGE_DEFAULT }
+Starting: Intent { act=android.net.scoring.CHANGE_ACTIVE }
+Starting: Intent { act=android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS }
+Starting: Intent { act=android.settings.NOTIFICATION_POLICY_ACCESS_SETTINGS }
+Starting: Intent { act=android.settings.NOTIFICATION_SETTINGS }
+Starting: Intent { act=android.settings.ACTION_OTHER_SOUND_SETTINGS }
+Starting: Intent { act=android.settings.APP_NOTIFICATION_SETTINGS }
+Starting: Intent { act=android.settings.SHOW_REGULATORY_INFO }
+Error: Activity not started, unable to resolve Intent { act=android.settings.SHOW_REGULATORY_INFO flg=0x10000000 }
+Starting: Intent { act=com.android.settings.sim.SIM_SUB_INFO_SETTINGS }
+Starting: Intent { act=android.settings.WIFI_CALLING_SETTINGS }
+Starting: Intent { act=android.settings.action.MANAGE_OVERLAY_PERMISSION }
+Starting: Intent { act=android.settings.action.MANAGE_WRITE_SETTINGS }
+Starting: Intent { act=com.android.music.PLAYBACK_VIEWER }
+Starting: Intent { act=android.speech.tts.engine.INSTALL_TTS_DATA }
+Starting: Intent { act=android.speech.tts.engine.CHECK_TTS_DATA }
+Starting: Intent { act=android.speech.tts.engine.GET_SAMPLE_TEXT }
+Starting: Intent { act=android.speech.tts.engine.CONFIGURE_ENGINE }
+Starting: Intent { act=android.nfc.action.TECH_DISCOVERED }
+Error: Activity not started, unable to resolve Intent { act=android.nfc.action.TECH_DISCOVERED flg=0x10000000 }
+Starting: Intent { act=com.android.development.VIEW_PERMISSION }
+Starting: Intent { act=com.android.camera.action.CROP }
+Error: Activity not started, unable to resolve Intent { act=com.android.camera.action.CROP flg=0x10000000 }
+Starting: Intent { act=android.provider.action.MANAGE_ROOT }
+Error: Activity not started, unable to resolve Intent { act=android.provider.action.MANAGE_ROOT flg=0x10000000 }
+Starting: Intent { act=android.provider.action.BROWSE_DOCUMENT_ROOT }
+Error: Activity not started, unable to resolve Intent { act=android.provider.action.BROWSE_DOCUMENT_ROOT flg=0x10000000 }
+Starting: Intent { act=android.app.action.PROVISION_MANAGED_DEVICE }
+Starting: Intent { act=com.android.managedprovisioning.ACTION_PROVISION_MANAGED_DEVICE }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=android.app.action.PROVISION_MANAGED_PROFILE }
+Starting: Intent { act=com.google.android.googlequicksearchbox.TEXT_ASSIST }
+Starting: Intent { act=android.search.action.SEARCH_SETTINGS }
+Starting: Intent { act=com.google.android.googlequicksearchbox.action.PRIVACY_SETTINGS }
+Starting: Intent { act=com.google.android.googlequicksearchbox.action.HOTWORD_DETECTION_SETTINGS }
+Starting: Intent { act=android.speech.action.RECOGNIZE_SPEECH }
+Starting: Intent { act=android.speech.action.RECOGNIZE_VOICE_COMMAND }
+Starting: Intent { act=com.google.android.speech.embedded.MANAGE_LANGUAGES }
+Starting: Intent { act=android.speech.action.VOICE_SEARCH_HANDS_FREE }
+Starting: Intent { act=com.google.android.search.core.action.PROXY_VOICE_BUTTON }
+Starting: Intent { act=android.service.wallpaper.CROP_AND_SET_WALLPAPER }
+Error: Activity not started, unable to resolve Intent { act=android.service.wallpaper.CROP_AND_SET_WALLPAPER flg=0x10000000 }
+Starting: Intent { act=android.search.action.GLOBAL_SEARCH }
+Starting: Intent { act=android.speech.action.WEB_SEARCH }
+Starting: Intent { act=com.google.android.googlequicksearchbox.GOOGLE_SEARCH }
+Starting: Intent { act=com.google.android.googlequicksearchbox.LAUNCH_GSA }
+Starting: Intent { act=com.google.android.googlequicksearchbox.MUSIC_SEARCH }
+Starting: Intent { act=com.google.android.googlequicksearchbox.VIEW_TERMS_OF_SERVICE }
+Starting: Intent { act=com.google.android.googlequicksearchbox.VIEW_PRIVACY_POLICY }
+Starting: Intent { act=com.google.android.gms.games.destination.VIEW_GAME_DETAIL }
+Starting: Intent { act=com.google.android.gms.games.destination.VIEW_LEADERBOARD_SCORES }
+Starting: Intent { act=com.google.android.gms.games.destination.SHOW_INBOX }
+Starting: Intent { act=com.google.android.gms.games.destination.SHOW_MULTIPLAYER_LIST }
+Starting: Intent { act=com.google.android.gms.games.destination.SHOW_REQUEST_LIST }
+Starting: Intent { act=com.google.android.gms.games.destination.SHOW_VIDEO_RECORDING_ONBOARDING }
+Starting: Intent { act=com.google.android.gms.games.VIEW_ACHIEVEMENTS }
+Starting: Intent { act=com.google.android.gms.games.VIEW_ACHIEVEMENTS_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.VIEW_ACHIEVEMENTS_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.VIEW_ACHIEVEMENT }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.VIEW_ACHIEVEMENT flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.VIEW_LEADERBOARDS }
+Starting: Intent { act=com.google.android.gms.games.VIEW_LEADERBOARDS_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.VIEW_LEADERBOARDS_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.VIEW_LEADERBOARD_SCORES }
+Starting: Intent { act=com.google.android.gms.games.VIEW_LEADERBOARD_SCORES_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.VIEW_LEADERBOARD_SCORES_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SELECT_PLAYERS }
+Starting: Intent { act=com.google.android.gms.games.SELECT_OPPONENTS_REAL_TIME }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SELECT_OPPONENTS_REAL_TIME flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SELECT_OPPONENTS_TURN_BASED }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SELECT_OPPONENTS_TURN_BASED flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SELECT_OPPONENTS_REAL_TIME_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SELECT_OPPONENTS_REAL_TIME_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SELECT_OPPONENTS_TURN_BASED_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SELECT_OPPONENTS_TURN_BASED_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.PLAYER_SEARCH }
+Starting: Intent { act=com.google.android.gms.games.PLAYER_SEARCH_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.PLAYER_SEARCH_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_REAL_TIME_WAITING_ROOM }
+Starting: Intent { act=com.google.android.gms.games.SHOW_REAL_TIME_WAITING_ROOM_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_REAL_TIME_WAITING_ROOM_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_INVITATIONS }
+Starting: Intent { act=com.google.android.gms.games.SHOW_MULTIPLAYER_INBOX }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_MULTIPLAYER_INBOX flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_INVITATIONS_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_INVITATIONS_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_MULTIPLAYER_INBOX_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_MULTIPLAYER_INBOX_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_PUBLIC_INVITATIONS }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_PUBLIC_INVITATIONS flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SEND_REQUEST }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SEND_REQUEST flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_REQUEST_INBOX }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_REQUEST_INBOX flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_PUBLIC_REQUESTS }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_PUBLIC_REQUESTS flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_SETTINGS }
+Starting: Intent { act=com.google.android.gms.games.SHOW_SETTINGS_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_SETTINGS_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_SELECT_SNAPSHOT }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_SELECT_SNAPSHOT flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_SELECT_SNAPSHOT_V2 }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_SELECT_SNAPSHOT_V2 flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_QUESTS }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_QUESTS flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_QUEST }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.SHOW_QUEST flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.VIDEO_DIALOG_LAUNCHER }
+Starting: Intent { act=com.google.android.gms.games.VIEW_VIDEO_CAPTURED }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.VIEW_VIDEO_CAPTURED flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.SHOW_VIDEO_RECORDING_ONBOARDING }
+Starting: Intent { act=com.google.android.gms.games.PARCEL_COMPAT }
+Starting: Intent { act=com.google.android.gms.games.SHOW_GOOGLE_SETTINGS }
+Starting: Intent { act=com.google.android.gms.games.SIGN_IN }
+Starting: Intent { act=com.google.android.gms.games.VIEW_PARTICIPANTS }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.VIEW_PARTICIPANTS flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.games.CLIENT_PROXY }
+Starting: Intent { act=com.google.android.gms.games.VIEW_PROFILE }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.games.VIEW_PROFILE flg=0x10000000 }
+Starting: Intent { act=android.settings.WEBVIEW_LICENSE }
+Starting: Intent { act=com.android.contacts.action.SHOW_OR_CREATE_CONTACT }
+Error: Activity not started, unable to resolve Intent { act=com.android.contacts.action.SHOW_OR_CREATE_CONTACT flg=0x10000000 }
+Starting: Intent { act=com.android.contacts.action.QUICK_CONTACT }
+Error: Activity not started, unable to resolve Intent { act=com.android.contacts.action.QUICK_CONTACT flg=0x10000000 }
+Starting: Intent { act=android.provider.action.QUICK_CONTACT }
+Error: Activity not started, unable to resolve Intent { act=android.provider.action.QUICK_CONTACT flg=0x10000000 }
+Starting: Intent { act=com.google.android.gsf.action.SET_USE_LOCATION_FOR_SERVICES }
+Starting: Intent { act=com.google.android.gsf.GOOGLE_LOCATION_SETTINGS }
+Starting: Intent { act=com.google.android.gsf.GOOGLE_APPS_LOCATION_SETTINGS }
+Starting: Intent { act=android.settings.TERMS }
+Starting: Intent { act=android.hardware.usb.action.USB_DEVICE_ATTACHED }
+Error: Activity not started, unable to resolve Intent { act=android.hardware.usb.action.USB_DEVICE_ATTACHED flg=0x10000000 }
+Starting: Intent { act=com.google.android.apps.photos.photoeditor.edit }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.apps.photos.photoeditor.edit flg=0x10000000 }
+Starting: Intent { act=com.android.camera.action.TRIM }
+Error: Activity not started, unable to resolve Intent { act=com.android.camera.action.TRIM flg=0x10000000 }
+Starting: Intent { act=com.android.camera.action.REVIEW }
+Error: Activity not started, unable to resolve Intent { act=com.android.camera.action.REVIEW flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.settings.ADS_PRIVACY }
+Starting: Intent { act=com.google.android.gms.settings.STORAGE_SETTINGS }
+Starting: Intent { act=com.google.android.gms.appinvite.ACTION_APP_INVITE }
+Starting: Intent { act=com.google.android.gms.appinvite.ACTION_CONTEXTUAL_PEOPLE_SELECTION }
+Starting: Intent { act=com.google.firebase.dynamiclinks.VIEW_DYNAMIC_LINK }
+Error: Activity not started, unable to resolve Intent { act=com.google.firebase.dynamiclinks.VIEW_DYNAMIC_LINK flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.auth.GOOGLE_SIGN_IN }
+Starting: Intent { act=android.accounts.action.PRE_FACTORY_RESET }
+Error: Activity not started, unable to resolve Intent { act=android.accounts.action.PRE_FACTORY_RESET flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.ui.UNPACKING_REDIRECT }
+Starting: Intent { act=com.google.android.accounts.AccountIntro }
+Starting: Intent { act=com.google.android.gms.auth.api.credentials.PICKER }
+Starting: Intent { act=org.openyolo.hint }
+Error: Activity not started, unable to resolve Intent { act=org.openyolo.hint flg=0x10000000 }
+Starting: Intent { act=org.openyolo.credential.retrieve }
+Error: Activity not started, unable to resolve Intent { act=org.openyolo.credential.retrieve flg=0x10000000 }
+Starting: Intent { act=org.openyolo.credential.save }
+Error: Activity not started, unable to resolve Intent { act=org.openyolo.credential.save flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.auth.authzen.PULL }
+Starting: Intent { act=android.hardware.usb.action.USB_ACCESSORY_ATTACHED }
+Starting: Intent { act=com.android.settings.action.IA_SETTINGS }
+Starting: Intent { act=com.android.settings.action.SETTINGS }
+Error: Activity not started, unable to resolve Intent { act=com.android.settings.action.SETTINGS flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.common.account.CHOOSE_ACCOUNT }
+Starting: Intent { act=com.google.android.gms.common.account.CHOOSE_ACCOUNT_USERTILE }
+Starting: Intent { act=com.google.android.gms.family.v2.CREATE }
+Starting: Intent { act=com.google.android.gms.family.v2.MANAGE }
+Starting: Intent { act=com.google.android.gms.family.v2.DELETE_MEMBER }
+Starting: Intent { act=com.google.android.gms.family.v2.INVITE_MEMBER }
+Starting: Intent { act=com.google.android.gms.family.v2.ACCEPT_TOS }
+Starting: Intent { act=com.google.firebase.auth.api.gms.ui.START_WEB_SIGN_IN }
+Starting: Intent { act=com.google.android.gms.fitness.settings.GOOGLE_FITNESS_SETTINGS }
+Starting: Intent { act=com.google.android.gms.fitness.settings.DELETE_HISTORY }
+Starting: Intent { act=com.google.android.gms.games.PLAY_GAMES_UPGRADE }
+Starting: Intent { act=com.google.android.gms.gconnect.CONNECT }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.gconnect.CONNECT flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.googlehelp.HELP }
+Starting: Intent { act=com.google.android.gms.googlehelp.LAUNCH }
+Starting: Intent { act=com.google.android.gms.icing.STORAGE_SETTINGS }
+Starting: Intent { act=com.google.android.gms.icing.APP_INDEXING_DEBUG }
+Starting: Intent { act=com.google.android.gms.icing.PRIVACY_SETTINGS }
+Starting: Intent { act=com.google.android.gms.kids.action.PROFILE_OWNER_CONSENT }
+Starting: Intent { act=com.google.android.gms.auth.addaccount.DM_PRE_ADD_ACCOUNT }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.auth.addaccount.DM_PRE_ADD_ACCOUNT flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.auth.removeaccount.DM_PRE_REMOVE_ACCOUNT }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.auth.removeaccount.DM_PRE_REMOVE_ACCOUNT flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.auth.account.HANDLE_MANAGED }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.auth.account.HANDLE_MANAGED flg=0x10000000 }
+Starting: Intent { act=com.google.android.location.settings.GOOGLE_LOCATION_SETTINGS }
+Starting: Intent { act=com.google.android.gms.location.settings.GOOGLE_LOCATION_SETTINGS }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { act=com.google.android.gms.location.settings.LOCATION_HISTORY }
+Starting: Intent { act=com.google.android.location.settings.LOCATION_REPORTING_SETTINGS }
+Starting: Intent { act=com.google.android.gms.location.settings.LOCATION_REPORTING_SETTINGS }
+Starting: Intent { act=com.google.android.gms.location.settings.LOCATION_ACCURACY }
+Starting: Intent { act=com.google.android.gms.location.settings.LOCATION_SHARING }
+Starting: Intent { act=com.google.android.gms.locationsharing.UPDATE_SHARES }
+Starting: Intent { act=com.google.android.gms.location.settings.LOCATION_SHARING_SELECTION }
+Starting: Intent { act=com.google.android.gms.locationsharing.ONBOARDING }
+Starting: Intent { act=com.google.android.gms.matchstick.call.action.CALL }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.matchstick.call.action.CALL flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.matchstick.call.action.DIAL }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.matchstick.call.action.DIAL flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.matchstick.call.action.INVITE }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.matchstick.call.action.INVITE flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.matchstick.call.action.STATUS }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.matchstick.call.action.STATUS flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.matchstick.call.action.REGISTER }
+Starting: Intent { act=com.google.android.gms.mobiledataplan.ui.SETTING }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.mobiledataplan.ui.SETTING flg=0x10000000 }
+Starting: Intent { act=android.telephony.action.MANAGE_SUBSCRIPTION_PLANS }
+Starting: Intent { act=com.google.android.gms.mobiledataplan.ui.DETAIL }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.mobiledataplan.ui.DETAIL flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.settings.DEVICES }
+Starting: Intent { act=com.google.android.gms.settings.DISCOVERY }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.settings.DISCOVERY flg=0x10000000 }
+Starting: Intent { act=android.service.quicksettings.action.QS_TILE_PREFERENCES }
+Error: Activity not started, unable to resolve Intent { act=android.service.quicksettings.action.QS_TILE_PREFERENCES flg=0x10000000 }
+Starting: Intent { act=android.settings.SYSTEM_UPDATE_SETTINGS }
+Starting: Intent { act=com.google.android.gms.people.profile.ACTION_SET_AVATAR }
+Starting: Intent { act=com.google.android.gms.people.DATALAYER_NOTIFICATION }
+Starting: Intent { act=com.google.android.gms.location.places.ui.EDIT_ALIAS }
+Starting: Intent { act=com.google.android.gms.location.places.ui.AUTOCOMPLETE }
+Starting: Intent { act=com.google.android.gms.location.places.ui.PICK_PLACE }
+Starting: Intent { act=com.google.android.gms.common.oob.OOB_SIGN_UP }
+Starting: Intent { act=com.google.android.gms.plus.action.SHARE_GOOGLE }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.plus.action.SHARE_GOOGLE flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.plus.action.SHARE_INTERNAL_GOOGLE }
+Starting: Intent { act=com.google.android.gms.plus.audience.ACTION_CIRCLE_CREATION }
+Starting: Intent { act=com.google.android.gms.plus.action.REPLY_INTERNAL_GOOGLE }
+Starting: Intent { act=com.google.android.gms.common.acl.CHOOSE_ACL }
+Starting: Intent { act=com.google.android.gms.common.acl.CHOOSE_CIRCLES }
+Starting: Intent { act=com.google.android.gms.common.acl.UPDATE_CIRCLES }
+Starting: Intent { act=com.google.android.gms.common.acl.ACTION_ONLY_UPDATE }
+Starting: Intent { act=com.google.android.gms.common.acl.CHOOSE_FACL }
+Starting: Intent { act=com.google.android.gms.plus.circles.ACTION_ADD_TO_CIRCLE_CONSENT }
+Starting: Intent { act=com.google.android.gms.plus.action.PLUS_ONE }
+Starting: Intent { act=com.google.android.gms.plus.action.UNDO_PLUS_ONE }
+Starting: Intent { act=com.google.android.gms.plus.action.MANAGE_APPS }
+Starting: Intent { act=com.google.android.gms.plus.action.VIEW_ACTIVITY_LOG }
+Starting: Intent { act=com.google.android.gms.plus.action.MANAGE_APP }
+Starting: Intent { act=com.google.android.gms.romanesco.settings.CONTACTS_RESTORE_SETTINGS }
+Starting: Intent { act=com.google.android.gms.romanesco.settings.RESTORE_CONTACTS }
+Starting: Intent { act=com.google.android.gms.settings.VERIFY_APPS_SETTINGS }
+Starting: Intent { act=com.google.android.gms.mdm.MDM_SETTINGS_ACTIVITY }
+Starting: Intent { act=com.google.android.gms.mdm.MDM_LOCKSCREEN_ACTIVITY }
+Starting: Intent { act=com.google.android.gms.semanticlocation.settings.FREQUENT_LOCATIONS_SETTINGS }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.semanticlocation.settings.FREQUENT_LOCATIONS_SETTINGS flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.semanticlocation.settings.FREQUENT_LOCATIONS_VISITS }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.semanticlocation.settings.FREQUENT_LOCATIONS_VISITS flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.auth.GOOGLE_SERVICES }
+Starting: Intent { act=com.google.android.gms.auth.addaccount.POST_ADD_ACCOUNT }
+Error: Activity not started, unable to resolve Intent { act=com.google.android.gms.auth.addaccount.POST_ADD_ACCOUNT flg=0x10000000 }
+Starting: Intent { act=com.google.android.gms.people.smart_profile.ACTION_SHOW_PROFILE }
+Starting: Intent { act=com.google.android.gms.settings.SMART_DEVICE_DISCOVERY }
+Starting: Intent { act=com.google.android.gms.wallet.settings.GOOGLE_WALLET_SETTINGS }
+Starting: Intent { act=com.google.android.gms.settings.UDC_SETTINGS }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_ADD_ADDRESS }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_UPDATE_ADDRESS }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_ADD_INSTRUMENT }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_UPDATE_INSTRUMENT }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_BILLING_INSTRUMENT_MANAGEMENT }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_MAKE_BILLING_PAYMENT }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_CREATE_PROFILE }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_ACCEPT_LEGAL_DOCS }
+Starting: Intent { act=com.google.android.gms.wallet.onlinewallet.ACTION_GET_MASKED_WALLET }
+Starting: Intent { act=com.google.android.gms.wallet.onlinewallet.ACTION_AUTHENTICATE_INSTRUMENT }
+Starting: Intent { act=com.google.android.gms.wallet.onlinewallet.ACTION_LOCK_SCREEN_FOR_FULL_WALLET }
+Starting: Intent { act=com.google.android.gms.wallet.payform.ACTION_REQUEST_AUTO_COMPLETE }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_REVIEW_PURCHASE_OPTIONS }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_START_BILLING_ENROLLMENT }
+Starting: Intent { act=com.google.android.gms.identity.REQUEST_USER_ADDRESS }
+Starting: Intent { act=com.google.android.gms.wallet.onlinewallet.ACTION_CREATE_WALLET_OBJECTS }
+Starting: Intent { act=com.google.android.gms.wallet.ACTION_CHECKOUT }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_ADD_INSTRUMENT_WIDGET }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_FIX_INSTRUMENT }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_ALERT_ACTION }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_BOOTSTRAP_WIDGET }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_SELECT_ADDRESS }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_SELECT_CUSTOMER }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_COLLECT_ADDRESS }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_CREATE_CUSTOMER }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_UPDATE_CUSTOMER }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_ADD_INSTRUMENT }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_UPDATE_INSTRUMENT }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_DELETE_INSTRUMENT }
+Starting: Intent { act=com.google.android.gms.wallet.setupwizard.ACTION_SETUP_PAYMENTS }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_PURCHASE_MANAGER }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_VERIFY_IDENTITY }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_PAYMENT_METHODS }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_EMBEDDED_LANDING_PAGE }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_INVOICE_SUMMARY }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_WEB_VIEW_WIDGET }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_FILTER_ACTIVITY }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_TIME_LINE_VIEW }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_EMBEDDED_SETTINGS }
+Starting: Intent { act=com.google.android.gms.wallet.firstparty.ACTION_USER_MANAGEMENT }
+Starting: Intent { act=com.google.android.gms.walletp2p.SPLIT_REQUEST }
+Starting: Intent { act=com.google.android.gms.walletp2p.TRANSFER_MONEY }
+Starting: Intent { act=com.google.android.gms.wearable.STORAGE_SETTINGS }
+Starting: Intent { act=com.google.android.gm.email.FORCE_CREATE_ACCOUNT }
+Starting: Intent { act=com.google.android.gm.email.CREATE_NEW_ACCOUNT }
+Starting: Intent { act=com.android.mail.intent.action.LAUNCH_COMPOSE }
+Starting: Intent { act=com.google.android.gm.email.ACCOUNT_MANAGER_ENTRY_INTENT }
+Starting: Intent { act=android.net.conn.CAPTIVE_PORTAL }
+Starting: Intent { cmp=com.android.messaging/.ui.LicenseActivity }
+Starting: Intent { cmp=com.android.deskclock/.ScreensaverSettingsActivity }
+Starting: Intent { cmp=com.android.settings/.applications.InstalledAppDetailsTop }
+Starting: Intent { cmp=com.android.settings/.Settings }
+Warning: Activity not started, its current task has been brought to the front
+Starting: Intent { cmp=com.android.music/.MusicBrowserActivity }
+Starting: Intent { cmp=com.android.music/.AudioPreview }
+Starting: Intent { cmp=com.android.music/.QueryBrowserActivity }
+Starting: Intent { cmp=com.android.music/.PlaylistBrowserActivity }
+Starting: Intent { cmp=com.android.music/.MusicPicker }
+Starting: Intent { cmp=com.android.backupconfirm/.BackupRestoreConfirmation }
+Starting: Intent { cmp=com.android.systemui/.egg.MLandActivity }
+Starting: Intent { cmp=com.android.systemui/.Somnambulator }
+Starting: Intent { cmp=com.android/.internal.app.IntentForwarderActivity }
+Error type 3
+Error: Activity class {com.android/com.android.internal.app.IntentForwarderActivity} does not exist.
+Starting: Intent { cmp=android/.accounts.ChooseAccountActivity }
+Starting: Intent { cmp=android/.accounts.ChooseTypeAndAccountActivity }
+Starting: Intent { cmp=android/.accounts.CantAddAccountActivity }
+Starting: Intent { cmp=android/.accounts.GrantCredentialsPermissionActivity }
+Starting: Intent { cmp=com.google.android.calendar/.com.android.calendar.AllInOneCalendarActivity }
+Error type 3
+Error: Activity class {com.google.android.calendar/com.google.android.calendar.com.android.calendar.AllInOneCalendarActivity} does not exist.
+Starting: Intent { cmp=com.google.android.calendar/.com.android.calendar.event.LaunchInfoActivity }
+Error type 3
+Error: Activity class {com.google.android.calendar/com.google.android.calendar.com.android.calendar.event.LaunchInfoActivity} does not exist.
+Starting: Intent { cmp=com.google.android.calendar/.timely.settings.TimelyNotificationSettingsActvity }
+Starting: Intent { cmp=com.google.android.calendar/.timely.settings.CalendarPublicPreferenceActvity }
+Starting: Intent { cmp=com.google.android.calendar/.com.android.calendar.SearchActivity }
+Error type 3
+Error: Activity class {com.google.android.calendar/com.google.android.calendar.com.android.calendar.SearchActivity} does not exist.
+Starting: Intent { cmp=com.google.android.calendar/.extensions.LicenseActivity }
+Starting: Intent { cmp=com.google.android.googlequicksearchbox/.com.google.android.apps.gsa.velour.DynamicActivityTrampoline }
+Error type 3
+Error: Activity class {com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.com.google.android.apps.gsa.velour.DynamicActivityTrampoline} does not exist.
+Starting: Intent { cmp=com.google.android.googlequicksearchbox/.com.google.android.sidekick.main.TestLauncherActivity }
+Error type 3
+Error: Activity class {com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.com.google.android.sidekick.main.TestLauncherActivity} does not exist.
+Starting: Intent { cmp=com.google.android.googlequicksearchbox/.com.google.android.apps.gsa.soundsearchwidget.WidgetResultActivity }
+Error type 3
+Error: Activity class {com.google.android.googlequicksearchbox/com.google.android.googlequicksearchbox.com.google.android.apps.gsa.soundsearchwidget.WidgetResultActivity} does not exist.
+Starting: Intent { cmp=com.android.systemui/.media.MediaProjectionPermissionActivity }
+Starting: Intent { cmp=com.android.systemui/.DessertCase }
+Starting: Intent { cmp=com.android.systemui/.settings.BrightnessDialog }
+Starting: Intent { cmp=com.google.android.play.games/.com.google.android.libraries.social.licenses.LicenseMenuActivity }
+Error type 3
+Error: Activity class {com.google.android.play.games/com.google.android.play.games.com.google.android.libraries.social.licenses.LicenseMenuActivity} does not exist.
+Starting: Intent { cmp=com.google.android.apps.photos/.com.google.android.libraries.social.licenses.LicenseMenuActivity }
+Error type 3
+Error: Activity class {com.google.android.apps.photos/com.google.android.apps.photos.com.google.android.libraries.social.licenses.LicenseMenuActivity} does not exist.
+Starting: Intent { cmp=com.google.android.apps.photos/.home.HomeActivity }
+Starting: Intent { cmp=com.google.android.apps.photos/.picker.external.ExternalPickerActivity }
+Starting: Intent { cmp=com.google.android.apps.photos/.setwallpaper.SetWallpaperActivity }
+Starting: Intent { cmp=com.google.android.apps.photos/.uploadtoalbum.UploadContentActivity }
+Starting: Intent { cmp=com.google.android.gms/.auth.TokenActivity }
+Starting: Intent { cmp=com.google.android.gms/.auth.frp.FactoryResetProtectionActivity }
+Starting: Intent { cmp=com.google.android.gms/.auth.uiflows.addaccount.AccountAddedActivity }
+Starting: Intent { cmp=com.google.android.gms/.auth.account.visibility.RequestAccountsAccessActivity }
+Starting: Intent { cmp=com.google.android.gms/.auth.api.credentials.ui.CredentialsSaveConfirmationActivity }
+Starting: Intent { cmp=com.google.android.gms/.auth.authzen.AuthzenDeeplinkHandlerActivity }
+Starting: Intent { cmp=com.google.android.gms/.auth.authzen.magicwand.MagicWandBarcodeScannerActivity }
+Starting: Intent { cmp=com.google.android.gms/.auth.managed.ui.SetupWorkProfileActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.auth.managed.ui.SetupWorkProfileActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.car.CarHomeActivity }
+Starting: Intent { cmp=com.google.android.gms/.car.CarServiceSettingsActivity2 }
+Starting: Intent { cmp=com.google.android.gms/.carsetup.DrivingModeFrxActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.carsetup.DrivingModeFrxActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.carsetup.DrivingModeToggleActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.carsetup.DrivingModeToggleActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.app.settings.GoogleSettingsActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.app.settings.GoogleSettingsActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.easysignin.EasySignInActivity }
+Starting: Intent { cmp=com.google.android.gms/.feedback.FeedbackActivity }
+Starting: Intent { cmp=com.google.android.gms/.feedback.IntentListenerFeedbackActivity }
+Starting: Intent { cmp=com.google.android.gms/.com.google.firebase.auth.api.gms.ui.BrowserSignInResponseHandlerActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.com.google.firebase.auth.api.gms.ui.BrowserSignInResponseHandlerActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.gcm.GcmDiagnostics }
+Starting: Intent { cmp=com.google.android.gms/.gconnect.ui.PhoneNumberTosActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.gconnect.ui.PhoneNumberTosActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.gconnect.ui.SmsEntryActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.gconnect.ui.SmsEntryActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.gconnect.ui.ConnectionCompletionActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.gconnect.ui.ConnectionCompletionActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.gconnect.ui.ErrorActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.gconnect.ui.ErrorActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.googlehelp.helpactivities.DeviceSignalsExportActivity }
+Starting: Intent { cmp=com.google.android.gms/.googlehelp.contact.chat.ChatSupportRequestFormActivity }
+Starting: Intent { cmp=com.google.android.gms/.growth.ui.webview.GrowthWebViewActivity }
+Starting: Intent { cmp=com.google.android.gms/.instantapps.settings.OptInActivity }
+Starting: Intent { cmp=com.google.android.gms/.instantapps.settings.SettingsActivity }
+Starting: Intent { cmp=com.google.android.gms/.matchstick.ui.ConversationListActivity }
+Starting: Intent { cmp=com.google.android.gms/.nearby.discovery.ui.DiscoveryChromeTabActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.nearby.discovery.ui.DiscoveryChromeTabActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.nearby.discovery.ui.NotificationSettingsActivity }
+Error type 3
+Error: Activity class {com.google.android.gms/com.google.android.gms.nearby.discovery.ui.NotificationSettingsActivity} does not exist.
+Starting: Intent { cmp=com.google.android.gms/.nearby.messages.settings.NearbyMessagesAppOptInActivity }
+Starting: Intent { cmp=com.google.android.gms/.panorama.PanoramaViewActivity }
+Starting: Intent { cmp=com.google.android.gms/.people.pub.PeopleInviteContactActivity }
+Starting: Intent { cmp=com.google.android.gms/.people.pub.PeopleViewCircleActivity }
+Starting: Intent { cmp=com.google.android.gms/.people.pub.PeopleProfileActionGatewayActivity }
+Starting: Intent { cmp=com.google.android.gms/.photos.autobackup.ui.AutoBackupSettingsActivity }
+Starting: Intent { cmp=com.google.android.gms/.photos.autobackup.ui.LocalFoldersBackupSettings }
+Starting: Intent { cmp=com.google.android.gms/.smartdevice.magicwand.MagicWandActivity }
+Starting: Intent { cmp=com.google.android.gms/.tapandpay.tokenization.AddNewCardThroughBrowserActivity }
+Starting: Intent { cmp=com.google.android.gms/.trustagent.TrustAgentOnboardingActivity }
+Starting: Intent { cmp=com.google.android.gms/.trustagent.discovery.OnbodyPromotionActivity }
+Starting: Intent { cmp=com.google.android.gms/.trustagent.discovery.WebpageOnbodyPromotionActivity }
+Starting: Intent { cmp=com.google.android.gms/.wallet.ow.RootActivity }
+Starting: Intent { cmp=com.google.android.gms/.wallet.ow.ShowLockScreenActivity }
+Starting: Intent { cmp=com.google.android.gms/.wallet.buyflow.CheckoutActivity }
+Starting: Intent { cmp=com.google.android.gms/.wallet.addinstrument.AddInstrumentRootActivity }
+Starting: Intent { cmp=com.google.android.gms/.wallet.fixinstrument.FixInstrumentRootActivity }
+Starting: Intent { cmp=com.google.android.gms/.wallet.ib.LaunchPendingIntentActivity }
+Starting: Intent { cmp=com.google.android.gms/.wallet.redirect.FinishAndroidAppRedirectProxyActivity }
+Starting: Intent { cmp=com.google.android.gm/.LicenseActivity }
+Starting: Intent { cmp=com.google.android.gsf.login/.NameActivity }
+Starting: Intent { cmp=com.google.android.gsf.login/.PhotoActivity }
+Starting: Intent { cmp=com.google.android.gsf.login/.CaptchaActivity }
+Starting: Intent { cmp=com.google.android.gsf.login/.LoginActivity }
+Starting: Intent { cmp=com.google.android.gsf.login/.EduLoginActivity }
+Starting: Intent { cmp=com.google.android.gsf.login/.ShowErrorActivity }
+Starting: Intent { cmp=com.google.android.gsf.login/.RecoveryIntroActivity }
+Starting: Intent { cmp=com.google.android.gsf.login/.AccountSecurityActivity }
+Starting: Intent { cmp=com.google.android.gsf.login/.BrowserActivity }
+Starting: Intent { cmp=com.google.android.gsf.login/service.GrantCredentialsPermissionActivity }
+Error type 3
+Error: Activity class {com.google.android.gsf.login/service.GrantCredentialsPermissionActivity} does not exist.

@@ -1,0 +1,17 @@
+List of actions crashing processes (implicit intents):
+android.settings.WIFI_IF_SETTINGS
+android.settings.STORAGE_USB_SETTINGS
+android.speech.tts.engine.INSTALL_TTS_DATA
+com.android.development.VIEW_PERMISSION
+android.speech.action.RECOGNIZE_SPEECH
+com.google.android.gms.games.PARCEL_COMPAT
+com.google.android.gms.appinvite.ACTION_CONTEXTUAL_PEOPLE_SELECTION
+android.telephony.action.MANAGE_SUBSCRIPTION_PLANS
+com.google.android.gms.wallet.ACTION_BILLING_INSTRUMENT_MANAGEMENT
+
+
+List of actions crashing processes (explicit intents):
+com.android.settings/.applications.InstalledAppDetailsTop
+com.android.backupconfirm/.BackupRestoreConfirmation
+com.google.android.gms/.auth.TokenActivity
+com.google.android.gms/.wallet.buyflow.CheckoutActivity

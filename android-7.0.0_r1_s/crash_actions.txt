@@ -1,0 +1,16 @@
+List of actions crashing processes (implicit intents):
+android.telecom.CallServiceProvider
+com.google.android.libraries.social.notifications.impl.ACTOR_SELECTED
+com.google.android.gms.auth.service.START
+com.google.android.gms.checkin.BIND_TO_SERVICE
+com.google.android.gms.checkin.START
+android.location.SettingInjectorService
+com.google.android.gms.drive.ApiService.START
+com.google.android.gms.drive.ApiService.STOP
+com.google.android.gms.backup.ACTION_BACKUP_NOW
+
+
+List of actions crashing processes (explicit intents):
+com.google.android.syncadapters.contacts/.SyncHighResPhotoIntentService
+com.google.android.gms/.auth.GetToken
+com.google.android.gms/.auth.account.authenticator.DefaultAuthDelegateService

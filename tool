@@ -61,8 +61,7 @@ if [[ $# -ne 2 ]]; then
 		mkdir $apk_folder
 		mv $apk_file $apk_folder
 		cd $apk_folder
-		apktool d -f $apk_file 
-		#> /dev/null 2>&1
+		apktool d -f $apk_file > /dev/null 2>&1
 		mv $apk_folder"/AndroidManifest.xml" ./
 		rm -r $apk_folder/
 		cd ../
@@ -113,19 +112,17 @@ fi
 
 echo -en "\nDo you want to search for exposed components? [y|n] "
 read answer
-if [ $answer != 'y' ]; then
-	exit 1
-fi
-echo -en '\n'
 
 case $1 in
 	-a)
 		# Search for exposed activities
 		#echo -en "Searching for exposed activities..\n\n"
-		if [[ $# -eq 2 ]]; then
-			python3 ../activities.py
-		else
-			python3 ../activities_3rd.py
+		if [ $answer == 'y' ]; then
+			if [[ $# -eq 2 ]]; then
+				python3 ../activities.py
+			else
+				python3 ../activities_3rd.py
+			fi
 		fi
 		intents_i="test_activities_i.txt"
 		intents_e="test_activities_e.txt"
@@ -135,15 +132,17 @@ case $1 in
 	-s)
 		# Search for exposed services
 		#echo -en "Searching for exposed services..\n\n"
-		if [[ $# -eq 2 ]]; then
-			python3 ../services.py
-		else
-			python3 ../services_3rd.py
+		if [ $answer == 'y' ]; then
+			if [[ $# -eq 2 ]]; then
+				python3 ../services.py
+			else
+				python3 ../services_3rd.py
+			fi
 		fi
 		intents_i="test_services_i.txt"
 		intents_e="test_services_e.txt"
-		adb_command_i="$adb shell am startforegroundservice -a"
-		adb_command_e="$adb shell am startforegroundservice -n"
+		adb_command_i="$adb shell am startservice -a"
+		adb_command_e="$adb shell am startservice -n"
 		;;
 	*)
 		cd ..
@@ -172,6 +171,7 @@ if [[ $# -eq 2 ]]; then
 	echo "Adb activity manager output #" > log.txt
 	echo -en "#############################\n\n" >> log.txt
 	echo "List of actions crashing processes (implicit intents):" > crash_actions.txt
+	counter=0
 	while read -r action;
 	do
 		echo "Intent action: $action"
@@ -182,10 +182,11 @@ if [[ $# -eq 2 ]]; then
 		$adb logcat -b crash -c < /dev/null
 		# Start the activity
 		$adb_command_i "$action" < /dev/null >> log.txt
-		sleep 4
+		sleep 6
 		# Print logcat crash channel
 		tmp=$($adb logcat -b crash -d < /dev/null)
 		if [ "$tmp" != "" ]; then
+			counter=$(($counter+1))
 			echo "$action" >> crash_actions.txt
 			echo "################################" >> crash_report_i.txt 
 			echo "$tmp" >> crash_report_i.txt
@@ -193,12 +194,14 @@ if [[ $# -eq 2 ]]; then
 			echo -en '\n' >> crash_report_i.txt
 		fi
 	done < $intents_i
+	echo "Components causing applications to crash with implicit intents: $counter" >> results.txt
 
-	echo "Testing exposed components with explicit intents.."
+	echo -en "\nTesting exposed components with explicit intents..\n"
 	echo "##################################################"
 	echo "Logcat crash channell #" > crash_report_e.txt
 	echo -en "#######################\n\n" >> crash_report_e.txt
 	echo -en "\n\nList of actions crashing processes (explicit intents):\n" >> crash_actions.txt
+	counter=0
 	while read -r action;
 	do
 		echo "Intent: $action"
@@ -213,6 +216,7 @@ if [[ $# -eq 2 ]]; then
 		# Print logcat crash channel
 		tmp=$($adb logcat -b crash -d < /dev/null)
 		if [ "$tmp" != "" ]; then
+			counter=$(($counter+1))
 			echo "$action" >> crash_actions.txt
 			echo "################################" >> crash_report_e.txt 
 			echo "$tmp" >> crash_report_e.txt
@@ -220,6 +224,7 @@ if [[ $# -eq 2 ]]; then
 			echo -en '\n' >> crash_report_e.txt
 		fi
 	done < $intents_e
+	echo "Components causing applications to crash with explicit intents: $counter" >> results.txt
 else
 	# test 3rd party applications here
 	echo "Testing exposed components with implicit intents.."
@@ -231,49 +236,49 @@ else
 	echo "List of actions crashing processes (implicit intents):" > crash_actions.txt
 	first=true
 	counter=0
-	# while read -r action;
-	# do
-	# 	if [ -f $action ]; then
-	# 		counted=false
-	# 		if [ $first = true ]; then
-	# 			first=false
-	# 		else
-	# 			# uninstall previous application
-	# 			echo -en "Uninstalling $previous.. "
-	# 			$adb uninstall $previous
-	# 		fi
-	# 		# install the apk on the device
-	# 		previous=${action##*/}
-	# 		previous=${previous%.apk}
-	# 	 	echo -en "\nInstalling $previous.. "
-	# 	 	# -g grant all permissions requested by the app
-	# 	 	$adb install -g $action
-	# 	 	echo "#################"
-	# 	else
-	# 		echo "Intent action: $action"
-	# 		# Click home button
-	# 		$adb shell input tap 540 1855 < /dev/null
-	# 		sleep 1
-	# 		# Clear logcat crash channel
-	# 		$adb logcat -b crash -c < /dev/null
-	# 		# Start the activity
-	# 		$adb_command_i "$action" < /dev/null >> log.txt
-	# 		sleep 6
-	# 		# Print logcat crash channel
-	# 		tmp=$($adb logcat -b crash -d < /dev/null)
-	# 		if [ "$tmp" != "" ]; then
-	# 			if [ $counted = false ]; then
-	# 				counted=true
-	# 				counter=$(($counter+1))
-	# 			fi
-	# 			echo "$action" >> crash_actions.txt
-	# 			echo "################################" >> crash_report_i.txt 
-	# 			echo "$tmp" >> crash_report_i.txt
-	# 			echo "################################" >> crash_report_i.txt
-	# 			echo -en '\n' >> crash_report_i.txt
-	# 		fi
-	# 	fi
-	# done < $intents_i
+	while read -r action;
+	do
+		if [ -f $action ]; then
+			counted=false
+			if [ $first = true ]; then
+				first=false
+			else
+				# uninstall previous application
+				echo -en "Uninstalling $previous.. "
+				$adb uninstall $previous
+			fi
+			# install the apk on the device
+			previous=${action##*/}
+			previous=${previous%.apk}
+		 	echo -en "\nInstalling $previous.. "
+		 	# -g grant all permissions requested by the app
+		 	$adb install -g $action
+		 	echo "#################"
+		else
+			echo "Intent action: $action"
+			# Click home button
+			$adb shell input tap 540 1855 < /dev/null
+			sleep 1
+			# Clear logcat crash channel
+			$adb logcat -b crash -c < /dev/null
+			# Start the activity
+			$adb_command_i "$action" < /dev/null >> log.txt
+			sleep 6
+			# Print logcat crash channel
+			tmp=$($adb logcat -b crash -d < /dev/null)
+			if [ "$tmp" != "" ]; then
+				if [ $counted = false ]; then
+					counted=true
+					counter=$(($counter+1))
+				fi
+				echo "$action" >> crash_actions.txt
+				echo "################################" >> crash_report_i.txt 
+				echo "$tmp" >> crash_report_i.txt
+				echo "################################" >> crash_report_i.txt
+				echo -en '\n' >> crash_report_i.txt
+			fi
+		fi
+	done < $intents_i
 	echo "Applications crashing with implicit intents: $counter" >> results.txt
 
 	echo "Testing exposed components with explicit intents.."
