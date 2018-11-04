@@ -127,3 +127,996 @@ App:
 Service:	com.android.server.pm.BackgroundDexOptService
 Permission:	android.permission.BIND_JOB_SERVICE
 
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.mobile.usecase.settings.LaunchInEnvironmentTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+Action:		com.google.android.gms.gcm.ACTION_TASK_READY
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.service.contentnotification.NewSeasonNotificationTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.service.contentnotification.WishlistedMovieNotificationTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.service.contentnotification.ExpiringRewardNotificationTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.service.drm.RefreshLicenseTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.service.logging.FlushLogsTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.store.UpdateWishlistTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.service.pinning.UpdateLastPlaybackTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.videos.service.accounts.AccountsChangedTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Videos/AndroidManifest.xml
+Package:	com.google.android.videos
+App:		com.google.android.videos.mobile.MobileVideosApplication
+Service:	com.google.android.gms.auth.api.signin.RevocationBoundService
+Permission:	com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+
+Manifest:	device_APKs/GoogleBackupTransport/AndroidManifest.xml
+Package:	com.google.android.backuptransport
+App:		
+Service:	com.google.android.backup.SetBackupAccountService
+Permission:	android.permission.BACKUP
+Action:		com.google.android.backup.SetBackupAccount
+
+Manifest:	device_APKs/GoogleBackupTransport/AndroidManifest.xml
+Package:	com.google.android.backuptransport
+App:		
+Service:	com.google.android.backup.BeginBackupService
+Permission:	android.permission.BACKUP
+
+Manifest:	device_APKs/GoogleBackupTransport/AndroidManifest.xml
+Package:	com.google.android.backuptransport
+App:		
+Service:	com.google.android.backup.BackupEnabler
+Permission:	android.permission.BACKUP
+Action:		com.google.android.backup.BackupEnabler
+
+Manifest:	device_APKs/CompanionDeviceManager/AndroidManifest.xml
+Package:	com.android.companiondevicemanager
+App:		
+Service:	.DeviceDiscoveryService
+Permission:	android.permission.BIND_COMPANION_DEVICE_MANAGER_SERVICE
+
+Manifest:	device_APKs/WallpaperPickerGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.apps.wallpaper
+App:		com.google.android.apps.wallpaper.picker.WallpapersApplication
+Service:	com.google.android.apps.wallpaper.module.NoBackupImageWallpaper
+Permission:	android.permission.BIND_WALLPAPER
+Action:		android.service.wallpaper.WallpaperService
+
+Manifest:	device_APKs/WallpaperPickerGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.apps.wallpaper
+App:		com.google.android.apps.wallpaper.picker.WallpapersApplication
+Service:	com.google.android.apps.wallpaper.backdrop.BackdropRotationTask
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/WallpaperPickerGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.apps.wallpaper
+App:		com.google.android.apps.wallpaper.picker.WallpapersApplication
+Service:	com.google.android.apps.wallpaper.backdrop.BackdropRotationJobService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/WallpaperPickerGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.apps.wallpaper
+App:		com.google.android.apps.wallpaper.picker.WallpapersApplication
+Service:	com.google.android.apps.wallpaper.backup.MissingHashCodeGeneratorJobService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/CalendarGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.calendar
+App:		com.google.android.calendar.CalendarApplication
+Service:	com.google.android.calendar.timely.CalendarOobeService
+Permission:	com.google.android.calendar.permission.READ_OOBE
+
+Manifest:	device_APKs/FusedLocation/AndroidManifest.xml
+Package:	com.android.location.fused
+App:		
+Service:	com.android.location.fused.FusedLocationService
+Permission:	android.permission.WRITE_SECURE_SETTINGS
+
+Manifest:	device_APKs/GooglePinyinIME/AndroidManifest.xml
+Package:	com.google.android.inputmethod.pinyin
+App:		com.google.android.apps.inputmethod.pinyin.PinyinApp
+Service:	com.google.android.inputmethod.pinyin.PinyinIME
+Permission:	android.permission.BIND_INPUT_METHOD
+
+Manifest:	device_APKs/GooglePinyinIME/AndroidManifest.xml
+Package:	com.google.android.inputmethod.pinyin
+App:		com.google.android.apps.inputmethod.pinyin.PinyinApp
+Service:	com.google.android.gms.auth.signin.RevocationBoundService
+Permission:	com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+
+Manifest:	device_APKs/GooglePinyinIME/AndroidManifest.xml
+Package:	com.google.android.inputmethod.pinyin
+App:		com.google.android.apps.inputmethod.pinyin.PinyinApp
+Service:	com.firebase.jobdispatcher.GooglePlayReceiver
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrintSpooler/AndroidManifest.xml
+Package:	com.android.printspooler
+App:		
+Service:	.model.PrintSpoolerService
+Permission:	android.permission.BIND_PRINT_SPOOLER_SERVICE
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.apps.gsa.eventlogger.EventLoggerService
+Permission:	com.google.android.googlequicksearchbox.permission.FLUSH_LOGS
+Action:		com.google.android.apps.gsa.GSA_FLUSH_LOGS
+Action:		com.google.android.apps.gsa.ACTION_RECORD_GSA_CLIENT_EVENT
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.apps.gsa.proactive.ScheduledTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.apps.gsa.tasks.BackgroundTasksGcmService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.voiceinteraction.GsaVoiceInteractionService
+Permission:	android.permission.BIND_VOICE_INTERACTION
+Action:		android.service.voice.VoiceInteractionService
+
+Manifest:	device_APKs/Velvet/AndroidManifest.xml
+Package:	com.google.android.googlequicksearchbox
+App:		com.google.android.apps.gsa.velvet.VelvetApplication
+Service:	com.google.android.voicesearch.ime.VoiceInputMethodService
+Permission:	android.permission.BIND_INPUT_METHOD
+
+Manifest:	device_APKs/DownloadProvider/AndroidManifest.xml
+Package:	com.android.providers.downloads
+App:		
+Service:	.DownloadJobService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/DownloadProvider/AndroidManifest.xml
+Package:	com.android.providers.downloads
+App:		
+Service:	.DownloadIdleService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/NexusLauncherPrebuilt/AndroidManifest.xml
+Package:	com.google.android.apps.nexuslauncher
+App:		
+Service:	com.android.launcher3.notification.NotificationListener
+Permission:	android.permission.BIND_NOTIFICATION_LISTENER_SERVICE
+Action:		android.service.notification.NotificationListenerService
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	com.google.ipc.invalidation.ticl.android2.channel.GcmRegistrationTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.chrome.browser.ChromeBackgroundService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService0
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService1
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService2
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService3
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService4
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService5
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService6
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService7
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService8
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService9
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService10
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService11
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService12
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService13
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService14
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService15
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService16
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService17
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService18
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.content.app.SandboxedProcessService19
+Permission:	com.android.chrome.permission.CHILD_SERVICE
+
+Manifest:	device_APKs/Chrome/AndroidManifest.xml
+Package:	com.android.chrome
+App:		org.chromium.chrome.browser.MonochromeApplicationInternal
+Service:	org.chromium.android_webview.crash.AwMinidumpUploadJobService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/EasterEgg/AndroidManifest.xml
+Package:	com.android.egg
+App:		
+Service:	.neko.NekoService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/TeleService/AndroidManifest.xml
+Package:	com.android.phone
+App:		PhoneApp
+Service:	com.android.phone.TelephonyDebugService
+Permission:	android.permission.DUMP
+
+Manifest:	device_APKs/TeleService/AndroidManifest.xml
+Package:	com.android.phone
+App:		PhoneApp
+Service:	com.android.services.telephony.sip.SipConnectionService
+Permission:	android.permission.BIND_TELECOM_CONNECTION_SERVICE
+
+Manifest:	device_APKs/TeleService/AndroidManifest.xml
+Package:	com.android.phone
+App:		PhoneApp
+Service:	com.android.services.telephony.TelephonyConnectionService
+Permission:	android.permission.BIND_TELECOM_CONNECTION_SERVICE
+
+Manifest:	device_APKs/WallpapersBReel/AndroidManifest.xml
+Package:	com.breel.geswallpapers
+App:		
+Service:	.wallpapers.EarthWallpaperService
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersBReel/AndroidManifest.xml
+Package:	com.breel.geswallpapers
+App:		
+Service:	.wallpapers.WhitehavenWallpaperService
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersBReel/AndroidManifest.xml
+Package:	com.breel.geswallpapers
+App:		
+Service:	.wallpapers.KentWallpaperService
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersBReel/AndroidManifest.xml
+Package:	com.breel.geswallpapers
+App:		
+Service:	.wallpapers.HalfDomeWallpaperService
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersBReel/AndroidManifest.xml
+Package:	com.breel.geswallpapers
+App:		
+Service:	.wallpapers.SunsetOnBatteryWallpaperService
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersBReel/AndroidManifest.xml
+Package:	com.breel.geswallpapers
+App:		
+Service:	.wallpapers.MoabWallpaperService
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersBReel/AndroidManifest.xml
+Package:	com.breel.geswallpapers
+App:		
+Service:	.wallpapers.TogoWallpaperService
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersBReel/AndroidManifest.xml
+Package:	com.breel.geswallpapers
+App:		
+Service:	.wallpapers.PantheonWallpaperService
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/Contacts/AndroidManifest.xml
+Package:	com.android.contacts
+App:		com.android.contacts.ContactsApplication
+Service:	.ViewNotificationService
+Permission:	android.permission.WRITE_CONTACTS
+Action:		com.android.contacts.VIEW_NOTIFICATION
+
+Manifest:	device_APKs/YouTube/AndroidManifest.xml
+Package:	com.google.android.youtube
+App:		com.google.android.apps.youtube.app.YouTubeApplication
+Service:	com.google.android.libraries.youtube.common.gcore.gcoreclient.gcm.impl.GcmTaskServiceDelegator
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/YouTube/AndroidManifest.xml
+Package:	com.google.android.youtube
+App:		com.google.android.apps.youtube.app.YouTubeApplication
+Service:	com.google.android.youtube.api.service.YouTubeService
+Permission:	android.permission.INTERNET
+Action:		com.google.android.youtube.api.service.START
+
+Manifest:	device_APKs/PrebuiltBugle/AndroidManifest.xml
+Package:	com.google.android.apps.messaging
+App:		com.google.android.apps.messaging.BugleApplication
+Service:	com.google.android.apps.messaging.shared.datamodel.BugleChooserTargetService
+Permission:	android.permission.BIND_CHOOSER_TARGET_SERVICE
+Action:		android.service.chooser.ChooserTargetService
+
+Manifest:	device_APKs/PrebuiltBugle/AndroidManifest.xml
+Package:	com.google.android.apps.messaging
+App:		com.google.android.apps.messaging.BugleApplication
+Service:	com.google.android.apps.messaging.shared.service.NoConfirmationSmsSendService
+Permission:	android.permission.SEND_RESPOND_VIA_MESSAGE
+
+Manifest:	device_APKs/PrebuiltBugle/AndroidManifest.xml
+Package:	com.google.android.apps.messaging
+App:		com.google.android.apps.messaging.BugleApplication
+Service:	com.google.android.rcs.service.service.JibeService
+Permission:	com.google.android.apps.messaging.services.ACCESS_JIBESERVICE
+
+Manifest:	device_APKs/GoogleExtServices/AndroidManifest.xml
+Package:	android.ext.services
+App:		
+Service:	android.ext.services.storage.CacheQuotaServiceImpl
+Permission:	android.permission.BIND_CACHE_QUOTA_SERVICE
+
+Manifest:	device_APKs/GoogleExtServices/AndroidManifest.xml
+Package:	android.ext.services
+App:		
+Service:	android.ext.services.resolver.LRResolverRankerService
+Permission:	android.permission.BIND_RESOLVER_RANKER_SERVICE
+
+Manifest:	device_APKs/OpenWnn/AndroidManifest.xml
+Package:	jp.co.omronsoft.openwnn
+App:		
+Service:	OpenWnnJAJP
+Permission:	android.permission.BIND_INPUT_METHOD
+
+Manifest:	device_APKs/ConfigUpdater/AndroidManifest.xml
+Package:	com.google.android.configupdater
+App:		
+Service:	.MainJobService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/WallpapersUsTwo/AndroidManifest.xml
+Package:	com.ustwo.lwp
+App:		com.ustwo.lwp.App
+Service:	com.ustwo.lwp.wallpapers.timelapse.TimelapseWallpaperService
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersUsTwo/AndroidManifest.xml
+Package:	com.ustwo.lwp
+App:		com.ustwo.lwp.App
+Service:	com.ustwo.lwp.wallpapers.shadow.ShadowWallpaperService1
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersUsTwo/AndroidManifest.xml
+Package:	com.ustwo.lwp
+App:		com.ustwo.lwp.App
+Service:	com.ustwo.lwp.wallpapers.shadow.ShadowWallpaperService2
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersUsTwo/AndroidManifest.xml
+Package:	com.ustwo.lwp
+App:		com.ustwo.lwp.App
+Service:	com.ustwo.lwp.wallpapers.shadow.ShadowWallpaperService3
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersUsTwo/AndroidManifest.xml
+Package:	com.ustwo.lwp
+App:		com.ustwo.lwp.App
+Service:	com.ustwo.lwp.wallpapers.shadow.ShadowWallpaperService4
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersUsTwo/AndroidManifest.xml
+Package:	com.ustwo.lwp
+App:		com.ustwo.lwp.App
+Service:	com.ustwo.lwp.wallpapers.shadow.ShadowWallpaperService5
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersUsTwo/AndroidManifest.xml
+Package:	com.ustwo.lwp
+App:		com.ustwo.lwp.App
+Service:	com.ustwo.lwp.wallpapers.shadow.ShadowWallpaperService6
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersUsTwo/AndroidManifest.xml
+Package:	com.ustwo.lwp
+App:		com.ustwo.lwp.App
+Service:	com.ustwo.lwp.wallpapers.orbit.OrbitWallpaperService2
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/WallpapersUsTwo/AndroidManifest.xml
+Package:	com.ustwo.lwp
+App:		com.ustwo.lwp.App
+Service:	com.ustwo.lwp.wallpapers.orbit.OrbitWallpaperService3
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/LatinIMEGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.inputmethod.latin
+App:		com.google.android.apps.inputmethod.latin.LatinApp
+Service:	com.android.inputmethod.latin.LatinIME
+Permission:	android.permission.BIND_INPUT_METHOD
+
+Manifest:	device_APKs/LatinIMEGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.inputmethod.latin
+App:		com.google.android.apps.inputmethod.latin.LatinApp
+Service:	com.google.android.apps.inputmethod.libs.latin5.LanguageModelDownloadService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/LatinIMEGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.inputmethod.latin
+App:		com.google.android.apps.inputmethod.latin.LatinApp
+Service:	com.google.android.apps.inputmethod.latin.preference.SyncService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/LatinIMEGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.inputmethod.latin
+App:		com.google.android.apps.inputmethod.latin.LatinApp
+Service:	com.android.inputmethod.latin.spellcheck.AndroidSpellCheckerService
+Permission:	android.permission.BIND_TEXT_SERVICE
+Action:		android.service.textservice.SpellCheckerService
+
+Manifest:	device_APKs/LatinIMEGooglePrebuilt/AndroidManifest.xml
+Package:	com.google.android.inputmethod.latin
+App:		com.google.android.apps.inputmethod.latin.LatinApp
+Service:	com.firebase.jobdispatcher.GooglePlayReceiver
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/GoogleServicesFramework/AndroidManifest.xml
+Package:	com.google.android.gsf
+App:		
+Service:	.gtalkservice.PushMessagingRegistrarProxy
+Permission:	com.google.android.c2dm.permission.RECEIVE
+Action:		com.google.android.c2dm.intent.REGISTER
+Action:		com.google.android.c2dm.intent.UNREGISTER
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.traffic.notification.service.AreaTrafficNotificationService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.shared.cache.glide.GlideDiskCacheExpirationService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.notification.log.ServerRequestGcmService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.prefetch.TrackedTilePrefetcherGcmTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.ugc.clientnotification.phototaken.PhotoTakenObserverService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.reportaproblem.common.service.DismissNotificationTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.shared.util.networkquality.NetworkQualityRefreshService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.libraries.geophotouploader.PeriodicTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.libraries.geophotouploader.OneoffTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.transit.TransitDepartureBoardFetcherService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.offline.appindex.OfflineAppIndexingGcmService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.offline.OfflineManualDownloadRescheduleGcmService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.offline.OfflineAutoUpdateJobService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.offline.OfflineGcmTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Maps/AndroidManifest.xml
+Package:	com.google.android.apps.maps
+App:		com.google.android.apps.gmm.base.app.GoogleMapsApplication
+Service:	com.google.android.apps.gmm.offline.OfflineAutoUpdateGcmService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Music2/AndroidManifest.xml
+Package:	com.google.android.music
+App:		com.google.android.music.ui.PhoneMusicApplication
+Service:	com.google.android.music.sync.google.MusicGcmTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/GoogleDialer/AndroidManifest.xml
+Package:	com.google.android.dialer
+App:		com.google.android.apps.dialer.app.GoogleDialerApplication
+Service:	com.android.incallui.InCallServiceImpl
+Permission:	android.permission.BIND_INCALL_SERVICE
+Action:		android.telecom.InCallService
+
+Manifest:	device_APKs/GoogleDialer/AndroidManifest.xml
+Package:	com.google.android.dialer
+App:		com.google.android.apps.dialer.app.GoogleDialerApplication
+Service:	com.android.dialer.simulator.impl.SimulatorConnectionService
+Permission:	android.permission.BIND_CONNECTION_SERVICE
+Action:		android.telecomm.ConnectionService
+
+Manifest:	device_APKs/GoogleDialer/AndroidManifest.xml
+Package:	com.google.android.dialer
+App:		com.google.android.apps.dialer.app.GoogleDialerApplication
+Service:	com.android.voicemail.impl.OmtpService
+Permission:	android.permission.BIND_VISUAL_VOICEMAIL_SERVICE
+Action:		android.telephony.VisualVoicemailService
+
+Manifest:	device_APKs/SystemUIGoogle/AndroidManifest.xml
+Package:	com.android.systemui
+App:		com.android.systemui.SystemUIApplication
+Service:	com.android.systemui.SystemUISecondaryUserService
+Permission:	com.android.systemui.permission.SELF
+
+Manifest:	device_APKs/SystemUIGoogle/AndroidManifest.xml
+Package:	com.android.systemui
+App:		com.android.systemui.SystemUIApplication
+Service:	com.android.systemui.ImageWallpaper
+Permission:	android.permission.BIND_WALLPAPER
+
+Manifest:	device_APKs/SystemUIGoogle/AndroidManifest.xml
+Package:	com.android.systemui
+App:		com.android.systemui.SystemUIApplication
+Service:	com.android.systemui.doze.DozeService
+Permission:	android.permission.BIND_DREAM_SERVICE
+
+Manifest:	device_APKs/GoogleHindiIME/AndroidManifest.xml
+Package:	com.google.android.apps.inputmethod.hindi
+App:		com.google.android.apps.inputmethod.hindi.HindiApp
+Service:	com.google.android.apps.inputmethod.hindi.HindiInputMethodService
+Permission:	android.permission.BIND_INPUT_METHOD
+
+Manifest:	device_APKs/GoogleHindiIME/AndroidManifest.xml
+Package:	com.google.android.apps.inputmethod.hindi
+App:		com.google.android.apps.inputmethod.hindi.HindiApp
+Service:	com.google.android.apps.inputmethod.hindi.spellchecker.HinglishSpellCheckerService
+Permission:	android.permission.BIND_TEXT_SERVICE
+
+Manifest:	device_APKs/GoogleContactsSyncAdapter/AndroidManifest.xml
+Package:	com.google.android.syncadapters.contacts
+App:		
+Service:	com.google.android.syncadapters.contacts.delegation.DelegatorService
+Permission:	com.google.android.gms.permission.CONTACTS_SYNC_DELEGATION
+
+Manifest:	device_APKs/BasicDreams/AndroidManifest.xml
+Package:	com.android.dreams.basic
+App:		
+Service:	Colors
+Permission:	android.permission.BIND_DREAM_SERVICE
+Action:		android.service.dreams.DreamService
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.app.PhotosApplication
+Service:	com.google.android.apps.photos.backup.core.PhotosBackupGcoreGcmTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.app.PhotosApplication
+Service:	com.google.android.apps.photos.daydream.PhotosDreamService
+Permission:	android.permission.BIND_DREAM_SERVICE
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.app.PhotosApplication
+Service:	com.google.android.apps.photos.metasync.periodic.MetaSyncGcoreGcmTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.app.PhotosApplication
+Service:	com.google.android.apps.photos.search.localclusters.trigger.LocalClusterGcoreGcmTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/Photos/AndroidManifest.xml
+Package:	com.google.android.apps.photos
+App:		com.google.android.apps.photos.app.PhotosApplication
+Service:	com.google.android.libraries.social.notifications.scheduled.GunsScheduledTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.ads.jams.NegotiationService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.analytics.service.AnalyticsService
+Permission:	android.permission.INTERNET
+Action:		com.google.android.gms.analytics.service.START
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.uncertifieddevice.UncertifiedNotificationService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.backup.component.GmsBackupSchedulerService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.cast.media.CastRemoteDisplayProviderService
+Permission:	android.permission.BIND_REMOTE_DISPLAY
+Action:		com.android.media.remotedisplay.RemoteDisplayProvider
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.clearcut.uploader.QosUploaderService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.clearcut.service.VacuumService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.feedback.OfflineReportSendTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.games.chimera.GamesSyncServiceMainProxy
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+Action:		android.content.SyncAdapter
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.games.chimera.GamesUploadServiceProxy
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.gass.chimera.SchedulePeriodicTasksService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.gcm.GcmService
+Permission:	com.google.android.gtalkservice.permission.GTALK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.icing.service.IcingGcmTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.icing.mdh.service.MobileDataHubGcmTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.ipa.base.IpaGcmTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.geocode.GeocodeService
+Permission:	android.permission.WRITE_SECURE_SETTINGS
+Action:		com.android.location.service.GeocodeProvider
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.network.NetworkLocationService
+Permission:	android.permission.WRITE_SECURE_SETTINGS
+Action:		com.android.location.service.v3.NetworkLocationProvider
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.location.settings.DrivingConditionProvider
+Permission:	android.permission.BIND_CONDITION_PROVIDER_SERVICE
+Action:		android.service.notification.ConditionProviderService
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.matchstick.contacts.reachability.ReachabilityService
+Permission:	android.permission.READ_CONTACTS
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.nearby.discovery.service.DiscoveryService
+Permission:	com.google.android.gms.permission.NEARBY_START_DISCOVERER
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.nearby.discovery.ui.DiscoveryTileService
+Permission:	android.permission.BIND_QUICK_SETTINGS_TILE
+Action:		android.service.quicksettings.action.QS_TILE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.people.sync.focus.delegation.ContactsSyncDelegateService
+Permission:	com.google.android.gms.permission.CONTACTS_SYNC_DELEGATION
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.people.datalayer.DataLayerTaskService
+Permission:	com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.tapandpay.hce.service.TpHceService
+Permission:	android.permission.BIND_NFC_SERVICE
+Action:		android.nfc.cardemulation.action.HOST_APDU_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmsCore/AndroidManifest.xml
+Package:	com.google.android.gms
+App:		com.google.android.gms.common.app.GmsApplication
+Service:	com.google.android.gms.auth.trustagent.GoogleTrustAgent
+Permission:	android.permission.BIND_TRUST_AGENT
+Action:		android.service.trust.TrustAgentService
+
+Manifest:	device_APKs/Drive/AndroidManifest.xml
+Package:	com.google.android.apps.docs
+App:		com.google.android.apps.docs.drive.DriveApplication
+Service:	com.google.android.apps.docs.appindexing.AppIndexingService
+Permission:	com.google.android.gms.permission.APPINDEXING
+Action:		com.google.firebase.appindexing.UPDATE_INDEX
+
+Manifest:	device_APKs/Drive/AndroidManifest.xml
+Package:	com.google.android.apps.docs
+App:		com.google.android.apps.docs.drive.DriveApplication
+Service:	com.google.android.apps.docs.drive.directsharing.ChooserTargetService
+Permission:	android.permission.BIND_CHOOSER_TARGET_SERVICE
+
+Manifest:	device_APKs/Settings/AndroidManifest.xml
+Package:	com.android.settings
+App:		
+Service:	.SettingsDumpService
+Permission:	android.permission.DUMP
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.android.email.service.ImapPurgeService
+Permission:	android.permission.BIND_JOB_SERVICE
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.android.email.service.PolicyService
+Permission:	com.google.android.gm.email.permission.ACCESS_PROVIDER
+Action:		com.google.android.gm.email.POLICY_INTENT
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.android.email.service.AccountService
+Permission:	com.google.android.gm.email.permission.ACCESS_PROVIDER
+Action:		com.google.android.gm.email.ACCOUNT_INTENT
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.android.email.service.ImapService
+Permission:	com.google.android.gm.email.permission.ACCESS_PROVIDER
+Action:		com.google.android.gm.email.IMAP_INTENT
+
+Manifest:	device_APKs/PrebuiltGmail/AndroidManifest.xml
+Package:	com.google.android.gm
+App:		com.google.android.gm.MailMigrationApplication
+Service:	com.android.email.service.Pop3Service
+Permission:	com.google.android.gm.email.permission.ACCESS_PROVIDER
+Action:		com.google.android.gm.email.POP3_INTENT
+
+Manifest:	device_APKs/BuiltInPrintService/AndroidManifest.xml
+Package:	com.android.bips
+App:		
+Service:	com.android.bips.BuiltInPrintService
+Permission:	android.permission.BIND_PRINT_SERVICE
+
+Manifest:	device_APKs/LicenseChecker/AndroidManifest.xml
+Package:	com.android.vending
+App:		.VendingApplication
+Service:	.licensing.LicensingService
+Permission:	com.android.vending.CHECK_LICENSE
+Action:		com.android.vending.licensing.ILicensingService
+
+Manifest:	device_APKs/PrebuiltDeskClockGoogle/AndroidManifest.xml
+Package:	com.google.android.deskclock
+App:		com.android.deskclock.DeskClockGoogleApplication
+Service:	com.android.deskclock.Screensaver
+Permission:	android.permission.BIND_DREAM_SERVICE
+
+Manifest:	device_APKs/CarrierConfig/AndroidManifest.xml
+Package:	com.android.carrierconfig
+App:		
+Service:	.DefaultCarrierConfigService
+Permission:	android.permission.BIND_CARRIER_SERVICES
+

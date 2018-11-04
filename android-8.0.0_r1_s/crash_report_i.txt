@@ -1,0 +1,816 @@
+Logcat crash channell #
+#######################
+
+################################
+11-01 15:52:18.313  4701  4701 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:52:18.313  4701  4701 E AndroidRuntime: Process: com.android.keychain, PID: 4701
+11-01 15:52:18.313  4701  4701 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:52:18.313  4701  4701 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:52:18.313  4701  4701 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:52:18.313  4701  4701 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:52:18.313  4701  4701 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:52:18.313  4701  4701 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:52:18.313  4701  4701 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:52:18.313  4701  4701 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:52:51.461  3508  3508 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:52:51.461  3508  3508 E AndroidRuntime: Process: com.google.android.calendar, PID: 3508
+11-01 15:52:51.461  3508  3508 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:52:51.461  3508  3508 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:52:51.461  3508  3508 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:52:51.461  3508  3508 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:52:51.461  3508  3508 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:52:51.461  3508  3508 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:52:51.461  3508  3508 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:52:51.461  3508  3508 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:52:59.852  5432  5432 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:52:59.852  5432  5432 E AndroidRuntime: Process: com.google.android.apps.tachyon, PID: 5432
+11-01 15:52:59.852  5432  5432 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:52:59.852  5432  5432 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:52:59.852  5432  5432 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:52:59.852  5432  5432 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:52:59.852  5432  5432 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:52:59.852  5432  5432 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:52:59.852  5432  5432 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:52:59.852  5432  5432 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:55:04.080  5108  5108 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:55:04.080  5108  5108 E AndroidRuntime: Process: com.google.android.apps.messaging, PID: 5108
+11-01 15:55:04.080  5108  5108 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:55:04.080  5108  5108 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:55:04.080  5108  5108 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:55:04.080  5108  5108 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:55:04.080  5108  5108 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:55:04.080  5108  5108 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:55:04.080  5108  5108 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:55:04.080  5108  5108 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:55:45.590  6738  6738 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:55:45.590  6738  6738 E AndroidRuntime: Process: com.google.android.apps.photos, PID: 6738
+11-01 15:55:45.590  6738  6738 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:55:45.590  6738  6738 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:55:45.590  6738  6738 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:55:45.590  6738  6738 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:55:45.590  6738  6738 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:55:45.590  6738  6738 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:55:45.590  6738  6738 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:55:45.590  6738  6738 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:55:53.905  6801  6819 E AndroidRuntime: FATAL EXCEPTION: Executor Service Thread #0
+11-01 15:55:53.905  6801  6819 E AndroidRuntime: Process: com.google.android.apps.photos, PID: 6801
+11-01 15:55:53.905  6801  6819 E AndroidRuntime: java.lang.NullPointerException: Attempt to get length of null array
+11-01 15:55:53.905  6801  6819 E AndroidRuntime: 	at vfw.a(PG:3)
+11-01 15:55:53.905  6801  6819 E AndroidRuntime: 	at viw.run(PG:11)
+11-01 15:55:53.905  6801  6819 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+11-01 15:55:53.905  6801  6819 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+11-01 15:55:53.905  6801  6819 E AndroidRuntime: 	at jhq.run(PG:3)
+11-01 15:55:53.905  6801  6819 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)
+################################
+
+################################
+11-01 15:56:02.237  6859  6859 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:56:02.237  6859  6859 E AndroidRuntime: Process: com.google.android.apps.photos, PID: 6859
+11-01 15:56:02.237  6859  6859 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:56:02.237  6859  6859 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:56:02.237  6859  6859 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:56:02.237  6859  6859 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:56:02.237  6859  6859 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:56:02.237  6859  6859 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:56:02.237  6859  6859 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:56:02.237  6859  6859 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:56:10.571  6917  6917 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:56:10.571  6917  6917 E AndroidRuntime: Process: com.google.android.apps.photos, PID: 6917
+11-01 15:56:10.571  6917  6917 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:56:10.571  6917  6917 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:56:10.571  6917  6917 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:56:10.571  6917  6917 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:56:10.571  6917  6917 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:56:10.571  6917  6917 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:56:10.571  6917  6917 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:56:10.571  6917  6917 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:56:18.901  7011  7011 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:56:18.901  7011  7011 E AndroidRuntime: Process: com.google.android.apps.photos, PID: 7011
+11-01 15:56:18.901  7011  7011 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:56:18.901  7011  7011 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:56:18.901  7011  7011 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:56:18.901  7011  7011 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:56:18.901  7011  7011 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:56:18.901  7011  7011 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:56:18.901  7011  7011 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:56:18.901  7011  7011 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:57:00.309  7413  7413 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:57:00.309  7413  7413 E AndroidRuntime: Process: com.google.android.gms, PID: 7413
+11-01 15:57:00.309  7413  7413 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:57:00.309  7413  7413 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:57:00.309  7413  7413 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:57:00.309  7413  7413 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:57:00.309  7413  7413 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:57:00.309  7413  7413 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:57:00.309  7413  7413 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:57:00.309  7413  7413 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:57:08.595  7479  7479 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:57:08.595  7479  7479 E AndroidRuntime: Process: com.google.android.gms, PID: 7479
+11-01 15:57:08.595  7479  7479 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:57:08.595  7479  7479 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:57:08.595  7479  7479 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:57:08.595  7479  7479 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:57:08.595  7479  7479 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:57:08.595  7479  7479 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:57:08.595  7479  7479 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:57:08.595  7479  7479 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:57:25.178  7642  7642 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:57:25.178  7642  7642 E AndroidRuntime: Process: com.google.android.gms, PID: 7642
+11-01 15:57:25.178  7642  7642 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:57:25.178  7642  7642 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:57:25.178  7642  7642 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:57:25.178  7642  7642 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:57:25.178  7642  7642 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:57:25.178  7642  7642 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:57:25.178  7642  7642 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:57:25.178  7642  7642 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:57:58.319  7711  7711 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:57:58.319  7711  7711 E AndroidRuntime: Process: com.google.android.gms, PID: 7711
+11-01 15:57:58.319  7711  7711 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:57:58.319  7711  7711 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:57:58.319  7711  7711 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:57:58.319  7711  7711 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:57:58.319  7711  7711 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:57:58.319  7711  7711 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:57:58.319  7711  7711 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:57:58.319  7711  7711 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:58:06.613  8153  8153 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:58:06.613  8153  8153 E AndroidRuntime: Process: com.google.android.gms, PID: 8153
+11-01 15:58:06.613  8153  8153 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:58:06.613  8153  8153 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:58:06.613  8153  8153 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:58:06.613  8153  8153 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:58:06.613  8153  8153 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:58:06.613  8153  8153 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:58:06.613  8153  8153 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:58:06.613  8153  8153 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: Process: com.google.android.gms, PID: 8708
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: java.lang.RuntimeException: Unable to start service com.google.android.gms.checkin.CheckinService@9aaaa44 with Intent { act=com.google.android.gms.checkin.BIND_TO_SERVICE }: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.BaseBundle.putInt(java.lang.String, int)' on a null object reference
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3556)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at android.app.ActivityThread.-wrap20(Unknown Source:0)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1698)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.BaseBundle.putInt(java.lang.String, int)' on a null object reference
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at com.google.android.gms.checkin.CheckinChimeraService.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):20)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at dgd.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):1)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at nqe.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):2)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3539)
+11-01 15:59:04.708  8708  8708 E AndroidRuntime: 	... 8 more
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: Process: com.google.android.gms, PID: 8781
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: java.lang.RuntimeException: Unable to start service com.google.android.gms.checkin.CheckinService@9d8cfdb with Intent { act=com.google.android.gms.checkin.BIND_TO_SERVICE }: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.BaseBundle.putInt(java.lang.String, int)' on a null object reference
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3556)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at android.app.ActivityThread.-wrap20(Unknown Source:0)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1698)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.BaseBundle.putInt(java.lang.String, int)' on a null object reference
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at com.google.android.gms.checkin.CheckinChimeraService.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):20)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at dgd.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):1)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at nqe.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):2)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3539)
+11-01 15:59:04.850  8781  8781 E AndroidRuntime: 	... 8 more
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: Process: com.google.android.gms, PID: 8814
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: java.lang.RuntimeException: Unable to start service com.google.android.gms.checkin.CheckinService@9d8cfdb with Intent { act=com.google.android.gms.checkin.BIND_TO_SERVICE }: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.BaseBundle.putInt(java.lang.String, int)' on a null object reference
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3556)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at android.app.ActivityThread.-wrap20(Unknown Source:0)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1698)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.BaseBundle.putInt(java.lang.String, int)' on a null object reference
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at com.google.android.gms.checkin.CheckinChimeraService.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):20)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at dgd.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):1)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at nqe.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):2)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3539)
+11-01 15:59:04.998  8814  8814 E AndroidRuntime: 	... 8 more
+################################
+
+################################
+11-01 15:59:12.981  8847  8847 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:59:12.981  8847  8847 E AndroidRuntime: Process: com.google.android.gms, PID: 8847
+11-01 15:59:12.981  8847  8847 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:59:12.981  8847  8847 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:59:12.981  8847  8847 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:59:12.981  8847  8847 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:59:12.981  8847  8847 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:59:12.981  8847  8847 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:59:12.981  8847  8847 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:59:12.981  8847  8847 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:59:21.269  8320  8320 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:59:21.269  8320  8320 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 8320
+11-01 15:59:21.269  8320  8320 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:59:21.269  8320  8320 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:59:21.269  8320  8320 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:59:21.269  8320  8320 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:59:21.269  8320  8320 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:59:21.269  8320  8320 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:59:21.269  8320  8320 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:59:21.269  8320  8320 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:59:34.661  9130  9130 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:59:34.661  9130  9130 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 9130
+11-01 15:59:34.661  9130  9130 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:59:34.661  9130  9130 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:59:34.661  9130  9130 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:59:34.661  9130  9130 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:59:34.661  9130  9130 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:59:34.661  9130  9130 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:59:34.661  9130  9130 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:59:34.661  9130  9130 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:59:37.841  3433  3433 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:59:37.841  3433  3433 E AndroidRuntime: Process: com.google.android.gms.unstable, PID: 3433
+11-01 15:59:37.841  3433  3433 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:59:37.841  3433  3433 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:59:37.841  3433  3433 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:59:37.841  3433  3433 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:59:37.841  3433  3433 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:59:37.841  3433  3433 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:59:37.841  3433  3433 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:59:37.841  3433  3433 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:59:47.048  9299  9299 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:59:47.048  9299  9299 E AndroidRuntime: Process: com.google.android.gms.unstable, PID: 9299
+11-01 15:59:47.048  9299  9299 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:59:47.048  9299  9299 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:59:47.048  9299  9299 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:59:47.048  9299  9299 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:59:47.048  9299  9299 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:59:47.048  9299  9299 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:59:47.048  9299  9299 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:59:47.048  9299  9299 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 15:59:54.513  9368  9368 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 15:59:54.513  9368  9368 E AndroidRuntime: Process: com.google.android.gms.unstable, PID: 9368
+11-01 15:59:54.513  9368  9368 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 15:59:54.513  9368  9368 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 15:59:54.513  9368  9368 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 15:59:54.513  9368  9368 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 15:59:54.513  9368  9368 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 15:59:54.513  9368  9368 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 15:59:54.513  9368  9368 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 15:59:54.513  9368  9368 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:00:02.734  8923  8923 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:00:02.734  8923  8923 E AndroidRuntime: Process: com.google.android.gms, PID: 8923
+11-01 16:00:02.734  8923  8923 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:00:02.734  8923  8923 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:00:02.734  8923  8923 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:00:02.734  8923  8923 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:00:02.734  8923  8923 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:00:02.734  8923  8923 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:00:02.734  8923  8923 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:00:02.734  8923  8923 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:00:11.025  9427  9427 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:00:11.025  9427  9427 E AndroidRuntime: Process: com.google.android.gms, PID: 9427
+11-01 16:00:11.025  9427  9427 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:00:11.025  9427  9427 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:00:11.025  9427  9427 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:00:11.025  9427  9427 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:00:11.025  9427  9427 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:00:11.025  9427  9427 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:00:11.025  9427  9427 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:00:11.025  9427  9427 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:00:19.328  9500  9500 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:00:19.328  9500  9500 E AndroidRuntime: Process: com.google.android.gms, PID: 9500
+11-01 16:00:19.328  9500  9500 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:00:19.328  9500  9500 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:00:19.328  9500  9500 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:00:19.328  9500  9500 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:00:19.328  9500  9500 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:00:19.328  9500  9500 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:00:19.328  9500  9500 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:00:19.328  9500  9500 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:00:27.624  9578  9578 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:00:27.624  9578  9578 E AndroidRuntime: Process: com.google.android.gms, PID: 9578
+11-01 16:00:27.624  9578  9578 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:00:27.624  9578  9578 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:00:27.624  9578  9578 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:00:27.624  9578  9578 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:00:27.624  9578  9578 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:00:27.624  9578  9578 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:00:27.624  9578  9578 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:00:27.624  9578  9578 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:01:17.366 10124 10124 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:01:17.366 10124 10124 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 10124
+11-01 16:01:17.366 10124 10124 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:01:17.366 10124 10124 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:01:17.366 10124 10124 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:01:17.366 10124 10124 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:01:17.366 10124 10124 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:01:17.366 10124 10124 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:01:17.366 10124 10124 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:01:17.366 10124 10124 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: FATAL EXCEPTION: lowpool[0]
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 10695
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: java.lang.IllegalStateException
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: 	at bcqk.b(:com.google.android.gms@12874026@12.8.74 (040700-204998136):5)
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: 	at com.google.android.gms.fitness.service.wearable.WearableSyncChimeraService.a(:com.google.android.gms@12874026@12.8.74 (040700-204998136):103)
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: 	at pmj.handleMessage(Unknown Source:6)
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: 	at pmn.run(:com.google.android.gms@12874026@12.8.74 (040700-204998136):6)
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: 	at pmz.run(:com.google.android.gms@12874026@12.8.74 (040700-204998136):28)
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: 	at ptb.run(Unknown Source:7)
+11-01 16:01:58.818 10695 10727 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:764)
+################################
+
+################################
+11-01 16:03:13.488 10806 10806 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:03:13.488 10806 10806 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 10806
+11-01 16:03:13.488 10806 10806 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:03:13.488 10806 10806 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:03:13.488 10806 10806 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:03:13.488 10806 10806 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:03:13.488 10806 10806 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:03:13.488 10806 10806 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:03:13.488 10806 10806 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:03:13.488 10806 10806 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:03:21.779 11476 11476 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:03:21.779 11476 11476 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 11476
+11-01 16:03:21.779 11476 11476 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:03:21.779 11476 11476 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:03:21.779 11476 11476 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:03:21.779 11476 11476 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:03:21.779 11476 11476 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:03:21.779 11476 11476 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:03:21.779 11476 11476 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:03:21.779 11476 11476 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:03:30.063 11586 11586 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:03:30.063 11586 11586 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 11586
+11-01 16:03:30.063 11586 11586 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:03:30.063 11586 11586 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:03:30.063 11586 11586 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:03:30.063 11586 11586 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:03:30.063 11586 11586 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:03:30.063 11586 11586 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:03:30.063 11586 11586 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:03:30.063 11586 11586 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:03:38.353  6439  6439 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:03:38.353  6439  6439 E AndroidRuntime: Process: com.google.android.gms.ui, PID: 6439
+11-01 16:03:38.353  6439  6439 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:03:38.353  6439  6439 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:03:38.353  6439  6439 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:03:38.353  6439  6439 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:03:38.353  6439  6439 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:03:38.353  6439  6439 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:03:38.353  6439  6439 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:03:38.353  6439  6439 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:03:56.710 11841 11841 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:03:56.710 11841 11841 E AndroidRuntime: Process: com.google.android.gms, PID: 11841
+11-01 16:03:56.710 11841 11841 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:03:56.710 11841 11841 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:03:56.710 11841 11841 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:03:56.710 11841 11841 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:03:56.710 11841 11841 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:03:56.710 11841 11841 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:03:56.710 11841 11841 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:03:56.710 11841 11841 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:04:03.223 11694 11694 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:04:03.223 11694 11694 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 11694
+11-01 16:04:03.223 11694 11694 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:04:03.223 11694 11694 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:04:03.223 11694 11694 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:04:03.223 11694 11694 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:04:03.223 11694 11694 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:04:03.223 11694 11694 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:04:03.223 11694 11694 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:04:03.223 11694 11694 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:04:11.547 11965 11965 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:04:11.547 11965 11965 E AndroidRuntime: Process: com.google.android.gms, PID: 11965
+11-01 16:04:11.547 11965 11965 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:04:11.547 11965 11965 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:04:11.547 11965 11965 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:04:11.547 11965 11965 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:04:11.547 11965 11965 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:04:11.547 11965 11965 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:04:11.547 11965 11965 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:04:11.547 11965 11965 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 12923
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: java.lang.RuntimeException: Unable to start service com.google.android.location.reporting.service.LocationHistoryInjectorService@7d7b47c with Intent { act=android.location.SettingInjectorService }: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.Messenger.send(android.os.Message)' on a null object reference
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3556)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at android.app.ActivityThread.-wrap20(Unknown Source:0)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1698)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.Messenger.send(android.os.Message)' on a null object reference
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at android.location.SettingInjectorService.sendStatus(SettingInjectorService.java:184)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at android.location.SettingInjectorService.onHandleIntent(SettingInjectorService.java:164)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at android.location.SettingInjectorService.onStartCommand(SettingInjectorService.java:147)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at com.google.android.chimera.SettingInjectorService.onStartCommand(Unknown Source:2)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at dgd.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):1)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at nqe.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):2)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3539)
+11-01 16:05:17.822 12923 12923 E AndroidRuntime: 	... 8 more
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 13032
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: java.lang.RuntimeException: Unable to start service com.google.android.location.reporting.service.LocationHistoryInjectorService@512b0ea with Intent { act=android.location.SettingInjectorService }: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.Messenger.send(android.os.Message)' on a null object reference
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3556)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at android.app.ActivityThread.-wrap20(Unknown Source:0)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1698)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.Messenger.send(android.os.Message)' on a null object reference
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at android.location.SettingInjectorService.sendStatus(SettingInjectorService.java:184)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at android.location.SettingInjectorService.onHandleIntent(SettingInjectorService.java:164)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at android.location.SettingInjectorService.onStartCommand(SettingInjectorService.java:147)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at com.google.android.chimera.SettingInjectorService.onStartCommand(Unknown Source:2)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at dgd.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):1)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at nqe.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):2)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3539)
+11-01 16:05:18.983 13032 13032 E AndroidRuntime: 	... 8 more
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 13063
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: java.lang.RuntimeException: Unable to start service com.google.android.location.reporting.service.LocationHistoryInjectorService@ddf8dbd with Intent { act=android.location.SettingInjectorService }: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.Messenger.send(android.os.Message)' on a null object reference
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3556)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at android.app.ActivityThread.-wrap20(Unknown Source:0)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1698)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.Messenger.send(android.os.Message)' on a null object reference
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at android.location.SettingInjectorService.sendStatus(SettingInjectorService.java:184)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at android.location.SettingInjectorService.onHandleIntent(SettingInjectorService.java:164)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at android.location.SettingInjectorService.onStartCommand(SettingInjectorService.java:147)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at com.google.android.chimera.SettingInjectorService.onStartCommand(Unknown Source:2)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at dgd.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):1)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at nqe.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):2)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3539)
+11-01 16:05:19.812 13063 13063 E AndroidRuntime: 	... 8 more
+################################
+
+################################
+11-01 16:05:26.107 12151 12151 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:05:26.107 12151 12151 E AndroidRuntime: Process: com.google.android.gms, PID: 12151
+11-01 16:05:26.107 12151 12151 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:05:26.107 12151 12151 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:05:26.107 12151 12151 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:05:26.107 12151 12151 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:05:26.107 12151 12151 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:05:26.107 12151 12151 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:05:26.107 12151 12151 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:05:26.107 12151 12151 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:05:59.273 13298 13298 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:05:59.273 13298 13298 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 13298
+11-01 16:05:59.273 13298 13298 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:05:59.273 13298 13298 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:05:59.273 13298 13298 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:05:59.273 13298 13298 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:05:59.273 13298 13298 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:05:59.273 13298 13298 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:05:59.273 13298 13298 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:05:59.273 13298 13298 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:06:32.440 13437 13437 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:06:32.440 13437 13437 E AndroidRuntime: Process: com.google.android.gms, PID: 13437
+11-01 16:06:32.440 13437 13437 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:06:32.440 13437 13437 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:06:32.440 13437 13437 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:06:32.440 13437 13437 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:06:32.440 13437 13437 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:06:32.440 13437 13437 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:06:32.440 13437 13437 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:06:32.440 13437 13437 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:06:40.718 13627 13627 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:06:40.718 13627 13627 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 13627
+11-01 16:06:40.718 13627 13627 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:06:40.718 13627 13627 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:06:40.718 13627 13627 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:06:40.718 13627 13627 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:06:40.718 13627 13627 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:06:40.718 13627 13627 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:06:40.718 13627 13627 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:06:40.718 13627 13627 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:06:49.017 13835 13835 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:06:49.017 13835 13835 E AndroidRuntime: Process: com.google.android.gms, PID: 13835
+11-01 16:06:49.017 13835 13835 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:06:49.017 13835 13835 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:06:49.017 13835 13835 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:06:49.017 13835 13835 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:06:49.017 13835 13835 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:06:49.017 13835 13835 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:06:49.017 13835 13835 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:06:49.017 13835 13835 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:07:22.222 13916 13916 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:07:22.222 13916 13916 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 13916
+11-01 16:07:22.222 13916 13916 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:07:22.222 13916 13916 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:07:22.222 13916 13916 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:07:22.222 13916 13916 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:07:22.222 13916 13916 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:07:22.222 13916 13916 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:07:22.222 13916 13916 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:07:22.222 13916 13916 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:08:03.695 14338 14338 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:08:03.695 14338 14338 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 14338
+11-01 16:08:03.695 14338 14338 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:08:03.695 14338 14338 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:08:03.695 14338 14338 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:08:03.695 14338 14338 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:08:03.695 14338 14338 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:08:03.695 14338 14338 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:08:03.695 14338 14338 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:08:03.695 14338 14338 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:08:12.014 14767 14767 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:08:12.014 14767 14767 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 14767
+11-01 16:08:12.014 14767 14767 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:08:12.014 14767 14767 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:08:12.014 14767 14767 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:08:12.014 14767 14767 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:08:12.014 14767 14767 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:08:12.014 14767 14767 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:08:12.014 14767 14767 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:08:12.014 14767 14767 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:08:28.597 14693 14693 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:08:28.597 14693 14693 E AndroidRuntime: Process: com.google.android.gms, PID: 14693
+11-01 16:08:28.597 14693 14693 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:08:28.597 14693 14693 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:08:28.597 14693 14693 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:08:28.597 14693 14693 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:08:28.597 14693 14693 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:08:28.597 14693 14693 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:08:28.597 14693 14693 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:08:28.597 14693 14693 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:08:36.883 15117 15117 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:08:36.883 15117 15117 E AndroidRuntime: Process: com.google.android.gms, PID: 15117
+11-01 16:08:36.883 15117 15117 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:08:36.883 15117 15117 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:08:36.883 15117 15117 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:08:36.883 15117 15117 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:08:36.883 15117 15117 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:08:36.883 15117 15117 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:08:36.883 15117 15117 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:08:36.883 15117 15117 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:08:45.211 15203 15203 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:08:45.211 15203 15203 E AndroidRuntime: Process: com.google.android.gms, PID: 15203
+11-01 16:08:45.211 15203 15203 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:08:45.211 15203 15203 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:08:45.211 15203 15203 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:08:45.211 15203 15203 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:08:45.211 15203 15203 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:08:45.211 15203 15203 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:08:45.211 15203 15203 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:08:45.211 15203 15203 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:08:53.508 15288 15288 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:08:53.508 15288 15288 E AndroidRuntime: Process: com.google.android.gms, PID: 15288
+11-01 16:08:53.508 15288 15288 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:08:53.508 15288 15288 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:08:53.508 15288 15288 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:08:53.508 15288 15288 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:08:53.508 15288 15288 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:08:53.508 15288 15288 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:08:53.508 15288 15288 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:08:53.508 15288 15288 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:09:01.844 15368 15368 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:09:01.844 15368 15368 E AndroidRuntime: Process: com.google.android.gms, PID: 15368
+11-01 16:09:01.844 15368 15368 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:09:01.844 15368 15368 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:09:01.844 15368 15368 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:09:01.844 15368 15368 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:09:01.844 15368 15368 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:09:01.844 15368 15368 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:09:01.844 15368 15368 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:09:01.844 15368 15368 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:09:10.220 15451 15451 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:09:10.220 15451 15451 E AndroidRuntime: Process: com.google.android.gms, PID: 15451
+11-01 16:09:10.220 15451 15451 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:09:10.220 15451 15451 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:09:10.220 15451 15451 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:09:10.220 15451 15451 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:09:10.220 15451 15451 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:09:10.220 15451 15451 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:09:10.220 15451 15451 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:09:10.220 15451 15451 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:09:26.827 15000 15000 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:09:26.827 15000 15000 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 15000
+11-01 16:09:26.827 15000 15000 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:09:26.827 15000 15000 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:09:26.827 15000 15000 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:09:26.827 15000 15000 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:09:26.827 15000 15000 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:09:26.827 15000 15000 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:09:26.827 15000 15000 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:09:26.827 15000 15000 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:09:35.089 15615 15615 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:09:35.089 15615 15615 E AndroidRuntime: Process: com.google.android.gms, PID: 15615
+11-01 16:09:35.089 15615 15615 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:09:35.089 15615 15615 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:09:35.089 15615 15615 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:09:35.089 15615 15615 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:09:35.089 15615 15615 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:09:35.089 15615 15615 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:09:35.089 15615 15615 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:09:35.089 15615 15615 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:09:43.374 15805 15805 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:09:43.374 15805 15805 E AndroidRuntime: Process: com.google.android.gms, PID: 15805
+11-01 16:09:43.374 15805 15805 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:09:43.374 15805 15805 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:09:43.374 15805 15805 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:09:43.374 15805 15805 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:09:43.374 15805 15805 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:09:43.374 15805 15805 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:09:43.374 15805 15805 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:09:43.374 15805 15805 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:12:17.941 17328 17328 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:12:17.941 17328 17328 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 17328
+11-01 16:12:17.941 17328 17328 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:12:17.941 17328 17328 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:12:17.941 17328 17328 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:12:17.941 17328 17328 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:12:17.941 17328 17328 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:12:17.941 17328 17328 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:12:17.941 17328 17328 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:12:17.941 17328 17328 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:17:33.377 17387 17387 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:17:33.377 17387 17387 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 17387
+11-01 16:17:33.377 17387 17387 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:17:33.377 17387 17387 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:17:33.377 17387 17387 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:17:33.377 17387 17387 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:17:33.377 17387 17387 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:17:33.377 17387 17387 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:17:33.377 17387 17387 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:17:33.377 17387 17387 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+
+################################
+11-01 16:24:14.828 21407 21407 E AndroidRuntime: FATAL EXCEPTION: main
+11-01 16:24:14.828 21407 21407 E AndroidRuntime: Process: com.google.android.gms, PID: 21407
+11-01 16:24:14.828 21407 21407 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-01 16:24:14.828 21407 21407 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1775)
+11-01 16:24:14.828 21407 21407 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-01 16:24:14.828 21407 21407 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-01 16:24:14.828 21407 21407 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6541)
+11-01 16:24:14.828 21407 21407 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-01 16:24:14.828 21407 21407 E AndroidRuntime: 	at com.android.internal.os.Zygote$MethodAndArgsCaller.run(Zygote.java:240)
+11-01 16:24:14.828 21407 21407 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:767)
+################################
+

@@ -1,0 +1,29 @@
+List of actions crashing processes (implicit intents):
+com.android.settings.category.system
+com.android.net.wifi.SETUP_WIFI_NETWORK
+android.settings.WIFI_IF_SETTINGS
+android.bluetooth.devicepicker.action.LAUNCH
+android.settings.ZEN_MODE_SCHEDULE_RULE_SETTINGS
+android.settings.ZEN_MODE_EVENT_RULE_SETTINGS
+android.settings.ZEN_MODE_EXTERNAL_RULE_SETTINGS
+android.settings.ACTION_APP_NOTIFICATION_REDACTION
+android.bluetooth.device.action.PAIRING_REQUEST
+android.settings.NFCSHARING_SETTINGS
+android.nfc.cardemulation.action.ACTION_CHANGE_DEFAULT
+com.android.development.VIEW_PERMISSION
+com.android.cts.action.ACTION_SUB
+com.android.cts.action.ACTION_SUB_2
+com.android.cts.action.ACTION_SUB_3
+com.android.cts.action.CATEGORY_SUB
+com.android.cts.action.NEW_ACTION
+com.android.cts.action.NEW_CATEGORY
+android.os.action.CREATE_USER
+com.google.android.youtube.mdx.voice.CONNECT
+com.google.android.youtube.voice.PLAY_NTH_VIDEO
+com.google.android.music.SHARED_PLAY
+
+
+List of actions crashing processes (explicit intents):
+com.android.settings/.applications.InstalledAppDetailsTop
+com.google.android.videos/.mobile.usecase.details.ShowDetailsActivity
+com.google.android.music/.ui.TrackContainerActivity

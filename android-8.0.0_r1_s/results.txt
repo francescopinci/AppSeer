@@ -1,5 +1,7 @@
-Manifest files analyzed:	1939
-Exposed services found:		31
-Services startable by implicit intents:	6
-Services startable by explicit intents:	5
-Services requiring permissions:		20
+Manifest files analyzed:	2044
+Exposed services found:		396
+Services startable by implicit intents:	163
+Services startable by explicit intents:	53
+Services requiring permissions:		180
+Components causing applications to crash with implicit intents: 55
+Components causing applications to crash with explicit intents: 5

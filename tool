@@ -141,8 +141,8 @@ case $1 in
 		fi
 		intents_i="test_services_i.txt"
 		intents_e="test_services_e.txt"
-		adb_command_i="$adb shell am startservice -a"
-		adb_command_e="$adb shell am startservice -n"
+		adb_command_i="$adb shell am startforegroundservice -a"
+		adb_command_e="$adb shell am startforegroundservice -n"
 		;;
 	*)
 		cd ..
@@ -182,7 +182,7 @@ if [[ $# -eq 2 ]]; then
 		$adb logcat -b crash -c < /dev/null
 		# Start the activity
 		$adb_command_i "$action" < /dev/null >> log.txt
-		sleep 6
+		sleep 4
 		# Print logcat crash channel
 		tmp=$($adb logcat -b crash -d < /dev/null)
 		if [ "$tmp" != "" ]; then
@@ -212,7 +212,7 @@ if [[ $# -eq 2 ]]; then
 		$adb logcat -b crash -c < /dev/null
 		# Start the activity
 		$adb_command_e "$action" < /dev/null >> log.txt
-		sleep 6
+		sleep 4
 		# Print logcat crash channel
 		tmp=$($adb logcat -b crash -d < /dev/null)
 		if [ "$tmp" != "" ]; then

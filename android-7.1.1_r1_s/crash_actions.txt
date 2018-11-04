@@ -1,0 +1,6 @@
+List of actions crashing processes (implicit intents):
+com.google.android.libraries.social.notifications.impl.ACTOR_SELECTED
+
+
+List of actions crashing processes (explicit intents):
+com.google.android.syncadapters.contacts/.SyncHighResPhotoIntentService
