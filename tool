@@ -182,7 +182,7 @@ if [[ $# -eq 2 ]]; then
 		$adb logcat -b crash -c < /dev/null
 		# Start the activity
 		$adb_command_i "$action" < /dev/null >> log.txt
-		sleep 4
+		sleep 6
 		# Print logcat crash channel
 		tmp=$($adb logcat -b crash -d < /dev/null)
 		if [ "$tmp" != "" ]; then
@@ -212,7 +212,7 @@ if [[ $# -eq 2 ]]; then
 		$adb logcat -b crash -c < /dev/null
 		# Start the activity
 		$adb_command_e "$action" < /dev/null >> log.txt
-		sleep 4
+		sleep 6
 		# Print logcat crash channel
 		tmp=$($adb logcat -b crash -d < /dev/null)
 		if [ "$tmp" != "" ]; then

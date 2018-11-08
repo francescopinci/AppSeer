@@ -1,0 +1,84 @@
+Logcat crash channell #
+#######################
+
+################################
+11-07 22:09:51.450  1454  1454 E AndroidRuntime: FATAL EXCEPTION: main
+11-07 22:09:51.450  1454  1454 E AndroidRuntime: Process: com.android.systemui, PID: 1454
+11-07 22:09:51.450  1454  1454 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground(): ServiceRecord{9acf134 u0 com.android.systemui/.SystemUIService}
+11-07 22:09:51.450  1454  1454 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1737)
+11-07 22:09:51.450  1454  1454 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-07 22:09:51.450  1454  1454 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+11-07 22:09:51.450  1454  1454 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+11-07 22:09:51.450  1454  1454 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-07 22:09:51.450  1454  1454 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+11-07 22:09:51.450  1454  1454 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+################################
+
+################################
+11-07 22:13:54.091 19052 19069 E AndroidRuntime: FATAL EXCEPTION: IntentService[SyncHighResPhotoIntentService]
+11-07 22:13:54.091 19052 19069 E AndroidRuntime: Process: com.google.process.gapps, PID: 19052
+11-07 22:13:54.091 19052 19069 E AndroidRuntime: java.lang.NullPointerException: uri
+11-07 22:13:54.091 19052 19069 E AndroidRuntime: 	at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:128)
+11-07 22:13:54.091 19052 19069 E AndroidRuntime: 	at android.content.ContentResolver.acquireContentProviderClient(ContentResolver.java:1855)
+11-07 22:13:54.091 19052 19069 E AndroidRuntime: 	at com.google.android.syncadapters.contacts.SyncHighResPhotoIntentService.onHandleIntent(SyncHighResPhotoIntentService.java:45)
+11-07 22:13:54.091 19052 19069 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+11-07 22:13:54.091 19052 19069 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-07 22:13:54.091 19052 19069 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+11-07 22:13:54.091 19052 19069 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+################################
+
+################################
+11-07 22:14:46.298 12478 12478 E AndroidRuntime: FATAL EXCEPTION: main
+11-07 22:14:46.298 12478 12478 E AndroidRuntime: Process: com.google.android.gms, PID: 12478
+11-07 22:14:46.298 12478 12478 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground(): ServiceRecord{3c5e189 u0 com.google.android.gms/.backup.SetBackupAccountService}
+11-07 22:14:46.298 12478 12478 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1737)
+11-07 22:14:46.298 12478 12478 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-07 22:14:46.298 12478 12478 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+11-07 22:14:46.298 12478 12478 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+11-07 22:14:46.298 12478 12478 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-07 22:14:46.298 12478 12478 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+11-07 22:14:46.298 12478 12478 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+################################
+
+################################
+11-07 22:15:08.513 20060 20060 E AndroidRuntime: FATAL EXCEPTION: main
+11-07 22:15:08.513 20060 20060 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 20060
+11-07 22:15:08.513 20060 20060 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground(): ServiceRecord{357c735 u0 com.google.android.gms/.chimera.PersistentApiService}
+11-07 22:15:08.513 20060 20060 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1737)
+11-07 22:15:08.513 20060 20060 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-07 22:15:08.513 20060 20060 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+11-07 22:15:08.513 20060 20060 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+11-07 22:15:08.513 20060 20060 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-07 22:15:08.513 20060 20060 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+11-07 22:15:08.513 20060 20060 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+################################
+
+################################
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: FATAL EXCEPTION: IntentService[PeopleVCOS]
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: Process: com.google.android.gms, PID: 20513
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: java.lang.NullPointerException: uri
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: 	at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:128)
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:785)
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:752)
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: 	at android.content.ContentResolver.query(ContentResolver.java:710)
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: 	at aiwx.a(:com.google.android.gms@14367037@14.3.67 (100400-216465562):124)
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: 	at com.google.android.gms.people.pub.PeopleSyncRawContactChimeraService.onHandleIntent(:com.google.android.gms@14367037@14.3.67 (100400-216465562):2)
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: 	at djt.handleMessage(Unknown Source:6)
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+11-07 22:15:56.118 20513 20623 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+################################
+
+################################
+11-07 22:16:04.809 20631 20631 E AndroidRuntime: FATAL EXCEPTION: main
+11-07 22:16:04.809 20631 20631 E AndroidRuntime: Process: com.google.android.gms, PID: 20631
+11-07 22:16:04.809 20631 20631 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground(): ServiceRecord{413b31a u0 com.google.android.gms/.security.verifier.ApkUploadService}
+11-07 22:16:04.809 20631 20631 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1737)
+11-07 22:16:04.809 20631 20631 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-07 22:16:04.809 20631 20631 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:193)
+11-07 22:16:04.809 20631 20631 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6669)
+11-07 22:16:04.809 20631 20631 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-07 22:16:04.809 20631 20631 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+11-07 22:16:04.809 20631 20631 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+################################
+
