@@ -53,25 +53,25 @@ if [[ $# -ne 2 ]]; then
 	# prepare data
 	# 1 - decompile application
 	cd ../APKs/APKs/
-	while IFS= read -r line
-	do
-		echo "Decompiling $line"
-		apk_file=$line
-		apk_folder=$(basename -s ".apk" $line)
-		mkdir $apk_folder
-		mv $apk_file $apk_folder
-		cd $apk_folder
-		apktool d -f $apk_file > /dev/null 2>&1
-		mv $apk_folder"/AndroidManifest.xml" ./
-		rm -r $apk_folder/
-		cd ../
-		#rm -r $apk_folder/original/ > /dev/null 2>&1
-		#rm -r $apk_folder/res/ > /dev/null 2>&1
-	done < '../applications.txt'
+	# while IFS= read -r line
+	# do
+	# 	echo "Decompiling $line"
+	# 	apk_file=$line
+	# 	apk_folder=$(basename -s ".apk" $line)
+	# 	mkdir $apk_folder
+	# 	mv $apk_file $apk_folder
+	# 	cd $apk_folder
+	# 	apktool d -f $apk_file > /dev/null 2>&1
+	# 	mv $apk_folder"/AndroidManifest.xml" ./
+	# 	rm -r $apk_folder/
+	# 	cd ../
+	# 	#rm -r $apk_folder/original/ > /dev/null 2>&1
+	# 	#rm -r $apk_folder/res/ > /dev/null 2>&1
+	# done < '../applications.txt'
 
 	cd "../../"$build_results
 	if [ ! -f "manifests.txt" ]; then
-	echo -en "Searching all $manifest_name files in APKs.. "
+	echo -en "Searching all $manifest_name files in third-party APKs.. "
 	find $APKs_manifests_source -name $manifest_name > manifests.txt
 	echo -en "done.\n"
 	fi
@@ -112,6 +112,10 @@ fi
 
 echo -en "\nDo you want to search for exposed components? [y|n] "
 read answer
+if [ $answer != 'y' ]; then
+	exit 1
+fi
+echo -en '\n'
 
 case $1 in
 	-a)
@@ -226,14 +230,14 @@ if [[ $# -eq 2 ]]; then
 	done < $intents_e
 	echo "Components causing applications to crash with explicit intents: $counter" >> results.txt
 else
-	# test 3rd party applications here
+	test 3rd party applications here
 	echo "Testing exposed components with implicit intents.."
 	echo "##################################################"
-	echo "Logcat crash channell #" > crash_report_i.txt
+	echo "Logcat crash channell #" >> crash_report_i.txt
 	echo -en "#######################\n\n" >> crash_report_i.txt
-	echo "Adb activity manager output #" > log.txt
+	echo "Adb activity manager output #" >> log.txt
 	echo -en "#############################\n\n" >> log.txt
-	echo "List of actions crashing processes (implicit intents):" > crash_actions.txt
+	echo "List of actions crashing processes (implicit intents):" >> crash_actions.txt
 	first=true
 	counter=0
 	while read -r action;
@@ -283,7 +287,7 @@ else
 
 	echo "Testing exposed components with explicit intents.."
 	echo "##################################################"
-	echo "Logcat crash channell #" > crash_report_e.txt
+	echo "Logcat crash channell #" >> crash_report_e.txt
 	echo -en "#######################\n\n" >> crash_report_e.txt
 	echo -en "\n\nList of actions crashing processes (explicit intents):\n" >> crash_actions.txt
 	first=true

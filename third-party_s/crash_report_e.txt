@@ -1,0 +1,1498 @@
+Logcat crash channell #
+#######################
+
+################################
+11-19 16:16:31.554 31329 31329 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:16:31.554 31329 31329 E AndroidRuntime: Process: com.nick.translator, PID: 31329
+11-19 16:16:31.554 31329 31329 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:16:31.554 31329 31329 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:16:31.554 31329 31329 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:16:31.554 31329 31329 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:16:31.554 31329 31329 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:16:31.554 31329 31329 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:16:31.554 31329 31329 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:16:31.554 31329 31329 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:17:16.514 31750 31750 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:17:16.514 31750 31750 E AndroidRuntime: Process: com.yazio.android, PID: 31750
+11-19 16:17:16.514 31750 31750 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:17:16.514 31750 31750 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:17:16.514 31750 31750 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:17:16.514 31750 31750 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:17:16.514 31750 31750 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:17:16.514 31750 31750 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:17:16.514 31750 31750 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:17:16.514 31750 31750 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:17:32.510 31921 31988 E AndroidRuntime: FATAL EXCEPTION: IntentService[NearbyGeofenceIntentService]
+11-19 16:17:32.510 31921 31988 E AndroidRuntime: Process: com.nordstrom.app, PID: 31921
+11-19 16:17:32.510 31921 31988 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke interface method 'boolean java.util.List.isEmpty()' on a null object reference
+11-19 16:17:32.510 31921 31988 E AndroidRuntime: 	at com.nordstrom.app.nearby.intentservice.NearbyGeofenceIntentService.handleGeofenceEvent(NearbyGeofenceIntentService.java:163)
+11-19 16:17:32.510 31921 31988 E AndroidRuntime: 	at com.nordstrom.app.nearby.intentservice.NearbyGeofenceIntentService.onHandleIntent(NearbyGeofenceIntentService.java:130)
+11-19 16:17:32.510 31921 31988 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+11-19 16:17:32.510 31921 31988 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:17:32.510 31921 31988 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:17:32.510 31921 31988 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+################################
+
+################################
+11-19 16:17:41.194 32031 32031 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:17:41.194 32031 32031 E AndroidRuntime: Process: com.nordstrom.app, PID: 32031
+11-19 16:17:41.194 32031 32031 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:17:41.194 32031 32031 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:17:41.194 32031 32031 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:17:41.194 32031 32031 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:17:41.194 32031 32031 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:17:41.194 32031 32031 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:17:41.194 32031 32031 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:17:41.194 32031 32031 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:17:49.858 32144 32144 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:17:49.858 32144 32144 E AndroidRuntime: Process: com.nordstrom.app, PID: 32144
+11-19 16:17:49.858 32144 32144 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:17:49.858 32144 32144 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:17:49.858 32144 32144 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:17:49.858 32144 32144 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:17:49.858 32144 32144 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:17:49.858 32144 32144 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:17:49.858 32144 32144 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:17:49.858 32144 32144 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:18:21.123 32436 32436 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:18:21.123 32436 32436 E AndroidRuntime: Process: com.opensooq.OpenSooq, PID: 32436
+11-19 16:18:21.123 32436 32436 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:18:21.123 32436 32436 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:18:21.123 32436 32436 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:18:21.123 32436 32436 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:18:21.123 32436 32436 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:18:21.123 32436 32436 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:18:21.123 32436 32436 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:18:21.123 32436 32436 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:18:38.498 32636 32636 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:18:38.498 32636 32636 E AndroidRuntime: Process: com.opensooq.OpenSooq, PID: 32636
+11-19 16:18:38.498 32636 32636 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:18:38.498 32636 32636 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:18:38.498 32636 32636 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:18:38.498 32636 32636 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:18:38.498 32636 32636 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:18:38.498 32636 32636 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:18:38.498 32636 32636 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:18:38.498 32636 32636 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:24:44.381  3441  3441 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:24:44.381  3441  3441 E AndroidRuntime: Process: com.starmusic.playermp3, PID: 3441
+11-19 16:24:44.381  3441  3441 E AndroidRuntime: android.app.RemoteServiceException: Bad notification for startForeground: java.lang.RuntimeException: invalid channel for service notification: Notification(channel=null pri=0 contentView=com.starmusic.playermp3/0x7f0b0067 vibrate=null sound=null defaults=0x0 flags=0x62 color=0xffff6347 vis=PRIVATE)
+11-19 16:24:44.381  3441  3441 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:24:44.381  3441  3441 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:24:44.381  3441  3441 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:24:44.381  3441  3441 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:24:44.381  3441  3441 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:24:44.381  3441  3441 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:24:44.381  3441  3441 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:25:44.435  3896  3896 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:25:44.435  3896  3896 E AndroidRuntime: Process: com.podcast.podcasts, PID: 3896
+11-19 16:25:44.435  3896  3896 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:25:44.435  3896  3896 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:25:44.435  3896  3896 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:25:44.435  3896  3896 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:25:44.435  3896  3896 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:25:44.435  3896  3896 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:25:44.435  3896  3896 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:25:44.435  3896  3896 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:27:28.869  4454  4454 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:27:28.869  4454  4454 E AndroidRuntime: Process: com.premiereradio.android.rushlimbaugh, PID: 4454
+11-19 16:27:28.869  4454  4454 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:27:28.869  4454  4454 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:27:28.869  4454  4454 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:27:28.869  4454  4454 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:27:28.869  4454  4454 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:27:28.869  4454  4454 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:27:28.869  4454  4454 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:27:28.869  4454  4454 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:29:25.224  5054  5054 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:29:25.224  5054  5054 E AndroidRuntime: Process: com.quizlet.quizletandroid, PID: 5054
+11-19 16:29:25.224  5054  5054 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:29:25.224  5054  5054 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:29:25.224  5054  5054 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:29:25.224  5054  5054 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:29:25.224  5054  5054 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:29:25.224  5054  5054 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:29:25.224  5054  5054 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:29:25.224  5054  5054 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:29:34.847  5219  5219 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:29:34.847  5219  5219 E AndroidRuntime: Process: com.quizlet.quizletandroid, PID: 5219
+11-19 16:29:34.847  5219  5219 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:29:34.847  5219  5219 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:29:34.847  5219  5219 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:29:34.847  5219  5219 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:29:34.847  5219  5219 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:29:34.847  5219  5219 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:29:34.847  5219  5219 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:29:34.847  5219  5219 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:32:00.033  6586  6586 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:32:00.033  6586  6586 E AndroidRuntime: Process: com.reddit.frontpage, PID: 6586
+11-19 16:32:00.033  6586  6586 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:32:00.033  6586  6586 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:32:00.033  6586  6586 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:32:00.033  6586  6586 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:32:00.033  6586  6586 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:32:00.033  6586  6586 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:32:00.033  6586  6586 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:32:00.033  6586  6586 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:32:08.621  7135  7135 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:32:08.621  7135  7135 E AndroidRuntime: Process: com.reddit.frontpage, PID: 7135
+11-19 16:32:08.621  7135  7135 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:32:08.621  7135  7135 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:32:08.621  7135  7135 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:32:08.621  7135  7135 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:32:08.621  7135  7135 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:32:08.621  7135  7135 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:32:08.621  7135  7135 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:32:08.621  7135  7135 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:34:19.132  7834  7834 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:34:19.132  7834  7834 E AndroidRuntime: Process: com.roidapp.photogrid, PID: 7834
+11-19 16:34:19.132  7834  7834 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:34:19.132  7834  7834 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:34:19.132  7834  7834 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:34:19.132  7834  7834 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:34:19.132  7834  7834 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:34:19.132  7834  7834 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:34:19.132  7834  7834 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:34:19.132  7834  7834 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:34:57.012  8364  8364 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:34:57.012  8364  8364 E AndroidRuntime: Process: fm.player, PID: 8364
+11-19 16:34:57.012  8364  8364 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:34:57.012  8364  8364 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:34:57.012  8364  8364 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:34:57.012  8364  8364 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:34:57.012  8364  8364 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:34:57.012  8364  8364 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:34:57.012  8364  8364 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:34:57.012  8364  8364 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:35:05.782  8460  8460 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:35:05.782  8460  8460 E AndroidRuntime: Process: fm.player, PID: 8460
+11-19 16:35:05.782  8460  8460 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:35:05.782  8460  8460 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:35:05.782  8460  8460 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:35:05.782  8460  8460 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:35:05.782  8460  8460 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:35:05.782  8460  8460 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:35:05.782  8460  8460 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:35:05.782  8460  8460 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:38:41.584 10637 10637 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:38:41.584 10637 10637 E AndroidRuntime: Process: com.sillens.shapeupclub, PID: 10637
+11-19 16:38:41.584 10637 10637 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:38:41.584 10637 10637 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:38:41.584 10637 10637 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:38:41.584 10637 10637 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:38:41.584 10637 10637 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:38:41.584 10637 10637 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:38:41.584 10637 10637 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:38:41.584 10637 10637 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:38:58.374 10825 10825 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:38:58.374 10825 10825 E AndroidRuntime: Process: com.skimble.workouts, PID: 10825
+11-19 16:38:58.374 10825 10825 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:38:58.374 10825 10825 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:38:58.374 10825 10825 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:38:58.374 10825 10825 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:38:58.374 10825 10825 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:38:58.374 10825 10825 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:38:58.374 10825 10825 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:38:58.374 10825 10825 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:39:32.966 11054 11054 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:39:32.966 11054 11054 E AndroidRuntime: Process: com.sleekbit.dormi, PID: 11054
+11-19 16:39:32.966 11054 11054 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:39:32.966 11054 11054 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:39:32.966 11054 11054 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:39:32.966 11054 11054 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:39:32.966 11054 11054 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:39:32.966 11054 11054 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:39:32.966 11054 11054 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:39:32.966 11054 11054 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:52:09.077 14983 14983 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:52:09.077 14983 14983 E AndroidRuntime: Process: com.atlassian.android.jira.core, PID: 14983
+11-19 16:52:09.077 14983 14983 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:52:09.077 14983 14983 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:52:09.077 14983 14983 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:52:09.077 14983 14983 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:52:09.077 14983 14983 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:52:09.077 14983 14983 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:52:09.077 14983 14983 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:52:09.077 14983 14983 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:52:34.967 15161 15161 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:52:34.967 15161 15161 E AndroidRuntime: Process: fr.thema.wear.watch.swift, PID: 15161
+11-19 16:52:34.967 15161 15161 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:52:34.967 15161 15161 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:52:34.967 15161 15161 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:52:34.967 15161 15161 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:52:34.967 15161 15161 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:52:34.967 15161 15161 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:52:34.967 15161 15161 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:52:34.967 15161 15161 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:52:43.793 15214 15214 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:52:43.793 15214 15214 E AndroidRuntime: Process: fr.thema.wear.watch.swift, PID: 15214
+11-19 16:52:43.793 15214 15214 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:52:43.793 15214 15214 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:52:43.793 15214 15214 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:52:43.793 15214 15214 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:52:43.793 15214 15214 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:52:43.793 15214 15214 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:52:43.793 15214 15214 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:52:43.793 15214 15214 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: Process: com.callpod.android_apps.keeper:fastfill_service, PID: 17079
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: java.lang.RuntimeException: Unable to create service com.callpod.android_apps.keeper.fastfill.layouts.KeeperFillSearchService: android.view.InflateException: Binary XML file line #16: Binary XML file line #16: Error inflating class com.callpod.android_apps.keeper.buttons.ClearableAutoCompleteTextView
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:3349)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.app.ActivityThread.-wrap4(Unknown Source:0)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1677)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #16: Binary XML file line #16: Error inflating class com.callpod.android_apps.keeper.buttons.ClearableAutoCompleteTextView
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #16: Error inflating class com.callpod.android_apps.keeper.buttons.ClearableAutoCompleteTextView
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:334)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.view.LayoutInflater.createView(LayoutInflater.java:647)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:790)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:730)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:863)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:824)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:866)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.view.LayoutInflater.rInflateChildren(LayoutInflater.java:824)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:515)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at com.callpod.android_apps.keeper.fastfill.layouts.KeeperFillSearchService.c(SourceFile:2)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at com.callpod.android_apps.keeper.fastfill.layouts.KeeperFillSearchService.a(SourceFile:1)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at com.callpod.android_apps.keeper.fastfill.layouts.KeeperFillSearchService.onCreate(SourceFile:3)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:3339)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.app.ActivityThread.-wrap4(Unknown Source:0)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1677)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:215)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.content.res.Resources.getColor(Resources.java:950)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at android.content.Context.getColor(Context.java:588)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at Ve.c(SourceFile:2)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at Esa.a(SourceFile:15)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at com.callpod.android_apps.keeper.buttons.ClearableAutoCompleteTextView.a(SourceFile:5)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	at com.callpod.android_apps.keeper.buttons.ClearableAutoCompleteTextView.<init>(SourceFile:6)
+11-19 16:57:44.151 17079 17079 E AndroidRuntime: 	... 23 more
+################################
+
+################################
+11-19 16:58:33.839 17428 17428 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:58:33.839 17428 17428 E AndroidRuntime: Process: com.cars.android, PID: 17428
+11-19 16:58:33.839 17428 17428 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:58:33.839 17428 17428 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:58:33.839 17428 17428 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:58:33.839 17428 17428 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:58:33.839 17428 17428 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:58:33.839 17428 17428 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:58:33.839 17428 17428 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:58:33.839 17428 17428 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 16:59:55.404 18383 18383 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 16:59:55.404 18383 18383 E AndroidRuntime: Process: com.tohsoft.weather.radar.widget, PID: 18383
+11-19 16:59:55.404 18383 18383 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 16:59:55.404 18383 18383 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 16:59:55.404 18383 18383 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 16:59:55.404 18383 18383 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 16:59:55.404 18383 18383 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 16:59:55.404 18383 18383 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 16:59:55.404 18383 18383 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 16:59:55.404 18383 18383 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:05:50.229 20618 20618 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:05:50.229 20618 20618 E AndroidRuntime: Process: com.dazn, PID: 20618
+11-19 17:05:50.229 20618 20618 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:05:50.229 20618 20618 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:05:50.229 20618 20618 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:05:50.229 20618 20618 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:05:50.229 20618 20618 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:05:50.229 20618 20618 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:05:50.229 20618 20618 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:05:50.229 20618 20618 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: Process: com.duolingo, PID: 21497
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: java.lang.RuntimeException: Unable to get provider com.crashlytics.android.CrashlyticsInitProvider: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x7f080153
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6242)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5805)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5722)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.app.ActivityThread.-wrap1(Unknown Source:0)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1656)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x7f080153
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getResourcePackageName(ResourcesImpl.java:261)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.content.res.Resources.getResourcePackageName(Resources.java:1949)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.CommonUtils.n(CommonUtils.java:767)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.CommonUtils.a(CommonUtils.java:517)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.CommonUtils.a(CommonUtils.java:498)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.m.a(FirebaseInfo.java:52)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at com.crashlytics.android.CrashlyticsInitProvider.onCreate(CrashlyticsInitProvider.java:1073)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1917)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1892)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6239)
+11-19 17:08:00.020 21497 21497 E AndroidRuntime: 	... 10 more
+################################
+
+################################
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: Process: com.duolingo, PID: 21542
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: java.lang.RuntimeException: Unable to get provider com.crashlytics.android.CrashlyticsInitProvider: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x7f080153
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6242)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5805)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5722)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.app.ActivityThread.-wrap1(Unknown Source:0)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1656)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x7f080153
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getResourcePackageName(ResourcesImpl.java:261)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.content.res.Resources.getResourcePackageName(Resources.java:1949)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.CommonUtils.n(CommonUtils.java:767)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.CommonUtils.a(CommonUtils.java:517)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.CommonUtils.a(CommonUtils.java:498)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.m.a(FirebaseInfo.java:52)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at com.crashlytics.android.CrashlyticsInitProvider.onCreate(CrashlyticsInitProvider.java:1073)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1917)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1892)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6239)
+11-19 17:08:08.683 21542 21542 E AndroidRuntime: 	... 10 more
+################################
+
+################################
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: Process: com.duolingo, PID: 21585
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: java.lang.RuntimeException: Unable to get provider com.crashlytics.android.CrashlyticsInitProvider: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x7f080153
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6242)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5805)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5722)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.app.ActivityThread.-wrap1(Unknown Source:0)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1656)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: Caused by: android.content.res.Resources$NotFoundException: Unable to find resource ID #0x7f080153
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.content.res.ResourcesImpl.getResourcePackageName(ResourcesImpl.java:261)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.content.res.Resources.getResourcePackageName(Resources.java:1949)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.CommonUtils.n(CommonUtils.java:767)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.CommonUtils.a(CommonUtils.java:517)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.CommonUtils.a(CommonUtils.java:498)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at io.fabric.sdk.android.services.common.m.a(FirebaseInfo.java:52)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at com.crashlytics.android.CrashlyticsInitProvider.onCreate(CrashlyticsInitProvider.java:1073)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1917)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.content.ContentProvider.attachInfo(ContentProvider.java:1892)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	at android.app.ActivityThread.installProvider(ActivityThread.java:6239)
+11-19 17:08:17.397 21585 21585 E AndroidRuntime: 	... 10 more
+################################
+
+################################
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: Process: loseweight.weightloss.workout.fitness, PID: 21908
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate service loseweight.weightloss.workout.fitness.service.SyncDataService: java.lang.ClassNotFoundException: Didn't find class "loseweight.weightloss.workout.fitness.service.SyncDataService" on path: DexPathList[[zip file "/data/app/loseweight.weightloss.workout.fitness-hVr5UDsb5Bof8tJTLnm-5g==/base.apk"],nativeLibraryDirectories=[/data/app/loseweight.weightloss.workout.fitness-hVr5UDsb5Bof8tJTLnm-5g==/lib/arm64, /data/app/loseweight.weightloss.workout.fitness-hVr5UDsb5Bof8tJTLnm-5g==/base.apk!/lib/arm64-v8a, /system/lib64]]
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:3324)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at android.app.ActivityThread.-wrap4(Unknown Source:0)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1677)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "loseweight.weightloss.workout.fitness.service.SyncDataService" on path: DexPathList[[zip file "/data/app/loseweight.weightloss.workout.fitness-hVr5UDsb5Bof8tJTLnm-5g==/base.apk"],nativeLibraryDirectories=[/data/app/loseweight.weightloss.workout.fitness-hVr5UDsb5Bof8tJTLnm-5g==/lib/arm64, /data/app/loseweight.weightloss.workout.fitness-hVr5UDsb5Bof8tJTLnm-5g==/base.apk!/lib/arm64-v8a, /system/lib64]]
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:125)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:379)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:312)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:3321)
+11-19 17:09:01.692 21908 21908 E AndroidRuntime: 	... 8 more
+################################
+
+################################
+11-19 17:10:00.236 22295 22295 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:10:00.236 22295 22295 E AndroidRuntime: Process: com.dropbox.android, PID: 22295
+11-19 17:10:00.236 22295 22295 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:10:00.236 22295 22295 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:10:00.236 22295 22295 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:10:00.236 22295 22295 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:10:00.236 22295 22295 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:10:00.236 22295 22295 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:10:00.236 22295 22295 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:10:00.236 22295 22295 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:18:57.918 25226 25226 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:18:57.918 25226 25226 E AndroidRuntime: Process: com.foxnews.android, PID: 25226
+11-19 17:18:57.918 25226 25226 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:18:57.918 25226 25226 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:18:57.918 25226 25226 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:18:57.918 25226 25226 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:18:57.918 25226 25226 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:18:57.918 25226 25226 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:18:57.918 25226 25226 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:18:57.918 25226 25226 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:20:22.771 25734 25734 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:20:22.771 25734 25734 E AndroidRuntime: Process: com.underwood.route_optimiser, PID: 25734
+11-19 17:20:22.771 25734 25734 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:20:22.771 25734 25734 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:20:22.771 25734 25734 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:20:22.771 25734 25734 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:20:22.771 25734 25734 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:20:22.771 25734 25734 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:20:22.771 25734 25734 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:20:22.771 25734 25734 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:23:33.952 26523 26523 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:23:33.952 26523 26523 E AndroidRuntime: Process: com.glidetalk.glideapp, PID: 26523
+11-19 17:23:33.952 26523 26523 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:23:33.952 26523 26523 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:23:33.952 26523 26523 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:23:33.952 26523 26523 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:23:33.952 26523 26523 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:23:33.952 26523 26523 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:23:33.952 26523 26523 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:23:33.952 26523 26523 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:23:49.360 26750 26750 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:23:49.360 26750 26750 E AndroidRuntime: Process: com.glow.android.baby, PID: 26750
+11-19 17:23:49.360 26750 26750 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:23:49.360 26750 26750 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:23:49.360 26750 26750 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:23:49.360 26750 26750 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:23:49.360 26750 26750 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:23:49.360 26750 26750 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:23:49.360 26750 26750 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:23:49.360 26750 26750 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:25:30.512 27500 27500 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:25:30.512 27500 27500 E AndroidRuntime: Process: com.goodboystudios.petparade, PID: 27500
+11-19 17:25:30.512 27500 27500 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:25:30.512 27500 27500 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:25:30.512 27500 27500 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:25:30.512 27500 27500 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:25:30.512 27500 27500 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:25:30.512 27500 27500 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:25:30.512 27500 27500 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:25:30.512 27500 27500 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:30:19.777 29336 29336 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:30:19.777 29336 29336 E AndroidRuntime: Process: com.google.android.apps.primer, PID: 29336
+11-19 17:30:19.777 29336 29336 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:30:19.777 29336 29336 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:30:19.777 29336 29336 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:30:19.777 29336 29336 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:30:19.777 29336 29336 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:30:19.777 29336 29336 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:30:19.777 29336 29336 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:30:19.777 29336 29336 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: Process: com.waze, PID: 30029
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: java.lang.RuntimeException: Unable to create service com.waze.android_auto.WazeCarService: java.lang.RuntimeException: com.google.android.gms.car.b: java.lang.IllegalStateException: Android Auto is not installed!
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:3349)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at android.app.ActivityThread.-wrap4(Unknown Source:0)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1677)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: Caused by: java.lang.RuntimeException: com.google.android.gms.car.b: java.lang.IllegalStateException: Android Auto is not installed!
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at com.google.android.gms.car.d.onCreate(WazeSource:9)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:3339)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	... 8 more
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: Caused by: com.google.android.gms.car.b: java.lang.IllegalStateException: Android Auto is not installed!
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at com.google.android.gms.car.a.a(WazeSource:10)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at com.google.android.gms.car.d.onCreate(WazeSource:5)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	... 9 more
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: Caused by: java.lang.IllegalStateException: Android Auto is not installed!
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at com.google.android.gms.car.g.a(WazeSource:21)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at com.google.android.gms.car.g.b(WazeSource:30)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at com.google.android.gms.car.g.b(WazeSource:36)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at com.google.android.gms.car.a.b(WazeSource:21)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	at com.google.android.gms.car.a.a(WazeSource:4)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	... 10 more
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	Suppressed: android.content.pm.PackageManager$NameNotFoundException: com.google.android.projection.bumblebee
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 		at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:173)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 		at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:144)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 		at com.google.android.gms.car.i.a(WazeSource:4)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 		at com.google.android.gms.car.g.a(WazeSource:14)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 		... 14 more
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 	Suppressed: android.content.pm.PackageManager$NameNotFoundException: com.google.android.projection.gearhead
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 		at android.app.ApplicationPackageManager.getPackageInfoAsUser(ApplicationPackageManager.java:173)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 		at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:144)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 		at com.google.android.gms.car.i.a(WazeSource:4)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 		at com.google.android.gms.car.g.a(WazeSource:14)
+11-19 17:31:55.413 30029 30029 E AndroidRuntime: 		... 14 more
+################################
+
+################################
+11-19 17:32:47.389 30298 30298 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:32:47.389 30298 30298 E AndroidRuntime: Process: com.waze, PID: 30298
+11-19 17:32:47.389 30298 30298 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:32:47.389 30298 30298 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:32:47.389 30298 30298 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:32:47.389 30298 30298 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:32:47.389 30298 30298 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:32:47.389 30298 30298 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:32:47.389 30298 30298 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:32:47.389 30298 30298 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31253
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:34:40.676 31253 31253 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31312
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:34:42.002 31312 31312 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31411
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:34:49.144 31411 31411 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31439
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:34:50.442 31439 31439 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31485
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:34:57.829 31485 31485 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31512
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:34:59.144 31512 31512 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31563
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:06.517 31563 31563 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31593
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:07.840 31593 31593 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31641
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:15.206 31641 31641 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31667
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:16.552 31667 31667 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31713
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:23.735 31713 31713 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31740
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:25.086 31740 31740 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31788
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:32.320 31788 31788 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31813
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:33.646 31813 31813 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31864
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:41.019 31864 31864 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31891
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:42.365 31891 31891 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31937
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:49.627 31937 31937 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 31964
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:50.918 31964 31964 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 32009
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:58.249 32009 32009 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 32039
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:35:59.626 32039 32039 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 32092
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:36:06.863 32092 32092 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 32123
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:36:08.198 32123 32123 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 32173
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:36:15.502 32173 32173 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 32200
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:36:16.866 32200 32200 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 32276
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:36:32.739 32276 32276 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 32305
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:36:34.088 32305 32305 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 32420
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:37:07.239 32420 32420 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: Process: com.google.android.projection.gearhead:projection, PID: 32448
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: java.lang.IllegalStateException: Failed to connect to car service: API_UNAVAILABLE
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at amv.a(SourceFile:129)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at ezl.c(SourceFile:15)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at bft.b(SourceFile:397)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at bft.a(SourceFile:426)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at car.a(SourceFile:31)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at cjd.a(SourceFile:9)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzaw.k(SourceFile:339)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.j(SourceFile:154)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at com.google.android.gms.common.api.internal.zzak.QR(SourceFile:62)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at dse.g(SourceFile:27)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$zzh.o(SourceFile:4)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$a.aZ(SourceFile:25)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at com.google.android.gms.common.internal.BaseGmsClient$b.handleMessage(SourceFile:55)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:37:08.584 32448 32448 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:37:37.511 32634 32634 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:37:37.511 32634 32634 E AndroidRuntime: Process: com.graph.weather.forecast.channel, PID: 32634
+11-19 17:37:37.511 32634 32634 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:37:37.511 32634 32634 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:37:37.511 32634 32634 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:37:37.511 32634 32634 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:37:37.511 32634 32634 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:37:37.511 32634 32634 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:37:37.511 32634 32634 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:37:37.511 32634 32634 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:39:58.323  2188  2188 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:39:58.323  2188  2188 E AndroidRuntime: Process: com.huntstand.core, PID: 2188
+11-19 17:39:58.323  2188  2188 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:39:58.323  2188  2188 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:39:58.323  2188  2188 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:39:58.323  2188  2188 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:39:58.323  2188  2188 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:39:58.323  2188  2188 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:39:58.323  2188  2188 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:39:58.323  2188  2188 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:42:05.525  3108  3158 E AndroidRuntime: FATAL EXCEPTION: IntentService[GeoMonitoringService]
+11-19 17:42:05.525  3108  3158 E AndroidRuntime: Process: com.vivint.vivintsky, PID: 3108
+11-19 17:42:05.525  3108  3158 E AndroidRuntime: java.lang.RuntimeException: WakeLock under-locked GeoMonitoringService
+11-19 17:42:05.525  3108  3158 E AndroidRuntime: 	at android.os.PowerManager$WakeLock.release(PowerManager.java:1404)
+11-19 17:42:05.525  3108  3158 E AndroidRuntime: 	at android.os.PowerManager$WakeLock.release(PowerManager.java:1370)
+11-19 17:42:05.525  3108  3158 E AndroidRuntime: 	at com.vivint.vivintsky.geo.GeoMonitoringService.onHandleIntent(SourceFile:323)
+11-19 17:42:05.525  3108  3158 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+11-19 17:42:05.525  3108  3158 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:42:05.525  3108  3158 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:42:05.525  3108  3158 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+################################
+
+################################
+11-19 17:43:03.253  3436  3436 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:43:03.253  3436  3436 E AndroidRuntime: Process: com.instacart.client, PID: 3436
+11-19 17:43:03.253  3436  3436 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:43:03.253  3436  3436 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:43:03.253  3436  3436 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:43:03.253  3436  3436 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:43:03.253  3436  3436 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:43:03.253  3436  3436 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:43:03.253  3436  3436 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:43:03.253  3436  3436 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:43:11.938  3540  3540 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:43:11.938  3540  3540 E AndroidRuntime: Process: com.instacart.client, PID: 3540
+11-19 17:43:11.938  3540  3540 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:43:11.938  3540  3540 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:43:11.938  3540  3540 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:43:11.938  3540  3540 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:43:11.938  3540  3540 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:43:11.938  3540  3540 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:43:11.938  3540  3540 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:43:11.938  3540  3540 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:43:38.586  3726  3726 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:43:38.586  3726  3726 E AndroidRuntime: Process: org.telegram.messenger, PID: 3726
+11-19 17:43:38.586  3726  3726 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:43:38.586  3726  3726 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:43:38.586  3726  3726 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:43:38.586  3726  3726 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:43:38.586  3726  3726 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:43:38.586  3726  3726 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:43:38.586  3726  3726 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:43:38.586  3726  3726 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:45:50.288  4442  4442 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:45:50.288  4442  4442 E AndroidRuntime: Process: com.itworks.android.wrapapp, PID: 4442
+11-19 17:45:50.288  4442  4442 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:45:50.288  4442  4442 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:45:50.288  4442  4442 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:45:50.288  4442  4442 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:45:50.288  4442  4442 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:45:50.288  4442  4442 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:45:50.288  4442  4442 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:45:50.288  4442  4442 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:46:25.927  4673  4673 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:46:25.927  4673  4673 E AndroidRuntime: Process: com.jazarimusic.voloco, PID: 4673
+11-19 17:46:25.927  4673  4673 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:46:25.927  4673  4673 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:46:25.927  4673  4673 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:46:25.927  4673  4673 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:46:25.927  4673  4673 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:46:25.927  4673  4673 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:46:25.927  4673  4673 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:46:25.927  4673  4673 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: Process: com.ksmobile.launcher, PID: 5996
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: 	at com.ksmobile.launcher.r.a$a.handleMessage(CmHack.java:96)
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:49:44.346  5996  5996 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:50:16.257  6623  6623 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:50:16.257  6623  6623 E AndroidRuntime: Process: com.limebike, PID: 6623
+11-19 17:50:16.257  6623  6623 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:50:16.257  6623  6623 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:50:16.257  6623  6623 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:50:16.257  6623  6623 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:50:16.257  6623  6623 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:50:16.257  6623  6623 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:50:16.257  6623  6623 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:50:16.257  6623  6623 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:51:17.616  7155  7155 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:51:17.616  7155  7155 E AndroidRuntime: Process: com.lge.lifetracker, PID: 7155
+11-19 17:51:17.616  7155  7155 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:51:17.616  7155  7155 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:51:17.616  7155  7155 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:51:17.616  7155  7155 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:51:17.616  7155  7155 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:51:17.616  7155  7155 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:51:17.616  7155  7155 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:51:17.616  7155  7155 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 17:56:46.994 10130 10130 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 17:56:46.994 10130 10130 E AndroidRuntime: Process: slide.watchFrenzy, PID: 10130
+11-19 17:56:46.994 10130 10130 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 17:56:46.994 10130 10130 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 17:56:46.994 10130 10130 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 17:56:46.994 10130 10130 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 17:56:46.994 10130 10130 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 17:56:46.994 10130 10130 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 17:56:46.994 10130 10130 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 17:56:46.994 10130 10130 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 18:05:38.158 14119 14119 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 18:05:38.158 14119 14119 E AndroidRuntime: Process: com.mojisticker.afromoji, PID: 14119
+11-19 18:05:38.158 14119 14119 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 18:05:38.158 14119 14119 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 18:05:38.158 14119 14119 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 18:05:38.158 14119 14119 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 18:05:38.158 14119 14119 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 18:05:38.158 14119 14119 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 18:05:38.158 14119 14119 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 18:05:38.158 14119 14119 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 18:10:00.195 15710 15710 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 18:10:00.195 15710 15710 E AndroidRuntime: Process: co.happybits.marcopolo, PID: 15710
+11-19 18:10:00.195 15710 15710 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 18:10:00.195 15710 15710 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 18:10:00.195 15710 15710 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 18:10:00.195 15710 15710 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 18:10:00.195 15710 15710 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 18:10:00.195 15710 15710 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 18:10:00.195 15710 15710 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 18:10:00.195 15710 15710 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+
+################################
+11-19 18:10:21.589 15852 15852 E AndroidRuntime: FATAL EXCEPTION: main
+11-19 18:10:21.589 15852 15852 E AndroidRuntime: Process: com.aarp.app, PID: 15852
+11-19 18:10:21.589 15852 15852 E AndroidRuntime: android.app.RemoteServiceException: Context.startForegroundService() did not then call Service.startForeground()
+11-19 18:10:21.589 15852 15852 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1768)
+11-19 18:10:21.589 15852 15852 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+11-19 18:10:21.589 15852 15852 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:164)
+11-19 18:10:21.589 15852 15852 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+11-19 18:10:21.589 15852 15852 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-19 18:10:21.589 15852 15852 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+11-19 18:10:21.589 15852 15852 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+################################
+

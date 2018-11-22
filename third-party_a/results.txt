@@ -1,0 +1,7 @@
+Manifest files analyzed:	1694
+Exposed activities found:	4051
+Activities startable by implicit intents:	1983
+Activities startable by explicit intents:	1758
+Activities requiring permissions:		310
+Applications crashing with implicit intents: 84
+Applications crashing with explicit intents: 32

@@ -1,0 +1,7 @@
+Manifest files analyzed:	1694
+Exposed services found:		3210
+Services startable by implicit intents:	827
+Services startable by explicit intents:	444
+Services requiring permissions:		1939
+Applications crashing with implicit intents: 87
+Applications crashing with explicit intents: 45
