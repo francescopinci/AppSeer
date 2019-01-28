@@ -1,4 +1,14 @@
 List of actions crashing processes (implicit intents):
+android.media.IMediaScannerService
+android.telecom.CallServiceProvider
+com.google.android.gms.checkin.BIND_TO_SERVICE
+com.google.android.gms.checkin.START
+android.location.SettingInjectorService
+com.google.android.gms.wallet.service.ia.IIaService
+com.google.android.gms.audit.service.START
+com.google.android.gms.trustlet.place.service.BIND
 
 
 List of actions crashing processes (explicit intents):
+com.google.android.syncadapters.contacts/.SyncHighResPhotoIntentService
+com.google.android.gms/.security.verifier.ApkUploadService

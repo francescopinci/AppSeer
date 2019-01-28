@@ -1,0 +1,9 @@
+../android-6.0.0_r1/packages/providers/MediaProvider/AndroidManifest.xml,S,MediaScannerService,android.media.IMediaScannerService
+PhoneApp,S,com.android.services.telephony.sip.SipCallServiceProvider,android.telecom.CallServiceProvider
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.checkin.CheckinService,com.google.android.gms.checkin.BIND_TO_SERVICE
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.checkin.CheckinApiService,com.google.android.gms.checkin.START
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.location.reporting.service.LocationHistoryInjectorService,android.location.SettingInjectorService
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.wallet.service.PaymentService,com.google.android.gms.wallet.service.ia.IIaService
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.chimera.GmsBoundBrokerService,com.google.android.gms.audit.service.START
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.chimera.PersistentBoundBrokerService,com.google.android.gms.trustlet.place.service.BIND
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.security.verifier.ApkUploadService,

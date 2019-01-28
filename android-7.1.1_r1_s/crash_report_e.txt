@@ -2,15 +2,15 @@ Logcat crash channell #
 #######################
 
 ################################
-10-31 17:13:38.673 31514 31530 E AndroidRuntime: FATAL EXCEPTION: IntentService[SyncHighResPhotoIntentService]
-10-31 17:13:38.673 31514 31530 E AndroidRuntime: Process: com.google.process.gapps, PID: 31514
-10-31 17:13:38.673 31514 31530 E AndroidRuntime: java.lang.NullPointerException: uri
-10-31 17:13:38.673 31514 31530 E AndroidRuntime: 	at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:111)
-10-31 17:13:38.673 31514 31530 E AndroidRuntime: 	at android.content.ContentResolver.acquireContentProviderClient(ContentResolver.java:1544)
-10-31 17:13:38.673 31514 31530 E AndroidRuntime: 	at com.google.android.syncadapters.contacts.SyncHighResPhotoIntentService.onHandleIntent(SyncHighResPhotoIntentService.java:45)
-10-31 17:13:38.673 31514 31530 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:68)
-10-31 17:13:38.673 31514 31530 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
-10-31 17:13:38.673 31514 31530 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
-10-31 17:13:38.673 31514 31530 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:61)
+01-27 21:27:50.066 13436 13452 E AndroidRuntime: FATAL EXCEPTION: IntentService[SyncHighResPhotoIntentService]
+01-27 21:27:50.066 13436 13452 E AndroidRuntime: Process: com.google.process.gapps, PID: 13436
+01-27 21:27:50.066 13436 13452 E AndroidRuntime: java.lang.NullPointerException: uri
+01-27 21:27:50.066 13436 13452 E AndroidRuntime: 	at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:111)
+01-27 21:27:50.066 13436 13452 E AndroidRuntime: 	at android.content.ContentResolver.acquireContentProviderClient(ContentResolver.java:1544)
+01-27 21:27:50.066 13436 13452 E AndroidRuntime: 	at com.google.android.syncadapters.contacts.SyncHighResPhotoIntentService.onHandleIntent(SyncHighResPhotoIntentService.java:45)
+01-27 21:27:50.066 13436 13452 E AndroidRuntime: 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:68)
+01-27 21:27:50.066 13436 13452 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-27 21:27:50.066 13436 13452 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:154)
+01-27 21:27:50.066 13436 13452 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:61)
 ################################
 

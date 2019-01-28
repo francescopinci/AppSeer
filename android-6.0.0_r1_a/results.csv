@@ -1,0 +1,13 @@
+../android-6.0.0_r1/packages/apps/Settings/AndroidManifest.xml,A,Settings$SavedAccessPointsSettingsActivity,android.settings.WIFI_IF_SETTINGS
+../android-6.0.0_r1/packages/apps/Settings/AndroidManifest.xml,A,Settings$UsbSettingsActivity,android.settings.STORAGE_USB_SETTINGS
+../android-6.0.0_r1/external/svox/pico/AndroidManifest.xml,A,.DownloadVoiceData,android.speech.tts.engine.INSTALL_TTS_DATA
+../android-6.0.0_r1/development/apps/Development/AndroidManifest.xml,A,PermissionDetails,com.android.development.VIEW_PERMISSION
+com.google.android.velvet.VelvetApplication,A,com.google.android.voicesearch.intentapi.IntentApiActivity,android.speech.action.RECOGNIZE_SPEECH
+com.google.android.gms.games.app.PowerUpApplication,A,com.google.android.gms.games.testcompat.ParcelTestCompatActivity,com.google.android.gms.games.PARCEL_COMPAT
+com.google.android.gms.common.app.GmsApplication,A,com.google.android.gms.appinvite.ui.context.ContextualPeopleSelectionActivity,com.google.android.gms.appinvite.ACTION_CONTEXTUAL_PEOPLE_SELECTION
+com.google.android.gms.common.app.GmsApplication,A,com.google.android.gms.mobiledataplan.ui.MobileDataPlanSettingsActivity,android.telephony.action.MANAGE_SUBSCRIPTION_PLANS
+com.google.android.gms.common.app.GmsApplication,A,com.google.android.gms.wallet.common.ui.UpdateCallingAppActivity,com.google.android.gms.wallet.ACTION_BILLING_INSTRUMENT_MANAGEMENT
+../android-6.0.0_r1/packages/apps/Settings/AndroidManifest.xml,A,.applications.InstalledAppDetailsTop,
+../android-6.0.0_r1/frameworks/base/packages/BackupRestoreConfirmation/AndroidManifest.xml,A,.BackupRestoreConfirmation,
+com.google.android.gms.common.app.GmsApplication,A,com.google.android.gms.auth.TokenActivity,
+com.google.android.gms.common.app.GmsApplication,A,com.google.android.gms.wallet.buyflow.CheckoutActivity,

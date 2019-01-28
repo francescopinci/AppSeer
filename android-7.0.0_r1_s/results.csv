@@ -1,0 +1,12 @@
+PhoneApp,S,com.android.services.telephony.sip.SipCallServiceProvider,android.telecom.CallServiceProvider
+com.google.android.apps.photos.app.PhotosApplication,S,com.google.android.libraries.social.notifications.service.GunsService,com.google.android.libraries.social.notifications.impl.ACTOR_SELECTED
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.auth.api.proxy.AuthService,com.google.android.gms.auth.service.START
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.checkin.CheckinService,com.google.android.gms.checkin.BIND_TO_SERVICE
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.checkin.CheckinApiService,com.google.android.gms.checkin.START
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.location.reporting.service.LocationHistoryInjectorService,android.location.SettingInjectorService
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.chimera.GmsBoundBrokerService,com.google.android.gms.drive.ApiService.START
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.chimera.GmsBoundBrokerService,com.google.android.gms.drive.ApiService.STOP
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.chimera.PersistentBoundBrokerService,com.google.android.gms.backup.ACTION_BACKUP_NOW
+device_APKs/GoogleContactsSyncAdapter/AndroidManifest.xml,S,com.google.android.syncadapters.contacts.SyncHighResPhotoIntentService,
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.auth.GetToken,
+com.google.android.gms.common.app.GmsApplication,S,com.google.android.gms.auth.account.authenticator.DefaultAuthDelegateService,

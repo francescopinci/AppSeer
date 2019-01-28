@@ -1,3 +1,199 @@
 Logcat crash channell #
 #######################
 
+################################
+01-24 19:13:45.433  2651  4193 E AndroidRuntime: FATAL EXCEPTION: MediaScannerService
+01-24 19:13:45.433  2651  4193 E AndroidRuntime: Process: android.process.media, PID: 2651
+01-24 19:13:45.433  2651  4193 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.os.Bundle.getString(java.lang.String)' on a null object reference
+01-24 19:13:45.433  2651  4193 E AndroidRuntime: 	at com.android.providers.media.MediaScannerService$ServiceHandler.handleMessage(MediaScannerService.java:237)
+01-24 19:13:45.433  2651  4193 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-24 19:13:45.433  2651  4193 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+01-24 19:13:45.433  2651  4193 E AndroidRuntime: 	at com.android.providers.media.MediaScannerService.run(MediaScannerService.java:186)
+01-24 19:13:45.433  2651  4193 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:818)
+################################
+
+################################
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: FATAL EXCEPTION: main
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: Process: com.android.phone, PID: 2505
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate service com.android.services.telephony.sip.SipCallServiceProvider: java.lang.ClassNotFoundException: Didn't find class "com.android.services.telephony.sip.SipCallServiceProvider" on path: DexPathList[[zip file "/system/priv-app/TeleService/TeleService.apk"],nativeLibraryDirectories=[/system/priv-app/TeleService/lib/x86, /vendor/lib, /system/lib]]
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2862)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at android.app.ActivityThread.-wrap4(ActivityThread.java)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1427)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.services.telephony.sip.SipCallServiceProvider" on path: DexPathList[[zip file "/system/priv-app/TeleService/TeleService.apk"],nativeLibraryDirectories=[/system/priv-app/TeleService/lib/x86, /vendor/lib, /system/lib]]
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2859)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	... 8 more
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	Suppressed: java.lang.ClassNotFoundException: com.android.services.telephony.sip.SipCallServiceProvider
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 		at java.lang.Class.classForName(Native Method)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 		at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 		at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 		at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 		... 10 more
+01-24 19:14:11.555  2505  2505 E AndroidRuntime: 	Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack trace available
+################################
+
+################################
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: FATAL EXCEPTION: main
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: Process: com.google.android.gms, PID: 5161
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: java.lang.RuntimeException: Unable to start service com.google.android.gms.checkin.CheckinService@7bef3dd with Intent { act=com.google.android.gms.checkin.BIND_TO_SERVICE }: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.Bundle.putInt(java.lang.String, int)' on a null object reference
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3027)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at android.app.ActivityThread.-wrap17(ActivityThread.java)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1442)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.Bundle.putInt(java.lang.String, int)' on a null object reference
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at com.google.android.gms.checkin.CheckinChimeraService.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):20)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at dgd.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):1)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at nqe.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):2)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3010)
+01-24 19:18:51.568  5161  5161 E AndroidRuntime: 	... 8 more
+################################
+
+################################
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: FATAL EXCEPTION: main
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: Process: com.android.phone, PID: 5240
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate service com.android.services.telephony.sip.SipCallServiceProvider: java.lang.ClassNotFoundException: Didn't find class "com.android.services.telephony.sip.SipCallServiceProvider" on path: DexPathList[[zip file "/system/priv-app/TeleService/TeleService.apk"],nativeLibraryDirectories=[/system/priv-app/TeleService/lib/x86, /vendor/lib, /system/lib]]
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2862)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at android.app.ActivityThread.-wrap4(ActivityThread.java)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1427)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.services.telephony.sip.SipCallServiceProvider" on path: DexPathList[[zip file "/system/priv-app/TeleService/TeleService.apk"],nativeLibraryDirectories=[/system/priv-app/TeleService/lib/x86, /vendor/lib, /system/lib]]
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2859)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	... 8 more
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	Suppressed: java.lang.ClassNotFoundException: com.android.services.telephony.sip.SipCallServiceProvider
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 		at java.lang.Class.classForName(Native Method)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 		at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 		at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 		at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 		... 10 more
+01-24 19:19:11.823  5240  5240 E AndroidRuntime: 	Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack trace available
+################################
+
+################################
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: FATAL EXCEPTION: main
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: Process: com.google.android.gms.persistent, PID: 6629
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: java.lang.RuntimeException: Unable to start service com.google.android.location.reporting.service.LocationHistoryInjectorService@fbd15e3 with Intent { act=android.location.SettingInjectorService }: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.Messenger.send(android.os.Message)' on a null object reference
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3027)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at android.app.ActivityThread.-wrap17(ActivityThread.java)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1442)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.os.Messenger.send(android.os.Message)' on a null object reference
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at android.location.SettingInjectorService.sendStatus(SettingInjectorService.java:184)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at android.location.SettingInjectorService.onHandleIntent(SettingInjectorService.java:164)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at android.location.SettingInjectorService.onStartCommand(SettingInjectorService.java:147)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at com.google.android.chimera.SettingInjectorService.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136))
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at dgd.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):1)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at nqe.onStartCommand(:com.google.android.gms@12874026@12.8.74 (040700-204998136):2)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3010)
+01-24 19:25:42.565  6629  6629 E AndroidRuntime: 	... 8 more
+################################
+
+################################
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: FATAL EXCEPTION: main
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: Process: com.android.phone, PID: 7267
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate service com.android.services.telephony.sip.SipCallServiceProvider: java.lang.ClassNotFoundException: Didn't find class "com.android.services.telephony.sip.SipCallServiceProvider" on path: DexPathList[[zip file "/system/priv-app/TeleService/TeleService.apk"],nativeLibraryDirectories=[/system/priv-app/TeleService/lib/x86, /vendor/lib, /system/lib]]
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2862)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at android.app.ActivityThread.-wrap4(ActivityThread.java)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1427)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.services.telephony.sip.SipCallServiceProvider" on path: DexPathList[[zip file "/system/priv-app/TeleService/TeleService.apk"],nativeLibraryDirectories=[/system/priv-app/TeleService/lib/x86, /vendor/lib, /system/lib]]
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2859)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	... 8 more
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	Suppressed: java.lang.ClassNotFoundException: com.android.services.telephony.sip.SipCallServiceProvider
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 		at java.lang.Class.classForName(Native Method)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 		at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 		at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 		at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 		... 10 more
+01-24 19:29:12.291  7267  7267 E AndroidRuntime: 	Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack trace available
+################################
+
+################################
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: FATAL EXCEPTION: main
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: Process: com.android.phone, PID: 8236
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate service com.android.services.telephony.sip.SipCallServiceProvider: java.lang.ClassNotFoundException: Didn't find class "com.android.services.telephony.sip.SipCallServiceProvider" on path: DexPathList[[zip file "/system/priv-app/TeleService/TeleService.apk"],nativeLibraryDirectories=[/system/priv-app/TeleService/lib/x86, /vendor/lib, /system/lib]]
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2862)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at android.app.ActivityThread.-wrap4(ActivityThread.java)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1427)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.services.telephony.sip.SipCallServiceProvider" on path: DexPathList[[zip file "/system/priv-app/TeleService/TeleService.apk"],nativeLibraryDirectories=[/system/priv-app/TeleService/lib/x86, /vendor/lib, /system/lib]]
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2859)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	... 8 more
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	Suppressed: java.lang.ClassNotFoundException: com.android.services.telephony.sip.SipCallServiceProvider
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 		at java.lang.Class.classForName(Native Method)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 		at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 		at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 		at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 		... 10 more
+01-24 19:34:12.549  8236  8236 E AndroidRuntime: 	Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack trace available
+################################
+
+################################
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: FATAL EXCEPTION: main
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: Process: com.android.phone, PID: 9899
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: java.lang.RuntimeException: Unable to instantiate service com.android.services.telephony.sip.SipCallServiceProvider: java.lang.ClassNotFoundException: Didn't find class "com.android.services.telephony.sip.SipCallServiceProvider" on path: DexPathList[[zip file "/system/priv-app/TeleService/TeleService.apk"],nativeLibraryDirectories=[/system/priv-app/TeleService/lib/x86, /vendor/lib, /system/lib]]
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2862)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at android.app.ActivityThread.-wrap4(ActivityThread.java)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1427)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.services.telephony.sip.SipCallServiceProvider" on path: DexPathList[[zip file "/system/priv-app/TeleService/TeleService.apk"],nativeLibraryDirectories=[/system/priv-app/TeleService/lib/x86, /vendor/lib, /system/lib]]
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2859)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	... 8 more
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	Suppressed: java.lang.ClassNotFoundException: com.android.services.telephony.sip.SipCallServiceProvider
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 		at java.lang.Class.classForName(Native Method)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 		at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 		at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 		at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 		... 10 more
+01-24 19:44:12.993  9899  9899 E AndroidRuntime: 	Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack trace available
+################################
+

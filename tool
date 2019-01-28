@@ -121,13 +121,13 @@ case $1 in
 	-a)
 		# Search for exposed activities
 		#echo -en "Searching for exposed activities..\n\n"
-		if [ $answer == 'y' ]; then
-			if [[ $# -eq 2 ]]; then
-				python3 ../activities.py
-			else
-				python3 ../activities_3rd.py
-			fi
-		fi
+		# if [ $answer == 'y' ]; then
+		# 	if [[ $# -eq 2 ]]; then
+		# 		python3 ../activities.py
+		# 	else
+		# 		python3 ../activities_3rd.py
+		# 	fi
+		# fi
 		intents_i="test_activities_i.txt"
 		intents_e="test_activities_e.txt"
 		adb_command_i="$adb shell am start -a"
@@ -136,17 +136,17 @@ case $1 in
 	-s)
 		# Search for exposed services
 		#echo -en "Searching for exposed services..\n\n"
-		if [ $answer == 'y' ]; then
-			if [[ $# -eq 2 ]]; then
-				python3 ../services.py
-			else
-				python3 ../services_3rd.py
-			fi
-		fi
+		# if [ $answer == 'y' ]; then
+		# 	if [[ $# -eq 2 ]]; then
+		# 		python3 ../services.py
+		# 	else
+		# 		python3 ../services_3rd.py
+		# 	fi
+		# fi
 		intents_i="test_services_i.txt"
 		intents_e="test_services_e.txt"
-		adb_command_i="$adb shell am startforegroundservice -a"
-		adb_command_e="$adb shell am startforegroundservice -n"
+		adb_command_i="$adb shell am startservice -a"
+		adb_command_e="$adb shell am startservice -n"
 		;;
 	*)
 		cd ..
