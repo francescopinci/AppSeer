@@ -1,0 +1,13 @@
+The main program is in the 'tool' file. It is a bash script which parse the input parameters and run the necessary files.
+
+The tool can receive the following parameters:
+
+tool -a|-s [android_build]
+
+    -a : test activities
+    -s : test services
+
+If no other argument is provided, the tool will test the system applications that can be found in the connected device and in the 'APKs' directory placed in the same location of the 'tool' file.
+
+    android_build : when provided, it must be the name of the AOSP folder containing the Android source code. The AOSP folder must be placed in the same location of the 'tool' file. (i.e. "tool -a android-9.0.0_r1")
+
