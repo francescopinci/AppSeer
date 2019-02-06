@@ -10,25 +10,32 @@ manifest_name="AndroidManifest.xml"
 # a : activities
 # s : services
 
+# choose the name of the folder containing the results ("android_build" if provided, otherwise "third-party"
 if [[ $# -eq 2 ]]; then
 	build=$2
 else
 	build="third-party"
 fi
 
+# include "_a" or "_s" at the end of the folder containing the results wether we are testing activities or services
 if [[ $1 == "-a" ]]; then
 	build_results=$build"_a"
 elif [[ $1 == "-s" ]]; then
 	build_results=$build"_s"
 else
-	echo "Invalid option (-a | -s)"
+	echo "Invalid option (Valid: -a|-s)"
 	exit 1
 fi
 
+# this variables contains the paths to the source directories/files containing the AndroidManifest.xml files analyzed by the tool
+# directory containing the AOSP source code
 AOSP_manifests_source=../$build
+# the 'device_APKs' folder must contains the apk files extracted from a device
 device_manifests_source='device_APKs'
-APKs_manifests_source='/media/francesco/FRANCESCO2/APKs/'
+# the user must place the apk files that he wants to analyze inside "third_party_APKs/APKs"
+APKs_manifests_source='third_party_APKs/APKs'
 
+# check if a folder containing results for the build already exists
 flag=false
 if [ ! -d $build_results ]; then
 	flag=true
@@ -38,6 +45,7 @@ cd $build_results
 
 # ----------------------------------------------------------------
 
+# Test if a device is connected and ADB is working
 if [ $($adb devices | wc -l) -lt 3 ]; then
 	#if [ ! -d APKs ] || [ ! -f packages.txt ]; then
 	echo "Connect a device and enable ADB debugging to run the tool"
@@ -48,27 +56,36 @@ if [ $($adb devices | wc -l) -lt 3 ]; then
 	#fi
 fi
 
+# extract the list of packages which are actually installed on the device
+# (in the AOSP you find a lot of AndroidManifest.xml files of applications not installed on every device, so just test those who are installed on the connceted device)
+../packages.sh
+
+# if only one argument was provided, the user wants to test the apks that he has placed in 
 if [[ $# -ne 2 ]]; then
 	# third-party applications
-	# prepare data
-	# 1 - decompile application
-	cd ../APKs/APKs/
-	# while IFS= read -r line
-	# do
-	# 	echo "Decompiling $line"
-	# 	apk_file=$line
-	# 	apk_folder=$(basename -s ".apk" $line)
-	# 	mkdir $apk_folder
-	# 	mv $apk_file $apk_folder
-	# 	cd $apk_folder
-	# 	apktool d -f $apk_file > /dev/null 2>&1
-	# 	mv $apk_folder"/AndroidManifest.xml" ./
-	# 	rm -r $apk_folder/
-	# 	cd ../
-	# 	#rm -r $apk_folder/original/ > /dev/null 2>&1
-	# 	#rm -r $apk_folder/res/ > /dev/null 2>&1
-	# done < '../applications.txt'
+	# decompile the apk files
+	# create a list of the apk files provided by the user
+	ls ../third_party_APKs/APKs > ../third_party_APKs/applications.txt
+	cd ../third_party_APKs/APKs/
+	# decompile each apk
+	while IFS= read -r line
+	do
+		echo "Decompiling $line"
+		apk_file=$line
+		apk_folder=$(basename -s ".apk" $line)
+		mkdir $apk_folder
+		mv $apk_file $apk_folder
+		cd $apk_folder
+		apktool d -f $apk_file > /dev/null 2>&1
+		mv $apk_folder"/AndroidManifest.xml" ./
+		# uncomment this to avoid keeping all the decompiled data and just store the AndroidManifest.xml
+		#rm -r $apk_folder/
+		cd ../
+		#rm -r $apk_folder/original/ > /dev/null 2>&1
+		#rm -r $apk_folder/res/ > /dev/null 2>&1
+	done < '../applications.txt'
 
+	# create a list of the manifest files found
 	cd "../../"$build_results
 	if [ ! -f "manifests.txt" ]; then
 	echo -en "Searching all $manifest_name files in third-party APKs.. "
@@ -76,7 +93,7 @@ if [[ $# -ne 2 ]]; then
 	echo -en "done.\n"
 	fi
 else
-	# AOSP+device applications
+	# AOSP + device applications
 	if [ ! -f "packages.txt" ]; then
 		echo -en "Reading list of installed packages.."
 		$adb shell pm list packages > tmp
