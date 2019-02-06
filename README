@@ -10,5 +10,3 @@ tool -a|-s [android_build]
 If no other argument is provided, the tool will test the system applications that can be found in the connected device and in the 'APKs' directory placed in the same location of the 'tool' file.
 
     android_build : when provided, it must be the name of the AOSP folder containing the Android source code. The AOSP folder must be placed in the same location of the 'tool' file. (i.e. "tool -a android-9.0.0_r1")
-
-Testing device system apps + APKs

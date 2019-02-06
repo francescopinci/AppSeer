@@ -56,9 +56,6 @@ if [ $($adb devices | wc -l) -lt 3 ]; then
 	#fi
 fi
 
-# extract the list of packages which are actually installed on the device
-# (in the AOSP you find a lot of AndroidManifest.xml files of applications not installed on every device, so just test those who are installed on the connceted device)
-../packages.sh
 
 # if only one argument was provided, the user wants to test the apks that he has placed in 
 if [[ $# -ne 2 ]]; then
@@ -95,6 +92,8 @@ if [[ $# -ne 2 ]]; then
 else
 	# AOSP + device applications
 	if [ ! -f "packages.txt" ]; then
+		# extract the list of packages which are actually installed on the device
+		# (in the AOSP you find a lot of AndroidManifest.xml files of applications not installed on every device, so just test those who are installed on the connceted device)
 		echo -en "Reading list of installed packages.."
 		$adb shell pm list packages > tmp
 		file="tmp"
@@ -106,7 +105,7 @@ else
 		echo " done."
 	fi
 
-	# extract APK files from the connected device
+	# extract APK files from the connected device and decompile them
 	if [ ! -d "device_APKs" ]; then
 		../extract_apks.sh
 	fi
@@ -136,30 +135,30 @@ echo -en '\n'
 
 case $1 in
 	-a)
-		# Search for exposed activities
-		#echo -en "Searching for exposed activities..\n\n"
-		# if [ $answer == 'y' ]; then
-		# 	if [[ $# -eq 2 ]]; then
-		# 		python3 ../activities.py
-		# 	else
-		# 		python3 ../activities_3rd.py
-		# 	fi
-		# fi
+		Search for exposed activities
+		echo -en "Searching for exposed activities..\n\n"
+		if [ $answer == 'y' ]; then
+			if [[ $# -eq 2 ]]; then
+				python3 ../activities.py
+			else
+				python3 ../activities_3rd.py
+			fi
+		fi
 		intents_i="test_activities_i.txt"
 		intents_e="test_activities_e.txt"
 		adb_command_i="$adb shell am start -a"
 		adb_command_e="$adb shell am start -n"
 		;;
 	-s)
-		# Search for exposed services
-		#echo -en "Searching for exposed services..\n\n"
-		# if [ $answer == 'y' ]; then
-		# 	if [[ $# -eq 2 ]]; then
-		# 		python3 ../services.py
-		# 	else
-		# 		python3 ../services_3rd.py
-		# 	fi
-		# fi
+		Search for exposed services
+		echo -en "Searching for exposed services..\n\n"
+		if [ $answer == 'y' ]; then
+			if [[ $# -eq 2 ]]; then
+				python3 ../services.py
+			else
+				python3 ../services_3rd.py
+			fi
+		fi
 		intents_i="test_services_i.txt"
 		intents_e="test_services_e.txt"
 		adb_command_i="$adb shell am startservice -a"

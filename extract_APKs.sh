@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: ./extract_apks.sh device_build
+# Usage: ./extract_apks.sh
 # Extracts and decompiles all the apks present in the connected device
 
 # set adb folder for correct functioning
